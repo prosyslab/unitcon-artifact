@@ -122,22 +122,34 @@ def main():
     utbot_reports = list()
     for config in projects:
         if tool in ["randoop", "all"]:
-            output_dir = os.path.join(results_dir, "randoop", config.project)
+            dirname = "randoop"
+            if args.target_method:
+                dirname = "randoop-method"
+            output_dir = os.path.join(results_dir, dirname, config.project)
             report = execute_randoop(config, benchmarks_basedir, output_dir, args)
             if report:
                 randoop_reports.append(report)
         if tool in ["evosuite", "all"]:
-            output_dir = os.path.join(results_dir, "evosuite", config.project)
+            dirname = "evosuite"
+            if args.target_method:
+                dirname = "evosuite-method" 
+            output_dir = os.path.join(results_dir, dirname, config.project)
             report = execute_evosuite(config, benchmarks_basedir, output_dir, args)
             if report:
                 evosuite_reports.append(report)
         if tool in ["evofuzz", "all"]:
-            output_dir = os.path.join(results_dir, "evofuzz", config.project)
+            dirname = "evofuzz"
+            if args.target_method:
+                dirname = "evofuzz-method" 
+            output_dir = os.path.join(results_dir, dirname, config.project)
             report = execute_evofuzz(config, benchmarks_basedir, output_dir, args)
             if report:
                 evofuzz_reports.append(report)
         if tool in ["npetest", "all"]:
-            output_dir = os.path.join(results_dir, "npetest", config.project)
+            dirname = "npetest"
+            if args.target_method:
+                dirname = "npetest-method" 
+            output_dir = os.path.join(results_dir, dirname, config.project)
             report = execute_npetest(config, benchmarks_basedir, output_dir, args)
             if report:
                 npetest_reports.append(report)
@@ -147,19 +159,31 @@ def main():
             if report:
                 utbot_reports.append(report)
 
-    reportfile = os.path.join(results_dir, "randoop.csv")
+    file = "randoop.csv"
+    if args.target_method:
+        file = "randoop-method.csv"
+    reportfile = os.path.join(results_dir, file)
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, randoop_reports)
 
-    reportfile = os.path.join(results_dir, "evosuite.csv")
+    file = "evosuite.csv"
+    if args.target_method:
+        file = "evosuite-method.csv"
+    reportfile = os.path.join(results_dir, file)
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, evosuite_reports)
 
-    reportfile = os.path.join(results_dir, "evofuzz.csv")
+    file = "evofuzz.csv"
+    if args.target_method:
+        file = "evofuzz-method.csv"
+    reportfile = os.path.join(results_dir, file)
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, evofuzz_reports)
     
-    reportfile = os.path.join(results_dir, "npetest.csv")
+    file = "npetest.csv"
+    if args.target_method:
+        file = "npetest-method.csv"
+    reportfile = os.path.join(results_dir, file)
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, npetest_reports)
 

@@ -249,7 +249,7 @@ def main():
             mode = "w"
 
         fieldnames = [
-            "project", "num_of_tcs", "num_of_multcs", "num_of_multi_execs", "succ_time", "fst_succ_tc", "success",
+            "project", "num_of_tcs", "num_of_multcs", "num_of_multi_execs", "succ_time", "fst_succ_tc", "validated",
             "total_time"
         ]
         with open(report_file, mode) as f:

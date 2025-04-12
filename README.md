@@ -152,7 +152,8 @@ $ python3 script/execute.py synthesize all --mode full --report unitcon-results
 To run the experiment for other tools except UTBot, you can use the script `scripts/execute.py` as the following.
 FYI, we used seed ranging from 1 to 10.
 ```
-$ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --log /results/[seed].log
+$ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
+$ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --target_method --log results/[seed].log
 ```
 
 #### __UTBot__
@@ -232,8 +233,159 @@ $ python3 script/execute.py synthesize all --mode prune --report unitcon-prune-r
 $ python3 script/execute.py synthesize all --mode basic --report unitcon-basic-results
 ```
 
-### __3.6. Parsing the results__
-TBD
+### __3.6. Plotting the results__
+#### __Init Structure__
+After all the above experiments have finished, the results will be stored in both containers following the directory structure shown below.
+
+1. `~/unitcon/results` directory of `unitcon` container
+```
+├── unitcon-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── unitcon-both-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── unitcon-priority-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── unitcon-prune-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── unitcon-basic-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── 1
+│   ├── evofuzz
+│   │   ├── ...
+│   │   └── evofuzz.csv
+│   ├── evofuzz-method
+│   │   ├── ...
+│   │   └── evofuzz-method.csv
+│   ├── evosuite
+│   │   ├── ...
+│   │   └── evosuite.csv
+│   ├── evosuite-method
+│   │   ├── ...
+│   │   └── evosuite-method.csv
+│   ├── npetest
+│   │   ├── ...
+│   │   └── npetest.csv
+│   ├── npetest-method
+│   │   ├── ...
+│   │   └── npetest-method.csv
+│   ├── randoop
+│   │   ├── ...
+│   │   └── randoop.csv
+│   ├── randoop-method
+│   │   ├── ...
+│   │   └── randoop-method.csv
+│   └── ...
+└── ...
+```
+
+2. `/usr/src/baselines/results` directory of `utbot` container
+```
+├── 1
+│   └── utbot
+│       ├── ...
+│       └── utbot.csv
+└── ...
+```
+
+#### __Combine Structure__
+Please copy the data from the `utbot` container to the `unitcon` container and merge them into a single structure as shown below.
+```
+├── unitcon-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── unitcon-both-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── unitcon-priority-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── unitcon-prune-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── unitcon-basic-results
+│   ├── ...
+│   └── unitcon-report.csv
+├── 1
+│   ├── evofuzz
+│   │   ├── ...
+│   │   └── evofuzz.csv
+│   ├── evofuzz-method
+│   │   ├── ...
+│   │   └── evofuzz-method.csv
+│   ├── evosuite
+│   │   ├── ...
+│   │   └── evosuite.csv
+│   ├── evosuite-method
+│   │   ├── ...
+│   │   └── evosuite-method.csv
+│   ├── npetest
+│   │   ├── ...
+│   │   └── npetest.csv
+│   ├── npetest-method
+│   │   ├── ...
+│   │   └── npetest-method.csv
+│   ├── randoop
+│   │   ├── ...
+│   │   └── randoop.csv
+│   ├── randoop-method
+│   │   ├── ...
+│   │   └── randoop-method.csv
+│   ├── utbot
+│   │   ├── ...
+│   │   └── utbot.csv
+│   └── ...
+└── ...
+```
+
+#### __Running Script__
+After the experimental results have been structured as shown above, you can run the following scripts to prepare the data for plotting and to generate the graphs.
+
+1. prepare the data for plotting
+```console
+cd ~/unitcon/plot-script
+# unitcon
+$ python3 modify_csv.py unitcon-rc1
+$ python3 modify_csv.py unitcon-rc3
+
+# evofuzz
+$ python3 modify_csv.py evofuzz --iteration [iteration]
+$ python3 modify_csv.py evofuzz-method --iteration [iteration]
+
+# evosuite
+$ python3 modify_csv.py evosuite --iteration [iteration]
+$ python3 modify_csv.py evosuite-method --iteration [iteration]
+
+# npetest
+$ python3 modify_csv.py npetest --iteration [iteration]
+$ python3 modify_csv.py npetest-method --iteration [iteration]
+
+# randoop
+$ python3 modify_csv.py randoop --iteration [iteration]
+$ python3 modify_csv.py randoop-method --iteration [iteration]
+
+# utbot
+$ python3 modify_csv.py utbot --iteration [iteration]
+```
+
+2. generate the graphs
+```console
+# figure 6
+python3 figure_6_a.py --iteration [iteration]
+python3 figure_6_b.py
+
+# figure 7
+python3 figure_7_a.py --iteration [iteration]
+python3 figure_7_b.py --iteration [iteration]
+
+# figure 9
+python3 figure_9_a.py
+python3 figure_9_b.py
+```
 
 
 ## __4. The results of the experiments in the paper__
