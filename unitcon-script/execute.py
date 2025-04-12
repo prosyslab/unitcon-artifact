@@ -93,12 +93,10 @@ def run(p_dir_name, p, mode, time_out, proj_infos, log_file):
     return ret
 
 
-def success_checker(p, p_name, extension):
+def success_checker(p, p_name):
     log_path = os.path.join(p, "unitcon-out", "log.txt")
     tcdir_path = os.path.join(p, "unitcon-out", "unitcon-tests")
 
-    if extension:
-        log_path = os.path.join(p, re.sub('\.', '/', get_package_name(p)), "log.txt")
     lines = ""
 
     with open(log_path, 'r') as f:
@@ -164,25 +162,10 @@ def success_checker(p, p_name, extension):
     }
 
 
-def copy(report_path, extension):
-    for p in os.listdir(os.path.join(bench_home, "Maven")):
-        path = os.path.join(bench_home, "Maven", p)
-        if extension:
-            t_path = os.path.join(path, re.sub('\.', '/', get_package_name(path)))
-        else:
-            t_path = os.path.join(path, "unitcon-out", "unitcon-tests")
-            log_path = os.path.join(path, "unitcon-out", "log.txt")
-        shutil.copytree(t_path, os.path.join(report_path, p))
-        shutil.copyfile(log_path, os.path.join(report_path, p, "log.txt"))
-    for p in os.listdir(os.path.join(bench_home, "Javac")):
-        if p == "deps":
-            continue
-        path = os.path.join(bench_home, "Javac", p)
-        if extension:
-            t_path = os.path.join(path, re.sub('\.', '/', get_package_name(path)))
-        else:
-            t_path = os.path.join(path, "unitcon-out", "unitcon-tests")
-            log_path = os.path.join(path, "unitcon-out", "log.txt")
+def copy(report_path, projects):
+    for (p, path) in projects:
+        t_path = os.path.join(path, "unitcon-out", "unitcon-tests")
+        log_path = os.path.join(path, "unitcon-out", "log.txt")
         shutil.copytree(t_path, os.path.join(report_path, p))
         shutil.copyfile(log_path, os.path.join(report_path, p, "log.txt"))
 
@@ -193,79 +176,70 @@ def main():
                         type=str,
                         default="synthesize",
                         help='[ build | analyze | synthesize ]')
+    parser.add_argument("target", type=str, help='[ target project name | all | minimal ]')
     parser.add_argument("--analysis_info", type=argparse.FileType('r'), default="script/projects.json")
+    parser.add_argument("--minimal_projects", type=argparse.FileType('r'), default="script/minimal.json")
     parser.add_argument("--mode", type=str, default="", help='[ basic | prune | priority | full ]')
     parser.add_argument("--report", type=str, default="")
     parser.add_argument("--time_out", type=int, default=600, help='time out (s)')
     args = parser.parse_args()
 
-    if args.run == "build":
-        ret = 0
-        manual_check = list()
-        for p in os.listdir(os.path.join(bench_home, "Maven")):
+    target_projects = list()
+    if args.target == "all":
+        pass
+    elif args.target == "minimal":
+        target_projects = json.load(args.minimal_projects)
+    else:
+        target_projects.append(args.target)
+
+    projects = list()
+    for p in os.listdir(os.path.join(bench_home, "Maven")):
+        if not target_projects or p in target_projects:
             path = os.path.join(bench_home, "Maven", p)
-            ret = build(path)
-            if ret == 1:
-                manual_check.append(path)
-        for p in os.listdir(os.path.join(bench_home, "Javac")):
-            if p == "deps":
-                continue
+            projects.append((p, path))
+    for p in os.listdir(os.path.join(bench_home, "Javac")):
+        if p == "deps":
+            continue
+        if not target_projects or p in target_projects:
             path = os.path.join(bench_home, "Javac", p)
-            ret = build(path)
-            if ret == 1:
-                manual_check.append(path)
-        print("End!")
-        print(manual_check)
+            projects.append((p, path))
+
+    assert len(projects) > 0, "check the [target] argument"
+        
+    if args.run == "build":
+        for (p, path) in projects:
+            print(f"build started: {p}")
+            build(path)
+            print(f"build done: {p}")
+            
+        print("all build done!")
 
     elif args.run == 'analyze':
-        ret = 0
-        manual_check = list()
         all_projects = json.load(args.analysis_info)
-        for p in os.listdir(os.path.join(bench_home, "Maven")):
-            path = os.path.join(bench_home, "Maven", p)
-            ret = analyze(p, path, all_projects)
-            if ret == 1:
-                manual_check.append(path)
-        for p in os.listdir(os.path.join(bench_home, "Javac")):
-            if p == "deps":
-                continue
-            path = os.path.join(bench_home, "Javac", p)
-            ret = analyze(p, path, all_projects)
-            if ret == 1:
-                manual_check.append(path)
-        print("End!")
-        print(manual_check)
+        for (p, path) in projects:
+            print(f"analysis started: {p}")
+            analyze(p, path, all_projects)
+            print(f"analysis done: {p}")
+            
+        print("all analysis done!")
 
     elif args.run == "synthesize":
-        report_path = os.path.join("/results", args.report)
+        report_path = os.path.join(os.getenv("UNITCON_HOME"), "results", args.report)
         if not report_path.is_dir():
-            os.mkdir(report_path)
+            os.mkdirs(report_path)
         unitcon_output = os.path.join(report_path, "unitcon-log.txt")
 
-        ret = 0
-        manual_check = list()
         all_projects = json.load(args.analysis_info)
         reports = list()
-        for p in os.listdir(os.path.join(bench_home, "Maven")):
-            path = os.path.join(bench_home, "Maven", p)
-            ret = run(p, path, args.mode, args.mock, args.extension, args.ast, args.time_out, all_projects,
-                unitcon_output)
-            if ret == 1:
-                manual_check.append(path)
-            report = success_checker(path, p, args.extension)
+
+        for (p, path) in projects:
+            print(f"synthesis started: {p}")
+            run(p, path, args.mode, args.time_out, all_projects, unitcon_output)
+            print(f"synthesis done: {p}")
+            report = success_checker(path, p)
             reports.append(report)
-        for p in os.listdir(os.path.join(bench_home, "Javac")):
-            if p == "deps":
-                continue
-            path = os.path.join(bench_home, "Javac", p)
-            ret = run(p, path, args.mode, args.mock, args.extension, args.ast, args.time_out, all_projects,
-                unitcon_output)
-            if ret == 1:
-                manual_check.append(path)
-            report = success_checker(path, p, args.extension)
-            reports.append(report)
-        print("End!")
-        print(manual_check)
+            
+        print("all synthesis done!")
 
         report_file = os.path.join(report_path, "unitcon-report.csv")
 
@@ -285,7 +259,7 @@ def main():
             for r in reports:
                 w.writerow(r)
 
-        copy(report_path, args.extension)
+        copy(report_path, projects)
     else:
         print(f"Undefined Undefined Run Mode: {args.run}")
 

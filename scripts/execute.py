@@ -59,21 +59,21 @@ def main():
     parser.add_argument("tool", type=str, help="[evosuite | randoop | evofuzz | npetest | utbot | all]")
     parser.add_argument("target",
                         type=str,
-                        help="[target project name | subset(Javac, Maven) | all]")
+                        help="[target project name | subset(Javac, Maven) | all | minimal]")
     parser.add_argument("--tools-home", type=pathlib.Path, default=None)
     parser.add_argument("--projects", type=argparse.FileType('r'), default="projects.json")
+    parser.add_argument("--minimal_projects", type=argparse.FileType('r'), default="minimal.json")
     parser.add_argument("--benchmarks", type=pathlib.Path, default=None)
     parser.add_argument("--results", type=pathlib.Path, default="results")
     parser.add_argument("--log", type=pathlib.Path, default="execution_log.txt")
     parser.add_argument("--force", action="store_true", help="remove cached results")
     parser.add_argument("--seed", type=int, default=1234, help="random seed")
     parser.add_argument("--timeout", type=int, default=30, help="timeout (minutes)")
-    parser.add_argument("--target_method", action="store_true",
-                        help="use -Dtarget_method (evosuite) / --methodlist (randoop) options")
+    parser.add_argument("--target_method", action="store_true")
     args = parser.parse_args()
 
     if not args.results.is_dir():
-        args.results.mkdir()
+        os.makedirs(args.results)
 
     set_logger(args.log.absolute().as_posix())
 
@@ -102,6 +102,9 @@ def main():
     projects = [ProjectConfig(**p) for p in projects]
     if target == "all":
         pass
+    elif target == "minimal":
+        projects = json.load(args.minimal_projects)
+        projects = [ProjectConfig(**p) for p in projects]
     elif target in ["javac", "maven"]:
         projects = [p for p in projects if p.project_dir.lower().startswith(target)]
     else:

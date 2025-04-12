@@ -5,7 +5,7 @@ This is the artifact of the paper *UnitCon: Synthesizing Targeted Unit Tests for
 ## __1. Getting started__
 ### __1.1. System requirements__
 To run the experiments in the paper, we used Linux machines with 512GB RAM and Intel Xeon 2.90GHz.
-The experiment requires **XXX** GB storage for Docker images and experimental results.
+The experiment requires **188** GB storage for Docker images and experimental results.
 
 Additionally, we assume that the following environment settings are met.
 - Ubuntu 22.04
@@ -133,26 +133,26 @@ $ ./setup.sh
 ```
 
 ### __3.2. Running the experiment for RQ1__
-If the following experiment are run sequentially, the total execution time is 70 days.
+If the following experiment are run sequentially, the total execution time is 125 days.
 
 #### __Build__
 Before starting the experiment, projects need to be built. You can run:
 ```
-$ python3 script/execute.py build
+$ python3 script/execute.py build all
 ```
 
 #### __UnitCon__
 To run the experiment for UnitCon, you can run
 ```
-$ python3 script/execute.py analyze
-$ python3 script/execute.py synthesize --mode full --report unitcon-results
+$ python3 script/execute.py analyze all
+$ python3 script/execute.py synthesize all --mode full --report unitcon-results
 ```
 
 #### __Other tools (except UTBot)__
 To run the experiment for other tools except UTBot, you can use the script `scripts/execute.py` as the following.
 FYI, we used seed ranging from 1 to 10.
 ```
-$ python3 execute.py all all --seed [seed] --timeout 10 --results /results/[seed] --log /results/[seed].log
+$ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --log /results/[seed].log
 ```
 
 #### __UTBot__
@@ -160,34 +160,35 @@ UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot` 
 To run the experiment for UTBot, you can use the script `scripts/build.py` as the following.
 ```
 $ cd baselines
-$ python3 build.py all --log /results/build.log
+$ python3 build.py all --log results/build.log
 ```
 
 To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
 FYI, we used iteration ranging from 1 to 10.
 ```
-$ python3 execute.py utbot all --timeout 10 --results /results/[iteration] --log /results/[iteration].log
+$ python3 execute.py utbot all --timeout 10 --results results/[iteration] --log results/[iteration].log
 ```
 
 ### __3.3. Running the minimal version of 3.2__
-Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 10 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 50 and the number of repetitions to 3. Under the assumption of running the experiment sequentially, the total execution time is 6 days.
+Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 10 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 20 and the number of repetitions to 3. Under the assumption of running the experiment sequentially, the total execution time is 4 days.
 
 Before starting the experiment, projects need to be built. You can run:
 ```
-$ python3 script/execute.py build --minimal
+$ python3 script/execute.py build minimal
 ```
 #### __UnitCon__
 To run the experiment for UnitCon, you can run
 ```
-$ python3 script/execute.py analyze --minimal
-$ python3 script/execute.py synthesize --mode full --report unitcon-results --minimal
+$ python3 script/execute.py analyze minimal
+$ python3 script/execute.py synthesize minimal --mode full --report unitcon-results
 ```
 
 #### __Other tools (except UTBot)__
 To run the experiment for other tools except UTBot, you can use the script `scripts/execute.py` as the following.
 you can use seed ranging from 1 to 3.
 ```
-$ python3 execute.py all all --seed [seed] --timeout 10 --results /results/[seed] --log /results/[seed].log --minimal
+$ cd ~/unitcon
+$ python3 execute.py all minimal --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
 ```
 
 #### __UTBot__
@@ -195,13 +196,13 @@ UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot` 
 To run the experiment for UTBot, you can use the script `scripts/build.py` as the following.
 ```
 $ cd baselines
-$ python3 build.py all --log /results/build.log --minimal
+$ python3 build.py minimal --log results/build.log
 ```
 
 To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
 You can use seed ranging from 1 to 3.
 ```
-$ python3 execute.py utbot all --timeout 10 --results /results/[iteration] --log /results/[iteration].log --minimal
+$ python3 execute.py utbot minimal --timeout 10 --results results/[iteration] --log results/[iteration].log
 ```
 
 ### __3.4. Running the experiment for RQ2__
@@ -218,17 +219,17 @@ If the following experiment are run sequentially, the total execution time is 6 
 #### __Build__
 If RQ1 has not been executed, you can run
 ```
-$ python3 script/execute.py build
-$ python3 script/execute.py analyze
+$ python3 script/execute.py build all
+$ python3 script/execute.py analyze all
 ```
 
 #### __UnitCon__
 To run the experiment for UnitCon, you can run
 ```
-$ python3 script/execute.py synthesize --mode full --report unitcon-both-results
-$ python3 script/execute.py synthesize --mode priority --report unitcon-priority-results
-$ python3 script/execute.py synthesize --mode prune --report unitcon-prune-results
-$ python3 script/execute.py synthesize --mode basic --report unitcon-basic-results
+$ python3 script/execute.py synthesize all --mode full --report unitcon-both-results
+$ python3 script/execute.py synthesize all --mode priority --report unitcon-priority-results
+$ python3 script/execute.py synthesize all --mode prune --report unitcon-prune-results
+$ python3 script/execute.py synthesize all --mode basic --report unitcon-basic-results
 ```
 
 ### __3.6. Parsing the results__

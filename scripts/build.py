@@ -38,8 +38,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("target",
                         type=str,
-                        help="[target project name | subset(Maven, Javac) | all]")
+                        help="[target project name | subset(Maven, Javac) | all | minimal]")
     parser.add_argument("--projects", type=argparse.FileType('r'), default="projects.json")
+    parser.add_argument("--minimal_projects", type=argparse.FileType('r'), default="minimal.json")
     parser.add_argument("--benchmarks", type=pathlib.Path, default=None)
     parser.add_argument("--log", type=pathlib.Path, default="build_logs.txt")
     args = parser.parse_args()
@@ -56,6 +57,9 @@ if __name__ == "__main__":
     projects = json.load(args.projects)
     if target == "all":
         pass
+    elif target == "minimal":
+        projects = json.load(args.minimal_projects)
+        projects = [ProjectConfig(**p) for p in projects]
     elif target in ["maven", "javac"]:
         projects = [p for p in projects if p["project_dir"].lower().startswith(target)]
     else:

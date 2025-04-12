@@ -1,0 +1,546 @@
+[
+    {
+    "project": "Bears-17-buggy",
+    "project_dir": "Maven/Bears-17-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+      "method": "_findAnnotation(Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;",
+      "path": "target/classes",
+      "file": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+      "line": 1336
+    },
+    "test_target_caller": [
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findAndAddVirtualProperties(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Ljava/util/List;)V"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findAutoDetectVisibility(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker;)Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findClassDescription(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findContentDeserializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findContentSerializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findCreatorAnnotation(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findCreatorBinding(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findDeserializationContentConverter(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findDeserializationConverter(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findDeserializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findFilterId(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findFormat(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonFormat$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findInjectableValue(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findKeyDeserializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findKeySerializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findMergeInfo(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findNameForDeserialization(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/PropertyName;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findNameForSerialization(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/PropertyName;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findNamingStrategy(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findNullSerializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findObjectIdInfo(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findObjectReferenceInfo(Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;)Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPOJOBuilder(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Class;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPOJOBuilderConfig(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyAccess(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonProperty$Access;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyAliases(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/util/List;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyDefaultValue(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyDescription(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyIgnorals(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonIgnoreProperties$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyInclusion(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonInclude$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyIndex(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Integer;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyTypeResolver(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/jsontype/TypeResolverBuilder;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findReferenceType(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/databind/AnnotationIntrospector$ReferenceProperty;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findRootName(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/PropertyName;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationContentConverter(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationConverter(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationPropertyOrder(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)[Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationSortAlphabetically(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationTyping(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/annotation/JsonSerialize$Typing;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSetterInfo(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonSetter$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSubtypes(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/util/List;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findTypeName(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findTypeResolver(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/jsontype/TypeResolverBuilder;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findUnwrappingNameTransformer(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/databind/util/NameTransformer;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findValueInstantiator(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findViews(Lcom/fasterxml/jackson/databind/introspect/Annotated;)[Ljava/lang/Class;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasAnyGetter(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasAnySetter(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasAsValue(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasAsValueAnnotation(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Z"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasCreatorAnnotation(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Z"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasIgnoreMarker(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Z"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasRequiredMarker(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "isIgnorableType(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "refineDeserializationType(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "refineSerializationType(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;"
+      }
+    ]
+  },
+  {
+    "project": "Bears-196-buggy",
+    "project_dir": "Maven/Bears-196-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.tamaya.spisupport.EnumConverter",
+      "method": "convert(Ljava/lang/String;Lorg/apache/tamaya/spi/ConversionContext;)Ljava/lang/Object;",
+      "path": "code/spi-support/target/classes",
+      "file": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+      "line": 63
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "Bears-56-buggy",
+    "project_dir": "Maven/Bears-56-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "spoon.reflect.visitor.ImportScannerImpl",
+      "method": "isTypeInCollision(Lspoon/reflect/reference/CtReference;Z)Z",
+      "path": "target/classes",
+      "file": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+      "line": 566
+    },
+    "test_target_caller": [
+      {
+        "class": "spoon.reflect.visitor.ImportScannerImpl",
+        "method": "visitCtTypeReference(Lspoon/reflect/reference/CtTypeReference;)V"
+      }
+    ]
+  },
+  {
+    "project": "chart-18",
+    "project_dir": "Javac/chart-18",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.jfree.data.DefaultKeyedValues",
+      "method": "setValue(Ljava/lang/Comparable;Ljava/lang/Number;)V",
+      "file": "source/org/jfree/data/DefaultKeyedValues.java",
+      "line": 234
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-125",
+    "project_dir": "Javac/closure-125",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalStateException",
+    "test_target": {
+      "class": "com.google.javascript.rhino.jstype.FunctionType",
+      "method": "getInstanceType()Lcom/google/javascript/rhino/jstype/ObjectType;",
+      "file": "src/com/google/javascript/rhino/jstype/FunctionType.java",
+      "line": 1071
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-27",
+    "project_dir": "Javac/closure-27",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalStateException",
+    "test_target": {
+      "class": "com.google.javascript.rhino.IR",
+      "method": "tryFinally(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;",
+      "file": "src/com/google/javascript/rhino/IR.java",
+      "line": 224
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "cxf_ae805e6",
+    "project_dir": "Maven/cxf_ae805e6",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.cxf.jaxrs.utils.JAXRSUtils",
+      "method": "getStructuredParams(Ljavax/ws/rs/core/MultivaluedMap;Ljava/lang/String;Ljava/lang/String;ZZZ)V",
+      "path": "rt/frontend/jaxrs/target/classes",
+      "file": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+      "line": 1328
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "directory-ldap-api_3c6a765",
+    "project_dir": "Maven/directory-ldap-api_3c6a765",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.directory.api.ldap.model.entry.Value",
+      "method": "Value(Lorg/apache/directory/api/ldap/model/schema/AttributeType;Ljava/lang/String;)V",
+      "path": "ldap/model/target/classes",
+      "file": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+      "line": 272
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "dubbo-hessian-lite_5526dd8",
+    "project_dir": "Maven/dubbo-hessian-lite_5526dd8",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.alibaba.dubbo.common.URL",
+      "method": "addParameters(Ljava/util/Map;)Lcom/alibaba/dubbo/common/URL;",
+      "path": "dubbo-common/target/classes",
+      "file": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+      "line": 974
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "httpcomponents-client_bf1822c",
+    "project_dir": "Maven/httpcomponents-client_bf1822c",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder",
+      "method": "addExecInterceptorFirst(Ljava/lang/String;Lorg/apache/hc/client5/http/async/AsyncExecChainHandler;)Lorg/apache/hc/client5/http/impl/async/H2AsyncClientBuilder;",
+      "path": "httpclient5/target/classes",
+      "file": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/async/H2AsyncClientBuilder.java",
+      "line": 341
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "javaslang-faf9ac2-buggy",
+    "project_dir": "Maven/javaslang-faf9ac2-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "javaslang.Tuples$AbstractTuple",
+      "method": "decycle(Ljava/lang/ThreadLocal;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)Ljava/lang/Object;",
+      "path": "target/classes",
+      "file": "src/main/java/javaslang/Tuples.java",
+      "line": 840
+    },
+    "test_target_caller": [
+      {
+        "class": "javaslang.Tuples$AbstractTuple",
+        "method": "equals(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "javaslang.Tuples$AbstractTuple",
+        "method": "hashCode()I"
+      }
+    ]
+  },
+  {
+    "project": "lang-45",
+    "project_dir": "Javac/lang-45",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StringIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang.WordUtils",
+      "method": "abbreviate(Ljava/lang/String;IILjava/lang/String;)Ljava/lang/String;",
+      "file": "src/java/org/apache/commons/lang/WordUtils.java",
+      "line": 629
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-58",
+    "project_dir": "Javac/math-58",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.exception.NotStrictlyPositiveException",
+    "test_target": {
+      "class": "org.apache.commons.math.analysis.function.Gaussian$Parametric",
+      "method": "validateParameters([D)V",
+      "file": "src/main/java/org/apache/commons/math/analysis/function/Gaussian.java",
+      "line": 183
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.commons.math.analysis.function.Gaussian$Parametric",
+        "method": "gradient(D[D)[D"
+      },
+      {
+        "class": "org.apache.commons.math.analysis.function.Gaussian$Parametric",
+        "method": "value(D[D)D"
+      }
+    ]
+  },
+  {
+    "project": "math-61",
+    "project_dir": "Javac/math-61",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.MathRuntimeException$4",
+    "test_target": {
+      "class": "org.apache.commons.math.distribution.PoissonDistributionImpl",
+      "method": "PoissonDistributionImpl(DDI)V",
+      "file": "src/main/java/org/apache/commons/math/distribution/PoissonDistributionImpl.java",
+      "line": 94
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-78",
+    "project_dir": "Javac/math-78",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.MathRuntimeException$4",
+    "test_target": {
+      "class": "org.apache.commons.math.analysis.solvers.BrentSolver",
+      "method": "solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D",
+      "file": "src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java",
+      "line": 178
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "nutz_bbd28db",
+    "project_dir": "Maven/nutz_bbd28db",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.nutz.http.Sender",
+      "method": "create(Lorg/nutz/http/Request;)Lorg/nutz/http/Sender;",
+      "path": "target/classes",
+      "file": "src/org/nutz/http/Sender.java",
+      "line": 68
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "nutz_c8a9e83",
+    "project_dir": "Maven/nutz_c8a9e83",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.nutz.lang.Mirror",
+      "method": "getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;",
+      "path": "target/classes",
+      "file": "src/org/nutz/lang/Mirror.java",
+      "line": 606
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox_bdab232",
+    "project_dir": "Maven/pdfbox_bdab232",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.interactive.action.PDActionURI",
+      "method": "getURI()Ljava/lang/String;",
+      "path": "pdfbox/target/classes",
+      "file": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+      "line": 64
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-2965",
+    "project_dir": "Javac/pdfbox-2965",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm",
+      "method": "getField(Ljava/lang/String;)Lorg/apache/pdfbox/pdmodel/interactive/form/PDField;",
+      "file": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+      "line": 429
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "zookeeper_e41cac8",
+    "project_dir": "Maven/zookeeper_e41cac8",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.zookeeper.server.ZooKeeperServer",
+      "method": "processConnectRequest(Lorg/apache/zookeeper/server/ServerCnxn;Ljava/nio/ByteBuffer;)V",
+      "path": "zookeeper-server/target/classes",
+      "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+      "line": 1304
+    },
+    "test_target_caller": []
+  }
+]
