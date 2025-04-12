@@ -1,0 +1,1 @@
+mvn clean dependency:copy-dependencies install -Dlicense.skip=true

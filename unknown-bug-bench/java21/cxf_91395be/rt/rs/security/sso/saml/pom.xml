@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>cxf-rt-rs-security-sso-saml</artifactId>
+    <packaging>bundle</packaging>
+    <name>Apache CXF RS SSO SAML</name>
+    <description>Apache CXF RS SSO SAML</description>
+    <url>https://cxf.apache.org</url>
+    <parent>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-parent</artifactId>
+        <version>4.0.4-SNAPSHOT</version>
+        <relativePath>../../../../../parent/pom.xml</relativePath>
+    </parent>
+    <properties>
+        <cxf.module.name>org.apache.cxf.rs.security.sso.saml</cxf.module.name>
+        <cxf.osgi.import>
+            jakarta.servlet*;version=&quot;${cxf.osgi.jakarta.servlet.version}&quot;,
+            org.ehcache*;resolution:=optional;version=&quot;${cxf.ehcache.osgi.version}&quot;,
+            org.opensaml*;version=&quot;${cxf.opensaml.osgi.version}&quot;,
+            jakarta.xml.bind*;version=&quot;${cxf.osgi.jakarta.bind.version}&quot;,
+            jakarta.annotation*;version=&quot;${cxf.osgi.jakarta.annotation.version}&quot;
+        </cxf.osgi.import>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-security-xml</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${cxf.servlet-api.group}</groupId>
+            <artifactId>${cxf.servlet-api.artifact}</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <classifier>jakarta</classifier>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    </project>

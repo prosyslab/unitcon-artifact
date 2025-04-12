@@ -1,0 +1,1 @@
+javac -d . -cp ./deps/cglib-and-asm-1.0.jar:./deps/hamcrest-core-1.1.jar:./deps/junit-4.10.jar:./deps/objenesis-2.1.jar @java_files

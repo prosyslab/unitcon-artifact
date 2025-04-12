@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>examples-kmeans</artifactId>
+    <version>4.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>examples-kmeans-image</artifactId>
+  <version>4.0-SNAPSHOT</version>
+  
+  <name>K-Means: Image Clustering</name>
+
+  <description>Clustering applied to 2D graphics data (image).</description>
+
+  <properties>
+    
+    <commons.osgi.symbolicName>org.apache.commons.math4.examples.kmeans.image</commons.osgi.symbolicName>
+    <commons.osgi.export>org.apache.commons.math4.examples.kmeans.image</commons.osgi.export>
+    
+    <commons.module.name>org.apache.commons.math4.examples.kmeans.image</commons.module.name>
+    
+    <math.parent.dir>${basedir}/../../..</math.parent.dir>
+
+    <uberjar.name>examples-kmeans-image</uberjar.name>
+    <project.mainClass>org.apache.commons.math4.examples.kmeans.image.StandAlone</project.mainClass>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-geometry-euclidean</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-legacy</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-imaging</artifactId>
+    </dependency>
+
+  </dependencies>
+
+    </project>

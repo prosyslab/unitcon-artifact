@@ -1,0 +1,1 @@
+javac -cp ./deps/commons-logging-1.2.jar:./deps/fontbox-1.8.10.jar:./deps/icu-4.0.1.v20090822.jar:./deps/jempbox-1.8.17.jar:./deps/bcprov-jdk16-1.38.jar:./deps/bcpkix-jdk15on-1.47.jar:./deps/bcmail-jdk15on-1.55.jar:. @java_files -encoding UTF-8

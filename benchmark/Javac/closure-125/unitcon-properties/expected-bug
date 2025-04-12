@@ -1,0 +1,2 @@
+at com.google.common.base.Preconditions.checkState(Preconditions.java:133)
+at com.google.javascript.rhino.jstype.FunctionType.getInstanceType(FunctionType.java:1071)

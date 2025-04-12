@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>cxf-maven-plugins</artifactId>
+    <packaging>pom</packaging>
+    <name>Apache CXF Maven Plugins</name>
+    <description>Apache CXF Maven Plugins</description>
+    <url>https://cxf.apache.org</url>
+    <parent>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-parent</artifactId>
+        <version>4.0.4-SNAPSHOT</version>
+        <relativePath>../parent</relativePath>
+    </parent>
+    <modules>
+        <module>codegen-plugin</module>
+        <module>java2ws-plugin</module>
+        <module>java2wadl-plugin</module>
+        <module>wsdl-validator-plugin</module>
+        <module>corba</module>
+        <module>archetypes</module>
+        <module>wadl2java-plugin</module>
+    </modules>
+    </project>

@@ -1,0 +1,2 @@
+at java.lang.String.substring(String.java:1963)
+at org.apache.commons.lang.WordUtils.abbreviate(WordUtils.java:629)

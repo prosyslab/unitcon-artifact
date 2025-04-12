@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>cxf-tools-wadlto</artifactId>
+    <packaging>pom</packaging>
+    <name>Apache CXF Command Line Tools WADLTo</name>
+    <description>Apache CXF Command Line Tools WADLTo</description>
+    <url>https://cxf.apache.org</url>
+    <parent>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-tools</artifactId>
+        <version>4.0.4-SNAPSHOT</version>
+    </parent>
+    <modules>
+        <module>jaxrs</module>
+    </modules>
+    </project>

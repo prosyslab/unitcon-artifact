@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>cxf-rt-rs-security-jose-jaxrs</artifactId>
+    <packaging>bundle</packaging>
+    <name>Apache CXF Runtime JOSE JAX-RS</name>
+    <description>Apache CXF Runtime JOSE JAX-RS</description>
+    <url>https://cxf.apache.org</url>
+    <parent>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-parent</artifactId>
+        <version>4.0.4-SNAPSHOT</version>
+        <relativePath>../../../../../parent/pom.xml</relativePath>
+    </parent>
+    <properties>
+        <cxf.module.name>org.apache.cxf.rs.security.jose.jaxrs</cxf.module.name>
+        <cxf.osgi.import>
+            jakarta.activation;version=&quot;${cxf.osgi.jakarta.activation.version}&quot;,
+            jakarta.annotation*;version=&quot;${cxf.osgi.jakarta.annotation.version}&quot;
+        </cxf.osgi.import>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-security</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-security-jose</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    </project>

@@ -1,0 +1,1402 @@
+{
+  "chart-15": {
+    "target_source": "org/jfree/chart/plot/PiePlot.java",
+    "target_line": 1379,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-16": {
+    "target_source": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+    "target_line": 574,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-2": {
+    "target_source": "UnitconInsertion.java",
+    "target_line": 13,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-25": {
+    "target_source": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+    "target_line": 386,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-26": {
+    "target_source": "org/jfree/chart/axis/Axis.java",
+    "target_line": 1192,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-20": {
+    "target_source": "org/apache/commons/lang3/StringUtils.java",
+    "target_line": 3383,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-33": {
+    "target_source": "org/apache/commons/lang3/ClassUtils.java",
+    "target_line": 911,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-47": {
+    "target_source": "org/apache/commons/lang3/text/StrBuilder.java",
+    "target_line": 1319,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-57": {
+    "target_source": "org/apache/commons/lang3/LocaleUtils.java",
+    "target_line": 250,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-70": {
+    "target_source": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+    "target_line": 89,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-2266": {
+    "target_source": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+    "target_line": 130,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-2477": {
+    "target_source": "org/apache/xmpbox/xml/DomXmpParser.java",
+    "target_line": 393,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-2812": {
+    "target_source": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+    "target_line": 253,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-2951": {
+    "target_source": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+    "target_line": 106,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-3479": {
+    "target_source": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+    "target_line": 136,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-3572": {
+    "target_source": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+    "target_line": 271,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "sling-4982": {
+    "target_source": "org/apache/sling/security/impl/ContentDispositionFilter.java",
+    "target_line": 288,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "checkstyle-536bc20-buggy": {
+    "target_source": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+    "target_line": 279,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "checkstyle-8381754-buggy": {
+    "target_source": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+    "target_line": 122,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "checkstyle-aaf606e-buggy": {
+    "target_source": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+    "target_line": 279,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-200-buggy": {
+    "target_source": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+    "target_line": 130,
+    "keep_going": false,
+    "interproc": true,
+    "skip_procedures": ""
+  },
+  "shardingsphere_e46f68d": {
+    "target_source": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+    "target_line": 58,
+    "keep_going": false,
+    "interproc": true,
+    "skip_procedures": ""
+  },
+  "directory-ldap-api_3c6a765": {
+    "target_source": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+    "target_line": 272,
+    "keep_going": false,
+    "interproc": true,
+    "skip_procedures": ""
+  },
+  "JSqlParser_2897935": {
+    "target_source": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+    "target_line": 216,
+    "keep_going": false,
+    "interproc": true,
+    "skip_procedures": ""
+  },
+  "nutz_bbd28db": {
+    "target_source": "src/org/nutz/http/Sender.java",
+    "target_line": 68,
+    "keep_going": false,
+    "interproc": true,
+    "skip_procedures": ""
+  },
+  "Bears-184-buggy": {
+    "target_source": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+    "target_line": 79,
+    "keep_going": true,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "avro_a7a43da": {
+    "target_source": "lang/java/avro/src/main/java/org/apache/avro/Schema.java",
+    "target_line": 1228,
+    "keep_going": true,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "opengrok_6a95adb": {
+    "target_source": "src/org/opensolaris/opengrok/analysis/IteratorReader.java",
+    "target_line": 39,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": "org.opensolaris.opengrok.authorization.AuthorizationFrameworkTest.*"
+  },
+  "Activiti_0d83e98": {
+    "target_source": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/JPAEntityMappings.java",
+    "target_line": 125,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Activity-3d624a5-buggy": {
+    "target_source": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+    "target_line": 38,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "activemq-artemis_6fbafc4": {
+    "target_source": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+    "target_line": 98,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-121-buggy": {
+    "target_source": "src/org/traccar/BaseProtocolDecoder.java",
+    "target_line": 109,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-17-buggy": {
+    "target_source": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+    "target_line": 1336,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-180-buggy": {
+    "target_source": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+    "target_line": 110,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-189-buggy": {
+    "target_source": "src/main/java/hu/oe/nik/szfmv/detector/classes/Detector.java",
+    "target_line": 52,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-196-buggy": {
+    "target_source": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+    "target_line": 56,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-222-buggy": {
+    "target_source": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+    "target_line": 172,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-249-buggy": {
+    "target_source": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+    "target_line": 24,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-46-buggy": {
+    "target_source": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+    "target_line": 389,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-88-buggy": {
+    "target_source": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+    "target_line": 69,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "HikariCP-ce4ff92-buggy": {
+    "target_source": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+    "target_line": 198,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Java-WebSocket_51b63a2": {
+    "target_source": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+    "target_line": 257,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "javapoet-70b38e5-buggy": {
+    "target_source": "src/main/java/com/squareup/javapoet/TypeName.java",
+    "target_line": 107,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Jest_93f3c48": {
+    "target_source": "jest-common/src/main/java/io/searchbox/client/config/discovery/NodeChecker.java",
+    "target_line": 114,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "OpenPDF_07ecaaf": {
+    "target_source": "openpdf/src/main/java/com/lowagie/text/pdf/StandardDecryption.java",
+    "target_line": 111,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "aries-jpa_7712046": {
+    "target_source": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+    "target_line": 39,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "async-http-client_86948f6": {
+    "target_source": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+    "target_line": 347,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "caelum-stella-2d2dd9c-buggy": {
+    "target_source": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+    "target_line": 57,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "caelum-stella-2ec5459-buggy": {
+    "target_source": "stella-core/src/main/java/br/com/caelum/stella/validation/CNPJValidator.java",
+    "target_line": 125,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "caelum-stella-e73113f-buggy": {
+    "target_source": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+    "target_line": 65,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "checkstyle-aa829d4-buggy": {
+    "target_source": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+    "target_line": 321,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "client_java_422e3b3": {
+    "target_source": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+    "target_line": 148,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "commons-bcel_1faf7d9": {
+    "target_source": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+    "target_line": 182,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "commons-configuration_746821e": {
+    "target_source": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+    "target_line": 884,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "commons-dbcp_b137fda": {
+    "target_source": "src/main/java/org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java",
+    "target_line": 768,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "commons-io_1ac7bef": {
+    "target_source": "src/main/java/org/apache/commons/io/IOCase.java",
+    "target_line": 196,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "dubbo-hessian-lite_5526dd8": {
+    "target_source": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+    "target_line": 974,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "easy-rules_72d7bff": {
+    "target_source": "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+    "target_line": 59,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "error-prone-370938-buggy": {
+    "target_source": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+    "target_line": 282,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "fastjson_7c05c6f": {
+    "target_source": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+    "target_line": 121,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "feign_cf31cd1": {
+    "target_source": "core/src/main/java/feign/Response.java",
+    "target_line": 342,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "httpcomponents-client_65c6c25": {
+    "target_source": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java",
+    "target_line": 145,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "httpcomponents-client_bf1822c": {
+    "target_source": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/async/H2AsyncClientBuilder.java",
+    "target_line": 341,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "httpcomponents-core_a63b121": {
+    "target_source": "httpcore5/src/main/java/org/apache/hc/core5/net/URIBuilder.java",
+    "target_line": 571,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "incubator-hivemall_e86815a": {
+    "target_source": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+    "target_line": 763,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "iotdb_97ca7e0": {
+    "target_source": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+    "target_line": 1136,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "johnzon_8b5c87d": {
+    "target_source": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+    "target_line": 43,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "jongo-f46f658-buggy": {
+    "target_source": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+    "target_line": 87,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "jsoup_8808e3f": {
+    "target_source": "src/main/java/org/jsoup/internal/Normalizer.java",
+    "target_line": 11,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "jspwiki_bdab6f2": {
+    "target_source": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+    "target_line": 78,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "logging-log4j2_147f78c": {
+    "target_source": "log4j-core/src/main/java/org/apache/logging/log4j/core/async/RingBufferLogEvent.java",
+    "target_line": 213,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "logging-log4j2_2d266d9": {
+    "target_source": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+    "target_line": 107,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "maven-doxia_16836d8": {
+    "target_source": "doxia-modules/doxia-module-confluence/src/main/java/org/apache/maven/doxia/module/confluence/parser/AbstractFatherBlock.java",
+    "target_line": 72,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "maven-surefire_08163fa": {
+    "target_source": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+    "target_line": 194,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "ninja_3e73cb8": {
+    "target_source": "ninja-core/src/main/java/ninja/Route.java",
+    "target_line": 128,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "nutz_c8a9e83": {
+    "target_source": "src/org/nutz/lang/Mirror.java",
+    "target_line": 606,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "picocli_758f4c0": {
+    "target_source": "src/main/java/picocli/CommandLine.java",
+    "target_line": 1025,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "qpid-proton-j_6422e24": {
+    "target_source": "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java",
+    "target_line": 526,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "shardingsphere_48237c8": {
+    "target_source": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+    "target_line": 106,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "shiro_3ca513f": {
+    "target_source": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+    "target_line": 62,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "sling-org-apache-sling-pipes_674819d": {
+    "target_source": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+    "target_line": 230,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "spring-hateoas-48749e7-buggy": {
+    "target_source": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+    "target_line": 145,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "tablesaw_65596d8": {
+    "target_source": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+    "target_line": 73,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "truth-99b314e-buggy": {
+    "target_source": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+    "target_line": 67,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "xmlgraphics-fop_62ff114": {
+    "target_source": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+    "target_line": 527,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "xmlgraphics-fop_991b446": {
+    "target_source": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+    "target_line": 138,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "zookeeper_e41cac8": {
+    "target_source": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+    "target_line": 1304,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-5": {
+    "target_source": "source/org/jfree/data/xy/XYSeries.java",
+    "target_line": 564,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-18": {
+    "target_source": "source/org/jfree/data/DefaultKeyedValues.java",
+    "target_line": 234,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-2": {
+    "target_source": "src/com/google/javascript/jscomp/TypeCheck.java",
+    "target_line": 1574,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-6": {
+    "target_source": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+    "target_line": 95,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-12": {
+    "target_source": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+    "target_line": 248,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-19": {
+    "target_source": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+    "target_line": 44,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-27": {
+    "target_source": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+    "target_line": 489,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-37": {
+    "target_source": "src/java/org/apache/commons/lang3/ArrayUtils.java",
+    "target_line": 2962,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-44": {
+    "target_source": "src/java/org/apache/commons/lang/NumberUtils.java",
+    "target_line": 193,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-45": {
+    "target_source": "src/java/org/apache/commons/lang/WordUtils.java",
+    "target_line": 629,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-51": {
+    "target_source": "src/java/org/apache/commons/lang/BooleanUtils.java",
+    "target_line": 686,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-59": {
+    "target_source": "src/java/org/apache/commons/lang/text/StrBuilder.java",
+    "target_line": 884,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-3": {
+    "target_source": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+    "target_line": 846,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-8": {
+    "target_source": "src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java",
+    "target_line": 190,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-32": {
+    "target_source": "src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java",
+    "target_line": 136,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-81": {
+    "target_source": "src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java",
+    "target_line": 1544,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-89": {
+    "target_source": "src/java/org/apache/commons/math/stat/Frequency.java",
+    "target_line": 110,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-98": {
+    "target_source": "src/java/org/apache/commons/math/linear/BigMatrixImpl.java",
+    "target_line": 997,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-100": {
+    "target_source": "src/java/org/apache/commons/math/estimation/AbstractEstimator.java",
+    "target_line": 173,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-101": {
+    "target_source": "src/java/org/apache/commons/math/complex/ComplexFormat.java",
+    "target_line": 321,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-12": {
+    "target_source": "src/org/mockito/internal/util/reflection/GenericMaster.java",
+    "target_line": 20,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-34": {
+    "target_source": "src/org/mockito/internal/invocation/InvocationMatcher.java",
+    "target_line": 107,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-36": {
+    "target_source": "src/org/mockito/internal/invocation/Invocation.java",
+    "target_line": 202,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-38": {
+    "target_source": "src/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java",
+    "target_line": 48,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-9": {
+    "target_source": "source/org/jfree/data/time/TimeSeries.java",
+    "target_line": 883,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-13": {
+    "target_source": "source/org/jfree/data/Range.java",
+    "target_line": 87,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-17": {
+    "target_source": "source/org/jfree/data/time/TimeSeries.java",
+    "target_line": 880,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-22": {
+    "target_source": "source/org/jfree/data/KeyedObjects.java",
+    "target_line": 268,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-24": {
+    "target_source": "source/org/jfree/chart/renderer/GrayPaintScale.java",
+    "target_line": 128,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-19": {
+    "target_source": "src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java",
+    "target_line": 175,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-27": {
+    "target_source": "src/com/google/javascript/rhino/IR.java",
+    "target_line": 224,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-34": {
+    "target_source": "src/com/google/javascript/jscomp/CodeGenerator.java",
+    "target_line": 102,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-37": {
+    "target_source": "src/com/google/javascript/jscomp/Compiler.java",
+    "target_line": 642,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-40": {
+    "target_source": "src/com/google/javascript/jscomp/Compiler.java",
+    "target_line": 639,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-53": {
+    "target_source": "src/com/google/javascript/jscomp/InlineObjectLiterals.java",
+    "target_line": 349,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-55": {
+    "target_source": "src/com/google/javascript/jscomp/AstValidator.java",
+    "target_line": 51,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-58": {
+    "target_source": "src/com/google/javascript/jscomp/LiveVariablesAnalysis.java",
+    "target_line": 266,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-79": {
+    "target_source": "src/com/google/javascript/jscomp/Normalize.java",
+    "target_line": 698,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-108": {
+    "target_source": "src/com/google/javascript/jscomp/ScopedAliases.java",
+    "target_line": 236,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-125": {
+    "target_source": "src/com/google/javascript/rhino/jstype/FunctionType.java",
+    "target_line": 1071,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "closure-133": {
+    "target_source": "src/com/google/javascript/rhino/SourcePosition.java",
+    "target_line": 87,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-1": {
+    "target_source": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+    "target_line": 684,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-5": {
+    "target_source": "src/main/java/org/apache/commons/lang3/LocaleUtils.java",
+    "target_line": 99,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-13": {
+    "target_source": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+    "target_line": 88,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-16": {
+    "target_source": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+    "target_line": 545,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-36": {
+    "target_source": "src/java/org/apache/commons/lang3/math/NumberUtils.java",
+    "target_line": 546,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-43": {
+    "target_source": "src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java",
+    "target_line": 422,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-54": {
+    "target_source": "src/java/org/apache/commons/lang/LocaleUtils.java",
+    "target_line": 116,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-56": {
+    "target_source": "src/java/org/apache/commons/lang/SerializationUtils.java",
+    "target_line": 111,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-58": {
+    "target_source": "src/java/org/apache/commons/lang/math/NumberUtils.java",
+    "target_line": 464,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-1": {
+    "target_source": "src/main/java/org/apache/commons/math3/fraction/BigFraction.java",
+    "target_line": 306,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-13": {
+    "target_source": "src/main/java/org/apache/commons/math3/linear/BlockRealMatrix.java",
+    "target_line": 229,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-14": {
+    "target_source": "src/main/java/org/apache/commons/math3/linear/BlockRealMatrix.java",
+    "target_line": 598,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-28": {
+    "target_source": "src/main/java/org/apache/commons/math3/optimization/linear/AbstractLinearOptimizer.java",
+    "target_line": 128,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-31": {
+    "target_source": "src/main/java/org/apache/commons/math3/util/ContinuedFraction.java",
+    "target_line": 177,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-38": {
+    "target_source": "src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java",
+    "target_line": 1588,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-40": {
+    "target_source": "src/main/java/org/apache/commons/math/analysis/solvers/BaseAbstractUnivariateRealSolver.java",
+    "target_line": 294,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-49": {
+    "target_source": "src/main/java/org/apache/commons/math/util/OpenIntToDoubleHashMap.java",
+    "target_line": 564,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-58": {
+    "target_source": "src/main/java/org/apache/commons/math/analysis/function/Gaussian.java",
+    "target_line": 183,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-60": {
+    "target_source": "src/main/java/org/apache/commons/math/util/ContinuedFraction.java",
+    "target_line": 186,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-61": {
+    "target_source": "src/main/java/org/apache/commons/math/distribution/PoissonDistributionImpl.java",
+    "target_line": 94,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-78": {
+    "target_source": "src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java",
+    "target_line": 159,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-85": {
+    "target_source": "src/java/org/apache/commons/math/distribution/AbstractContinuousDistribution.java",
+    "target_line": 85,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-90": {
+    "target_source": "src/java/org/apache/commons/math/stat/Frequency.java",
+    "target_line": 126,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-95": {
+    "target_source": "src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java",
+    "target_line": 179,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-97": {
+    "target_source": "src/java/org/apache/commons/math/analysis/BrentSolver.java",
+    "target_line": 129,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-103": {
+    "target_source": "src/java/org/apache/commons/math/special/Gamma.java",
+    "target_line": 180,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-1": {
+    "target_source": "src/org/mockito/internal/invocation/InvocationMatcher.java",
+    "target_line": 123,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-7": {
+    "target_source": "src/org/mockito/internal/util/reflection/GenericMetadataSupport.java",
+    "target_line": 407,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-8": {
+    "target_source": "src/org/mockito/internal/util/reflection/GenericMetadataSupport.java",
+    "target_line": 182,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-9": {
+    "target_source": "src/org/mockito/internal/invocation/InvocationImpl.java",
+    "target_line": 110,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-10": {
+    "target_source": "src/org/mockito/internal/util/MockCreationValidator.java",
+    "target_line": 63,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-16": {
+    "target_source": "src/org/mockito/internal/MockitoCore.java",
+    "target_line": 43,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-21": {
+    "target_source": "src/org/mockito/internal/creation/instance/ConstructorInstantiator.java",
+    "target_line": 24,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "mockito-29": {
+    "target_source": "src/org/mockito/internal/matchers/Same.java",
+    "target_line": 29,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "time-2": {
+    "target_source": "src/main/java/org/joda/time/Partial.java",
+    "target_line": 215,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "time-5": {
+    "target_source": "src/main/java/org/joda/time/PeriodType.java",
+    "target_line": 690,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "time-7": {
+    "target_source": "src/main/java/org/joda/time/field/FieldUtils.java",
+    "target_line": 218,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "time-8": {
+    "target_source": "src/main/java/org/joda/time/DateTimeZone.java",
+    "target_line": 280,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "time-18": {
+    "target_source": "src/main/java/org/joda/time/field/FieldUtils.java",
+    "target_line": 233,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "time-20": {
+    "target_source": "src/main/java/org/joda/time/format/DateTimeFormatter.java",
+    "target_line": 866,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "time-27": {
+    "target_source": "src/main/java/org/joda/time/format/PeriodFormatter.java",
+    "target_line": 326,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-32-buggy": {
+    "target_source": "src/main/java/spoon/reflect/visitor/chain/CtQueryImpl.java",
+    "target_line": 282,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-56-buggy": {
+    "target_source": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+    "target_line": 566,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "Bears-188-buggy": {
+    "target_source": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+    "target_line": 103,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-4": {
+    "target_source": "org/jfree/chart/plot/XYPlot.java",
+    "target_line": 4493,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "chart-14": {
+    "target_source": "org/jfree/chart/plot/CategoryPlot.java",
+    "target_line": 2166,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "collections-39": {
+    "target_source": "org/apache/commons/collections/ExtendedProperties.java",
+    "target_line": 569,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "commons-collections_a270ff6": {
+    "target_source": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+    "target_line": 2404,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "commons-pool_41f4e41": {
+    "target_source": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+    "target_line": 450,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "cxf_ae805e6": {
+    "target_source": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+    "target_line": 1328,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "cxf_aebfb0d": {
+    "target_source": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+    "target_line": 419,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "DataflowJavaSDK-c06125d-buggy": {
+    "target_source": "sdk/src/main/java/com/google/cloud/dataflow/sdk/transforms/join/CoGbkResult.java",
+    "target_line": 320,
+    "keep_going": true,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "felix-4960": {
+    "target_source": "org/apache/felix/framework/BundleRevisionImpl.java",
+    "target_line": 526,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "felix-5464": {
+    "target_source": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+    "target_line": 211,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "javaslang-faf9ac2-buggy": {
+    "target_source": "src/main/java/javaslang/Tuples.java",
+    "target_line": 840,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "jsoup_1d663ee": {
+    "target_source": "src/main/java/org/jsoup/nodes/Attribute.java",
+    "target_line": 88,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "karaf_5965290": {
+    "target_source": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+    "target_line": 103,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "lang-39": {
+    "target_source": "org/apache/commons/lang3/StringUtils.java",
+    "target_line": 3650,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "logging-log4j2_cd881ce": {
+    "target_source": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+    "target_line": 320,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "logging-log4j2_d1c02ee": {
+    "target_source": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+    "target_line": 268,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-4": {
+    "target_source": "org/apache/commons/math3/geometry/euclidean/threed/Line.java",
+    "target_line": 114,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "math-79": {
+    "target_source": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+    "target_line": 91,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "maven-release_6b1f658": {
+    "target_source": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+    "target_line": 327,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "opennlp_cb6ee2c": {
+    "target_source": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+    "target_line": 117,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-2948": {
+    "target_source": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+    "target_line": 254,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-2965": {
+    "target_source": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+    "target_line": 429,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox-2995": {
+    "target_source": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+    "target_line": 445,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "pdfbox_bdab232": {
+    "target_source": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+    "target_line": 64,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "qpid-proton-j_87ec94b": {
+    "target_source": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+    "target_line": 101,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "rocketmq_03c1f11": {
+    "target_source": "client/src/main/java/org/apache/rocketmq/client/impl/factory/MQClientInstance.java",
+    "target_line": 1218,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "shardingsphere_52b0150": {
+    "target_source": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
+    "target_line": 129,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  },
+  "sling-6487": {
+    "target_source": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+    "target_line": 126,
+    "keep_going": false,
+    "interproc": false,
+    "skip_procedures": ""
+  }
+}

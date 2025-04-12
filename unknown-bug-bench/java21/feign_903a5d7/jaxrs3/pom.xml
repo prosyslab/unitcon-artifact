@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.github.openfeign</groupId>
+    <artifactId>parent</artifactId>
+    <version>13.2-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>feign-jaxrs3</artifactId>
+  <name>Feign JAXRS 3</name>
+  <description>Feign JAXRS 3</description>
+
+  <properties>
+    <main.java.version>11</main.java.version>
+    <main.basedir>${project.basedir}/..</main.basedir>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>feign-jaxrs</artifactId>
+      <classifier>jakarta</classifier>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>feign-jaxrs2</artifactId>
+      <classifier>jakarta</classifier>
+    </dependency>
+
+    <dependency>
+      <groupId>jakarta.ws.rs</groupId>
+      <artifactId>jakarta.ws.rs-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>feign-gson</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.moditect</groupId>
+        <artifactId>moditect-maven-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+          <module>
+            <moduleInfo>
+              <exports>!jsr311.api;
+                      !feign.jaxrs;
+                      !feign.jaxrs2;
+                      *;</exports>
+              <requires>!jsr311.api;
+                      !feign.jaxrs;
+                      !feign.jaxrs2;
+                      *;</requires>
+              <addServiceUses>true</addServiceUses>
+            </moduleInfo>
+          </module>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <property name="mvn.project.build.outputDirectory" value="/root/bench/Genesis/checkstyle-8381754-buggy/target/classes"/>
+  <property name="mvn.project.version" value="6.13-SNAPSHOT"/>
+  <property name="mvn.compile_classpath" refid="maven.compile.classpath"/>
+  <ant antfile="config/ant-phase-compile.xml"/>
+</target>
+</project>

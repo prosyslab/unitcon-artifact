@@ -1,0 +1,3574 @@
+[
+  {
+    "project": "activemq-artemis_6fbafc4",
+    "project_dir": "Maven/activemq-artemis_6fbafc4",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.activemq.artemis.selector.filter.UnaryExpression$2",
+      "method": "toString()Ljava/lang/String;",
+      "path": "artemis-selector/target/classes",
+      "file": "artemis-selector/src/main/java/org/apache/activemq/artemis/selector/filter/UnaryExpression.java",
+      "line": 98
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "Activiti_0d83e98",
+    "project_dir": "Maven/Activiti_0d83e98",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.activiti.engine.impl.variable.JPAEntityMappings",
+      "method": "findEntity(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;",
+      "file": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/variable/JPAEntityMappings.java",
+      "path": "modules/activiti-engine/target/classes",
+      "line": 125
+    },
+    "test_target_caller": [
+      {
+        "class": "org.activiti.engine.impl.variable.JPAEntityMappings",
+        "method": "getJPAEntity(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;"
+      }
+    ]
+  },
+  {
+    "project": "Activity-3d624a5-buggy",
+    "project_dir": "Maven/Activity-3d624a5-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.activiti.engine.impl.event.AbstractEventHandler",
+      "method": "handleEvent(Lorg/activiti/engine/impl/persistence/entity/EventSubscriptionEntity;Ljava/lang/Object;Lorg/activiti/engine/impl/interceptor/CommandContext;)V",
+      "path": "modules/activiti-engine/target/classes",
+      "file": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+      "line": 44
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "aries-jpa_7712046",
+    "project_dir": "Maven/aries-jpa_7712046",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.aries.jpa.blueprint.impl.AnnotationScanner",
+      "method": "parseClass(Ljava/lang/Class;Ljava/util/List;Ljava/lang/Class;)V",
+      "path": "jpa-blueprint/target/classes",
+      "file": "jpa-blueprint/src/main/java/org/apache/aries/jpa/blueprint/impl/AnnotationScanner.java",
+      "line": 39
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.aries.jpa.blueprint.impl.AnnotationScanner",
+        "method": "getJpaAnnotatedMembers(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;"
+      }
+    ]
+  },
+  {
+    "project": "async-http-client_86948f6",
+    "project_dir": "Maven/async-http-client_86948f6",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.asynchttpclient.RequestBuilderBase",
+      "method": "setQueryParams(Ljava/util/List;)Lorg/asynchttpclient/RequestBuilderBase;",
+      "path": "client/target/classes",
+      "file": "client/src/main/java/org/asynchttpclient/RequestBuilderBase.java",
+      "line": 347
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "avro_a7a43da",
+    "project_dir": "Maven/avro_a7a43da",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.avro.Schema",
+      "method": "parse(Lorg/codehaus/jackson/JsonNode;Lorg/apache/avro/Schema$Names;)Lorg/apache/avro/Schema;",
+      "path": "lang/java/avro/target/classes",
+      "file": "lang/java/avro/src/main/java/org/apache/avro/Schema.java",
+      "line": 1228
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.avro.Schema$Parser",
+        "method": "parse(Ljava/io/File;)Lorg/apache/avro/Schema;"
+      },
+      {
+        "class": "org.apache.avro.Schema$Parser",
+        "method": "parse(Ljava/io/InputStream;)Lorg/apache/avro/Schema;"
+      },
+      {
+        "class": "org.apache.avro.Schema$Parser",
+        "method": "parse(Ljava/lang/String;)Lorg/apache/avro/Schema;"
+      },
+      {
+        "class": "org.apache.avro.Protocol",
+        "method": "parse(Ljava/io/File;)Lorg/apache/avro/Protocol;"
+      },
+      {
+        "class": "org.apache.avro.Protocol",
+        "method": "parse(Ljava/io/InputStream;)Lorg/apache/avro/Protocol;"
+      },
+      {
+        "class": "org.apache.avro.Protocol",
+        "method": "parse(Ljava/lang/String;)Lorg/apache/avro/Protocol;"
+      }
+    ]
+  },
+  {
+    "project": "Bears-17-buggy",
+    "project_dir": "Maven/Bears-17-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+      "method": "_findAnnotation(Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;",
+      "path": "target/classes",
+      "file": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+      "line": 1336
+    },
+    "test_target_caller": [
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findAndAddVirtualProperties(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Ljava/util/List;)V"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findAutoDetectVisibility(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker;)Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findClassDescription(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findContentDeserializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findContentSerializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findCreatorAnnotation(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findCreatorBinding(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findDeserializationContentConverter(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findDeserializationConverter(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findDeserializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findFilterId(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findFormat(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonFormat$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findInjectableValue(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findKeyDeserializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findKeySerializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findMergeInfo(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findNameForDeserialization(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/PropertyName;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findNameForSerialization(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/PropertyName;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findNamingStrategy(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findNullSerializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findObjectIdInfo(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findObjectReferenceInfo(Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;)Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPOJOBuilder(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Class;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPOJOBuilderConfig(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyAccess(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonProperty$Access;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyAliases(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/util/List;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyDefaultValue(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyDescription(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyIgnorals(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonIgnoreProperties$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyInclusion(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonInclude$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyIndex(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Integer;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findPropertyTypeResolver(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/jsontype/TypeResolverBuilder;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findReferenceType(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/databind/AnnotationIntrospector$ReferenceProperty;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findRootName(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/PropertyName;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationContentConverter(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationConverter(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationPropertyOrder(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)[Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationSortAlphabetically(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializationTyping(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/annotation/JsonSerialize$Typing;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSerializer(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSetterInfo(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonSetter$Value;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findSubtypes(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/util/List;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findTypeName(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findTypeResolver(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/jsontype/TypeResolverBuilder;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findUnwrappingNameTransformer(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/databind/util/NameTransformer;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findValueInstantiator(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Object;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "findViews(Lcom/fasterxml/jackson/databind/introspect/Annotated;)[Ljava/lang/Class;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasAnyGetter(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasAnySetter(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasAsValue(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasAsValueAnnotation(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Z"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasCreatorAnnotation(Lcom/fasterxml/jackson/databind/introspect/Annotated;)Z"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasIgnoreMarker(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Z"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "hasRequiredMarker(Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "isIgnorableType(Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Boolean;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "refineDeserializationType(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;"
+      },
+      {
+        "class": "com.fasterxml.jackson.databind.AnnotationIntrospector",
+        "method": "refineSerializationType(Lcom/fasterxml/jackson/databind/cfg/MapperConfig;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;"
+      }
+    ]
+  },
+  {
+    "project": "Bears-32-buggy",
+    "project_dir": "Maven/Bears-32-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "spoon.reflect.visitor.chain.CtQueryImpl$CurrentStep",
+      "method": "isFailOnCCE()Z",
+      "path": "target/classes",
+      "file": "src/main/java/spoon/reflect/visitor/chain/CtQueryImpl.java",
+      "line": 282
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "Bears-46-buggy",
+    "project_dir": "Maven/Bears-46-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "spoon.support.reflect.declaration.CtElementImpl",
+      "method": "getMetadataKeys()Ljava/util/Set;",
+      "path": "target/classes",
+      "file": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+      "line": 389
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "Bears-56-buggy",
+    "project_dir": "Maven/Bears-56-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "spoon.reflect.visitor.ImportScannerImpl",
+      "method": "isTypeInCollision(Lspoon/reflect/reference/CtReference;Z)Z",
+      "path": "target/classes",
+      "file": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+      "line": 566
+    },
+    "test_target_caller": [
+      {
+        "class": "spoon.reflect.visitor.ImportScannerImpl",
+        "method": "visitCtTypeReference(Lspoon/reflect/reference/CtTypeReference;)V"
+      }
+    ]
+  },
+  {
+    "project": "Bears-88-buggy",
+    "project_dir": "Maven/Bears-88-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.springframework.data.repository.config.RepositoryBeanNameGenerator",
+      "method": "getRepositoryInterfaceFrom(Lorg/springframework/beans/factory/config/BeanDefinition;)Ljava/lang/Class;",
+      "path": "target/classes",
+      "file": "src/main/java/org/springframework/data/repository/config/RepositoryBeanNameGenerator.java",
+      "line": 68
+    },
+    "test_target_caller": [
+      {
+        "class": "org.springframework.data.repository.config.RepositoryBeanNameGenerator",
+        "method": "generateBeanName(Lorg/springframework/beans/factory/config/BeanDefinition;Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "project": "Bears-121-buggy",
+    "project_dir": "Maven/Bears-121-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.traccar.BaseProtocolDecoder",
+      "method": "getDeviceSession(Lorg/jboss/netty/channel/Channel;Ljava/net/SocketAddress;[Ljava/lang/String;)Lorg/traccar/DeviceSession;",
+      "path": "target/classes",
+      "file": "src/org/traccar/BaseProtocolDecoder.java",
+      "line": 109
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "Bears-180-buggy",
+    "project_dir": "Maven/Bears-180-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.springframework.cloud.gcp.storage.GoogleStorageResourceObject",
+      "method": "getBlobId()Lcom/google/cloud/storage/BlobId;",
+      "path": "spring-cloud-gcp-storage/target/classes",
+      "file": "spring-cloud-gcp-storage/src/main/java/org/springframework/cloud/gcp/storage/GoogleStorageResourceObject.java",
+      "line": 110
+    },
+    "test_target_caller": [
+      {
+        "class": "org.springframework.cloud.gcp.storage.GoogleStorageResourceObject",
+        "method": "getGoogleStorageObject()Lcom/google/cloud/storage/Blob;"
+      }
+    ]
+  },
+  {
+    "project": "Bears-184-buggy",
+    "project_dir": "Maven/Bears-184-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.springframework.data.jpa.util.JpaMetamodel",
+      "method": "lambda$isSingleIdAttribute$0(Ljava/lang/Class;Ljavax/persistence/metamodel/EntityType;)Z",
+      "path": "target/classes",
+      "file": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+      "line": 79
+    },
+    "test_target_caller": [
+      {
+        "class": "org.springframework.data.jpa.util.JpaMetamodel",
+        "method": "isSingleIdAttribute(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Z"
+      }
+    ]
+  },
+  {
+    "project": "Bears-188-buggy",
+    "project_dir": "Maven/Bears-188-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "hu.oe.nik.szfmv.visualization.Dashboard",
+      "method": "paintComponent(Ljava/awt/Graphics;)V",
+      "path": "target/classes",
+      "file": "src/main/java/hu/oe/nik/szfmv/visualization/Dashboard.java",
+      "line": 103
+    },
+    "test_target_caller": [
+      {
+        "class": "hu.oe.nik.szfmv.visualization.Dashboard",
+        "method": "updateDisplayedValues(Lhu/oe/nik/szfmv/automatedcar/bus/packets/input/ReadOnlyInputPacket;)V"
+      }
+    ]
+  },
+  {
+    "project": "Bears-189-buggy",
+    "project_dir": "Maven/Bears-189-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "hu.oe.nik.szfmv.detector.classes.Detector",
+      "method": "getTheObjectsWhichAreInTheTriangle(Ljava/awt/Point;Ljava/awt/Point;Ljava/awt/Point;)Ljava/util/List;",
+      "path": "target/classes",
+      "file": "src/main/java/hu/oe/nik/szfmv/detector/classes/Detector.java",
+      "line": 52
+    },
+    "test_target_caller": [
+      {
+        "class": "hu.oe.nik.szfmv.detector.classes.Detector",
+        "method": "getCollidableObjects(Ljava/awt/Point;Ljava/awt/Point;Ljava/awt/Point;)Ljava/util/List;"
+      },
+      {
+        "class": "hu.oe.nik.szfmv.detector.classes.Detector",
+        "method": "getWorldObjects(Ljava/awt/Point;Ljava/awt/Point;Ljava/awt/Point;)Ljava/util/List;"
+      }
+    ]
+  },
+  {
+    "project": "Bears-196-buggy",
+    "project_dir": "Maven/Bears-196-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.tamaya.spisupport.EnumConverter",
+      "method": "convert(Ljava/lang/String;Lorg/apache/tamaya/spi/ConversionContext;)Ljava/lang/Object;",
+      "path": "code/spi-support/target/classes",
+      "file": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+      "line": 63
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "Bears-200-buggy",
+    "project_dir": "Maven/Bears-200-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.axonframework.axonserver.connector.ErrorCode",
+      "method": "convert(Ljava/lang/String;Ljava/lang/Throwable;)Lorg/axonframework/common/AxonException;",
+      "path": "axon-server-connector/target/classes",
+      "file": "axon-server-connector/src/main/java/org/axonframework/axonserver/connector/ErrorCode.java",
+      "line": 130
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "Bears-222-buggy",
+    "project_dir": "Maven/Bears-222-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jgrapht.generate.WattsStrogatzGraphGenerator",
+      "method": "generateGraph(Lorg/jgrapht/Graph;Ljava/util/Map;)V",
+      "path": "jgrapht-core/target/classes",
+      "file": "jgrapht-core/src/main/java/org/jgrapht/generate/WattsStrogatzGraphGenerator.java",
+      "line": 172
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "Bears-249-buggy",
+    "project_dir": "Maven/Bears-249-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.imdea.vcd.queue.clock.Clock",
+      "method": "Clock(Lorg/imdea/vcd/queue/clock/Clock;)V",
+      "path": "target/classes",
+      "file": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+      "line": 24
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "caelum-stella-2d2dd9c-buggy",
+    "project_dir": "Maven/caelum-stella-2d2dd9c-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "br.com.caelum.stella.faces.validation.StellaCNPJValidator",
+      "method": "validate(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/Object;)V",
+      "path": "stella-faces/target/classes",
+      "file": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCNPJValidator.java",
+      "line": 57
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "caelum-stella-2ec5459-buggy",
+    "project_dir": "Maven/caelum-stella-2ec5459-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "br.com.caelum.stella.validation.CNPJValidator",
+      "method": "isEligible(Ljava/lang/String;)Z",
+      "path": "stella-core/target/classes",
+      "file": "stella-core/src/main/java/br/com/caelum/stella/validation/CNPJValidator.java",
+      "line": 125
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "caelum-stella-e73113f-buggy",
+    "project_dir": "Maven/caelum-stella-e73113f-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "br.com.caelum.stella.faces.validation.StellaCPFValidator",
+      "method": "validate(Ljavax/faces/context/FacesContext;Ljavax/faces/component/UIComponent;Ljava/lang/Object;)V",
+      "path": "stella-faces/target/classes",
+      "file": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+      "line": 65
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-2",
+    "project_dir": "Javac/chart-2",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "UnitconInsertion",
+      "method": "errorEntryMethod(Lorg/jfree/data/xy/XYDataset;)V",
+      "file": "UnitconInsertion.java",
+      "line": 13
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-4",
+    "project_dir": "Javac/chart-4",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jfree.chart.plot.XYPlot",
+      "method": "getDataRange(Lorg/jfree/chart/axis/ValueAxis;)Lorg/jfree/data/Range;",
+      "file": "org/jfree/chart/plot/XYPlot.java",
+      "line": 4493
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-5",
+    "project_dir": "Javac/chart-5",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.jfree.data.xy.XYSeries",
+      "method": "addOrUpdate(Ljava/lang/Number;Ljava/lang/Number;)Lorg/jfree/data/xy/XYDataItem;",
+      "file": "source/org/jfree/data/xy/XYSeries.java",
+      "line": 564
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-9",
+    "project_dir": "Javac/chart-9",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.jfree.data.time.TimeSeries",
+      "method": "createCopy(II)Lorg/jfree/data/time/TimeSeries;",
+      "file": "source/org/jfree/data/time/TimeSeries.java",
+      "line": 883
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-13",
+    "project_dir": "Javac/chart-13",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.jfree.data.Range",
+      "method": "Range(DD)V",
+      "file": "source/org/jfree/data/Range.java",
+      "line": 87
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-14",
+    "project_dir": "Javac/chart-14",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jfree.chart.plot.CategoryPlot",
+      "method": "removeDomainMarker(ILorg/jfree/chart/plot/Marker;Lorg/jfree/chart/util/Layer;Z)Z",
+      "file": "org/jfree/chart/plot/CategoryPlot.java",
+      "line": 2166
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-15",
+    "project_dir": "Javac/chart-15",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jfree.chart.plot.PiePlot",
+      "method": "getMaximumExplodePercent()D",
+      "file": "org/jfree/chart/plot/PiePlot.java",
+      "line": 1379
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-16",
+    "project_dir": "Javac/chart-16",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jfree.data.category.DefaultIntervalCategoryDataset",
+      "method": "getCategoryIndex(Ljava/lang/Comparable;)I",
+      "file": "org/jfree/data/category/DefaultIntervalCategoryDataset.java",
+      "line": 574
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-17",
+    "project_dir": "Javac/chart-17",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.jfree.data.time.TimeSeries",
+      "method": "createCopy(II)Lorg/jfree/data/time/TimeSeries;",
+      "file": "source/org/jfree/data/time/TimeSeries.java",
+      "line": 880
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-18",
+    "project_dir": "Javac/chart-18",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.jfree.data.DefaultKeyedValues",
+      "method": "setValue(Ljava/lang/Comparable;Ljava/lang/Number;)V",
+      "file": "source/org/jfree/data/DefaultKeyedValues.java",
+      "line": 234
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-22",
+    "project_dir": "Javac/chart-22",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.jfree.data.UnknownKeyException",
+    "test_target": {
+      "class": "org.jfree.data.KeyedObjects",
+      "method": "removeValue(Ljava/lang/Comparable;)V",
+      "file": "source/org/jfree/data/KeyedObjects.java",
+      "line": 268
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-24",
+    "project_dir": "Javac/chart-24",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.jfree.chart.renderer.GrayPaintScale",
+      "method": "getPaint(D)Ljava/awt/Paint;",
+      "file": "source/org/jfree/chart/renderer/GrayPaintScale.java",
+      "line": 128
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "chart-25",
+    "project_dir": "Javac/chart-25",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jfree.chart.renderer.category.StatisticalBarRenderer",
+      "method": "drawVerticalItem(Ljava/awt/Graphics2D;Lorg/jfree/chart/renderer/category/CategoryItemRendererState;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/plot/CategoryPlot;Lorg/jfree/chart/axis/CategoryAxis;Lorg/jfree/chart/axis/ValueAxis;Lorg/jfree/data/statistics/StatisticalCategoryDataset;II)V",
+      "file": "org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+      "line": 404
+    },
+    "test_target_caller": [
+      {
+        "class": "org.jfree.chart.renderer.category.StatisticalBarRenderer",
+        "method": "drawItem(Ljava/awt/Graphics2D;Lorg/jfree/chart/renderer/category/CategoryItemRendererState;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/plot/CategoryPlot;Lorg/jfree/chart/axis/CategoryAxis;Lorg/jfree/chart/axis/ValueAxis;Lorg/jfree/data/category/CategoryDataset;III)V"
+      }
+    ]
+  },
+  {
+    "project": "chart-26",
+    "project_dir": "Javac/chart-26",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jfree.chart.axis.Axis",
+      "method": "drawLabel(Ljava/lang/String;Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/util/RectangleEdge;Lorg/jfree/chart/axis/AxisState;Lorg/jfree/chart/plot/PlotRenderingInfo;)Lorg/jfree/chart/axis/AxisState;",
+      "file": "org/jfree/chart/axis/Axis.java",
+      "line": 1192
+    },
+    "test_target_caller": [
+      {
+        "class": "org.jfree.chart.axis.CategoryAxis3D",
+        "method": "draw(Ljava/awt/Graphics2D;DLjava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/util/RectangleEdge;Lorg/jfree/chart/plot/PlotRenderingInfo;)Lorg/jfree/chart/axis/AxisState;"
+      },
+      {
+        "class": "org.jfree.chart.axis.CategoryAxis",
+        "method": "draw(Ljava/awt/Graphics2D;DLjava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/util/RectangleEdge;Lorg/jfree/chart/plot/PlotRenderingInfo;)Lorg/jfree/chart/axis/AxisState;"
+      },
+      {
+        "class": "org.jfree.chart.axis.DateAxis",
+        "method": "draw(Ljava/awt/Graphics2D;DLjava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/util/RectangleEdge;Lorg/jfree/chart/plot/PlotRenderingInfo;)Lorg/jfree/chart/axis/AxisState;"
+      },
+      {
+        "class": "org.jfree.chart.axis.NumberAxis",
+        "method": "draw(Ljava/awt/Graphics2D;DLjava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/util/RectangleEdge;Lorg/jfree/chart/plot/PlotRenderingInfo;)Lorg/jfree/chart/axis/AxisState;"
+      },
+      {
+        "class": "org.jfree.chart.axis.NumberAxis3D",
+        "method": "draw(Ljava/awt/Graphics2D;DLjava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/util/RectangleEdge;Lorg/jfree/chart/plot/PlotRenderingInfo;)Lorg/jfree/chart/axis/AxisState;"
+      },
+      {
+        "class": "org.jfree.chart.axis.PeriodAxis",
+        "method": "draw(Ljava/awt/Graphics2D;DLjava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/util/RectangleEdge;Lorg/jfree/chart/plot/PlotRenderingInfo;)Lorg/jfree/chart/axis/AxisState;"
+      },
+      {
+        "class": "org.jfree.chart.axis.SubCategoryAxis",
+        "method": "draw(Ljava/awt/Graphics2D;DLjava/awt/geom/Rectangle2D;Ljava/awt/geom/Rectangle2D;Lorg/jfree/chart/util/RectangleEdge;Lorg/jfree/chart/plot/PlotRenderingInfo;)Lorg/jfree/chart/axis/AxisState;"
+      }
+    ]
+  },
+  {
+    "project": "checkstyle-536bc20-buggy",
+    "project_dir": "Javac/checkstyle-536bc20-buggy",
+    "build_bin": "Javac",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck",
+      "method": "checkIdent(Lcom/puppycrawl/tools/checkstyle/api/DetailAST;)V",
+      "path": "src/main/java",
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+      "line": 279
+    },
+    "test_target_caller": [
+      {
+        "class": "com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck",
+        "method": "visitToken(Lcom/puppycrawl/tools/checkstyle/api/DetailAST;)V"
+      }
+    ]
+  },
+  {
+    "project": "checkstyle-8381754-buggy",
+    "project_dir": "Javac/checkstyle-8381754-buggy",
+    "build_bin": "Javac",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck",
+      "method": "isOverriddenMethod(Lcom/puppycrawl/tools/checkstyle/api/DetailAST;)Z",
+      "path": "src/main/java",
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/ParameterNameCheck.java",
+      "line": 122
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "checkstyle-aa829d4-buggy",
+    "project_dir": "Maven/checkstyle-aa829d4-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolder",
+      "method": "visitToken(Lcom/puppycrawl/tools/checkstyle/api/DetailAST;)V",
+      "path": "target/classes",
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/SuppressWarningsHolder.java",
+      "line": 321
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "checkstyle-aaf606e-buggy",
+    "project_dir": "Javac/checkstyle-aaf606e-buggy",
+    "build_bin": "Javac",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck",
+      "method": "isSingleLineFor(Lcom/puppycrawl/tools/checkstyle/api/DetailAST;)Z",
+      "path": "src/main/java",
+      "file": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/NeedBracesCheck.java",
+      "line": 286
+    },
+    "test_target_caller": [
+      {
+        "class": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck",
+        "method": "visitToken(Lcom/puppycrawl/tools/checkstyle/api/DetailAST;)V"
+      }
+    ]
+  },
+  {
+    "project": "client_java_422e3b3",
+    "project_dir": "Maven/client_java_422e3b3",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "io.prometheus.client.CollectorRegistry$MetricFamilySamplesEnumeration",
+      "method": "includedCollectorIterator(Ljava/util/Set;)Ljava/util/Iterator;",
+      "path": "simpleclient/target/classes",
+      "file": "simpleclient/src/main/java/io/prometheus/client/CollectorRegistry.java",
+      "line": 148
+    },
+    "test_target_caller": [
+      {
+        "class": "io.prometheus.client.CollectorRegistry",
+        "method": "filteredMetricFamilySamples(Ljava/util/Set;)Ljava/util/Enumeration;"
+      },
+      {
+        "class": "io.prometheus.client.CollectorRegistry",
+        "method": "metricFamilySamples()Ljava/util/Enumeration;"
+      }
+    ]
+  },
+  {
+    "project": "closure-2",
+    "project_dir": "Javac/closure-2",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.TypeCheck",
+      "method": "checkInterfaceConflictProperties(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Ljava/lang/String;Ljava/util/HashMap;Ljava/util/HashMap;Lcom/google/javascript/rhino/jstype/ObjectType;)V",
+      "file": "src/com/google/javascript/jscomp/TypeCheck.java",
+      "line": 1574
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-19",
+    "project_dir": "Javac/closure-19",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter",
+      "method": "declareNameInScope(Lcom/google/javascript/jscomp/type/FlowScope;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/jstype/JSType;)V",
+      "file": "src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java",
+      "line": 175
+    },
+    "test_target_caller": [
+      {
+        "class": "com.google.javascript.jscomp.type.ClosureReverseAbstractInterpreter",
+        "method": "getPreciserScopeKnowingConditionOutcome(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/type/FlowScope;Z)Lcom/google/javascript/jscomp/type/FlowScope;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.type.SemanticReverseAbstractInterpreter",
+        "method": "getPreciserScopeKnowingConditionOutcome(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/type/FlowScope;Z)Lcom/google/javascript/jscomp/type/FlowScope;"
+      }
+    ]
+  },
+  {
+    "project": "closure-27",
+    "project_dir": "Javac/closure-27",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalStateException",
+    "test_target": {
+      "class": "com.google.javascript.rhino.IR",
+      "method": "tryFinally(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)Lcom/google/javascript/rhino/Node;",
+      "file": "src/com/google/javascript/rhino/IR.java",
+      "line": 224
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-34",
+    "project_dir": "Javac/closure-34",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StackOverflowError",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.CodeGenerator",
+      "method": "add(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CodeGenerator$Cont\next;)V",
+      "file": "src/com/google/javascript/jscomp/CodeGenerator.java",
+      "line": 102
+    },
+    "test_target_caller": [
+      {
+        "class": "com.google.javascript.jscomp.Compiler$5",
+        "method": "call()Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler$6",
+        "method": "call()[Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler$9",
+        "method": "call()Ljava/lang/Object;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "check()V"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "normalize()V"
+      },
+      {
+        "class": "com.google.javascript.jscomp.ExternExportsPass",
+        "method": "getGeneratedExterns()Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.FunctionRewriter",
+        "method": "process(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V"
+      },
+      {
+        "class": "com.google.javascript.jscomp.InlineFunctions",
+        "method": "process(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V"
+      },
+      {
+        "class": "com.google.javascript.jscomp.NameAnonymousFunctionsMapped$MappedFunctionNamer",
+        "method": "getName(Lcom/google/javascript/rhino/Node;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.PhaseOptimizer$NamedPass",
+        "method": "process(Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V"
+      },
+      {
+        "class": "com.google.javascript.jscomp.RecordFunctionInformation",
+        "method": "visit(Lcom/google/javascript/jscomp/NodeTraversal;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/rhino/Node;)V"
+      }
+    ]
+  },
+  {
+    "project": "closure-37",
+    "project_dir": "Javac/closure-37",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.RuntimeException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.Compiler",
+      "method": "runCallable(Ljava/util/concurrent/Callable;ZZ)Ljava/lang/Object;",
+      "file": "src/com/google/javascript/jscomp/Compiler.java",
+      "line": 642
+    },
+    "test_target_caller": [
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSource()Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSource(Lcom/google/javascript/jscomp/Compiler$CodeBuilder;ILcom/google/javascript/rhino/Node;)V"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSource(Lcom/google/javascript/jscomp/JSModule;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSourceArray()[Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSourceArray(Lcom/google/javascript/jscomp/JSModule;)[Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "project": "closure-40",
+    "project_dir": "Javac/closure-40",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.RuntimeException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.Compiler",
+      "method": "runCallable(Ljava/util/concurrent/Callable;ZZ)Ljava/lang/Object;",
+      "file": "src/com/google/javascript/jscomp/Compiler.java",
+      "line": 639
+    },
+    "test_target_caller": [
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSource()Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSource(Lcom/google/javascript/jscomp/Compiler$CodeBuilder;ILcom/google/javascript/rhino/Node;)V"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSource(Lcom/google/javascript/jscomp/JSModule;)Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSourceArray()[Ljava/lang/String;"
+      },
+      {
+        "class": "com.google.javascript.jscomp.Compiler",
+        "method": "toSourceArray(Lcom/google/javascript/jscomp/JSModule;)[Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "project": "closure-53",
+    "project_dir": "Javac/closure-53",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.RuntimeException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.InlineObjectLiterals$InliningBehavior",
+      "method": "replaceAssignmentExpression(Lcom/google/javascript/jscomp/Scope$Var;Lcom/google/javascript/jscomp/ReferenceCollectingCallback$Reference;Ljava/util/Map;)V",
+      "file": "src/com/google/javascript/jscomp/InlineObjectLiterals.java",
+      "line": 349
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-55",
+    "project_dir": "Javac/closure-55",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalStateException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.AstValidator$1",
+      "method": "handleViolation(Ljava/lang/String;Lcom/google/javascript/rhino/Node;)V",
+      "file": "src/com/google/javascript/jscomp/AstValidator.java",
+      "line": 51
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-58",
+    "project_dir": "Javac/closure-58",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalStateException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.LiveVariablesAnalysis",
+      "method": "addToSetIfLocal(Lcom/google/javascript/rhino/Node;Ljava/util/BitSet;)V",
+      "file": "src/com/google/javascript/jscomp/LiveVariablesAnalysis.java",
+      "line": 266
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-79",
+    "project_dir": "Javac/closure-79",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.RuntimeException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.Normalize$DuplicateDeclarationHandler",
+      "method": "onRedeclaration(Lcom/google/javascript/jscomp/Scope;Ljava/lang/String;Lcom/google/javascript/rhino/Node;Lcom/google/javascript/jscomp/CompilerInput;)V",
+      "file": "src/com/google/javascript/jscomp/Normalize.java",
+      "line": 698
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-108",
+    "project_dir": "Javac/closure-108",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalStateException",
+    "test_target": {
+      "class": "com.google.javascript.jscomp.ScopedAliases$AliasedTypeNode",
+      "method": "applyAlias()V",
+      "file": "src/com/google/javascript/jscomp/ScopedAliases.java",
+      "line": 236
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-125",
+    "project_dir": "Javac/closure-125",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalStateException",
+    "test_target": {
+      "class": "com.google.javascript.rhino.jstype.FunctionType",
+      "method": "getInstanceType()Lcom/google/javascript/rhino/jstype/ObjectType;",
+      "file": "src/com/google/javascript/rhino/jstype/FunctionType.java",
+      "line": 1071
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "closure-133",
+    "project_dir": "Javac/closure-133",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalStateException",
+    "test_target": {
+      "class": "com.google.javascript.rhino.SourcePosition",
+      "method": "setPositionInformation(IIII)V",
+      "file": "src/com/google/javascript/rhino/SourcePosition.java",
+      "line": 87
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "collections-39",
+    "project_dir": "Javac/collections-39",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.collections.ExtendedProperties",
+      "method": "load(Ljava/io/InputStream;Ljava/lang/String;)V",
+      "file": "org/apache/commons/collections/ExtendedProperties.java",
+      "line": 569
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "commons-bcel_1faf7d9",
+    "project_dir": "Maven/commons-bcel_1faf7d9",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.bcel.generic.MethodGen",
+      "method": "MethodGen(Lorg/apache/bcel/classfile/Method;Ljava/lang/String;Lorg/apache/bcel/generic/ConstantPoolGen;)V",
+      "path": "target/classes",
+      "file": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+      "line": 182
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "commons-collections_a270ff6",
+    "project_dir": "Maven/commons-collections_a270ff6",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.collections4.trie.AbstractPatriciaTrie$PrefixRangeEntrySet$EntryIterator",
+      "method": "remove()V",
+      "path": "target/classes",
+      "file": "src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java",
+      "line": 2404
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "commons-configuration_746821e",
+    "project_dir": "Maven/commons-configuration_746821e",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.configuration2.XMLConfiguration",
+      "method": "createTransformer()Ljavax/xml/transform/Transformer;",
+      "path": "target/classes",
+      "file": "src/main/java/org/apache/commons/configuration2/XMLConfiguration.java",
+      "line": 884
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.commons.configuration2.XMLConfiguration",
+        "method": "validate()V"
+      },
+      {
+        "class": "org.apache.commons.configuration2.XMLConfiguration",
+        "method": "write(Ljava/io/Writer;)V"
+      }
+    ]
+  },
+  {
+    "project": "commons-dbcp_b137fda",
+    "project_dir": "Maven/commons-dbcp_b137fda",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS",
+      "method": "toString()Ljava/lang/String;",
+      "path": "target/classes",
+      "file": "src/main/java/org/apache/commons/dbcp2/cpdsadapter/DriverAdapterCPDS.java",
+      "line": 768
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "commons-io_1ac7bef",
+    "project_dir": "Maven/commons-io_1ac7bef",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.io.IOCase",
+      "method": "checkEndsWith(Ljava/lang/String;Ljava/lang/String;)Z",
+      "path": "target/classes",
+      "file": "src/main/java/org/apache/commons/io/IOCase.java",
+      "line": 196
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "commons-pool_41f4e41",
+    "project_dir": "Maven/commons-pool_41f4e41",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.pool2.impl.GenericKeyedObjectPool",
+      "method": "returnObject(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "path": "target/classes",
+      "file": "src/main/java/org/apache/commons/pool2/impl/GenericKeyedObjectPool.java",
+      "line": 450
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "cxf_ae805e6",
+    "project_dir": "Maven/cxf_ae805e6",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.cxf.jaxrs.utils.JAXRSUtils",
+      "method": "getStructuredParams(Ljavax/ws/rs/core/MultivaluedMap;Ljava/lang/String;Ljava/lang/String;ZZZ)V",
+      "path": "rt/frontend/jaxrs/target/classes",
+      "file": "rt/frontend/jaxrs/src/main/java/org/apache/cxf/jaxrs/utils/JAXRSUtils.java",
+      "line": 1328
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "cxf_aebfb0d",
+    "project_dir": "Maven/cxf_aebfb0d",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.cxf.rs.security.jose.jws.JwsUtils",
+      "method": "loadSignatureVerifier(Lorg/apache/cxf/message/Message;Ljava/util/Properties;Lorg/apache/cxf/rs/security/jose/jws/JwsHeaders;)Lorg/apache/cxf/rs/security/jose/jws/JwsSignatureVerifier;",
+      "path": "rt/rs/security/jose-parent/jose/target/classes",
+      "file": "rt/rs/security/jose-parent/jose/src/main/java/org/apache/cxf/rs/security/jose/jws/JwsUtils.java",
+      "line": 419
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "DataflowJavaSDK-c06125d-buggy",
+    "project_dir": "Maven/DataflowJavaSDK-c06125d-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.google.cloud.dataflow.sdk.transforms.join.CoGbkResult",
+      "method": "innerGetOnly(Lcom/google/cloud/dataflow/sdk/values/TupleTag;Ljava/lang/Object;Z)Ljava/lang/Object;",
+      "path": "sdk/target/classes",
+      "file": "sdk/src/main/java/com/google/cloud/dataflow/sdk/transforms/join/CoGbkResult.java",
+      "line": 320
+    },
+    "test_target_caller": [
+      {
+        "class": "com.google.cloud.dataflow.sdk.transforms.join.CoGbkResult",
+        "method": "getOnly(Lcom/google/cloud/dataflow/sdk/values/TupleTag;)Ljava/lang/Object;"
+      }
+    ]
+  },
+  {
+    "project": "directory-ldap-api_3c6a765",
+    "project_dir": "Maven/directory-ldap-api_3c6a765",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.directory.api.ldap.model.entry.Value",
+      "method": "Value(Lorg/apache/directory/api/ldap/model/schema/AttributeType;Ljava/lang/String;)V",
+      "path": "ldap/model/target/classes",
+      "file": "ldap/model/src/main/java/org/apache/directory/api/ldap/model/entry/Value.java",
+      "line": 272
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "dubbo-hessian-lite_5526dd8",
+    "project_dir": "Maven/dubbo-hessian-lite_5526dd8",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.alibaba.dubbo.common.URL",
+      "method": "addParameters(Ljava/util/Map;)Lcom/alibaba/dubbo/common/URL;",
+      "path": "dubbo-common/target/classes",
+      "file": "dubbo-common/src/main/java/com/alibaba/dubbo/common/URL.java",
+      "line": 974
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "easy-rules_72d7bff",
+    "project_dir": "Maven/easy-rules_72d7bff",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jeasy.rules.mvel.MVELRuleDefinitionReader",
+      "method": "createRuleDefinitionFrom(Ljava/util/Map;)Lorg/jeasy/rules/mvel/MVELRuleDefinition;",
+      "path": "easy-rules-mvel/target/classes",
+      "file": "easy-rules-mvel/src/main/java/org/jeasy/rules/mvel/MVELRuleDefinitionReader.java",
+      "line": 59
+    },
+    "test_target_caller": [
+      {
+        "class": "org.jeasy.rules.mvel.MVELRuleFactory",
+        "method": "createRuleFrom(Ljava/io/File;)Lorg/jeasy/rules/mvel/MVELRule;"
+      },
+      {
+        "class": "org.jeasy.rules.mvel.MVELRuleFactory",
+        "method": "createRuleFrom(Ljava/io/Reader;)Lorg/jeasy/rules/mvel/MVELRule;"
+      }
+    ]
+  },
+  {
+    "project": "error-prone-370938-buggy",
+    "project_dir": "Maven/error-prone-370938-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder$2",
+      "method": "normalizeBase(Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByBinder$BinderContext;Lcom/sun/tools/javac/code/Symbol;Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByExpression;)Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByExpression;",
+      "path": "core/target/classes",
+      "file": "core/src/main/java/com/google/errorprone/bugpatterns/threadsafety/GuardedByBinder.java",
+      "line": 282
+    },
+    "test_target_caller": [
+      {
+        "class": "com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder$2",
+        "method": "visitIdentifier(Lcom/sun/source/tree/IdentifierTree;Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByBinder$BinderContext;)Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByExpression;"
+      },
+      {
+        "class": "com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder$2",
+        "method": "visitMemberSelect(Lcom/sun/source/tree/MemberSelectTree;Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByBinder$BinderContext;)Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByExpression;"
+      },
+      {
+        "class": "com.google.errorprone.bugpatterns.threadsafety.GuardedByBinder$2",
+        "method": "visitMethodInvocation(Lcom/sun/source/tree/MethodInvocationTree;Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByBinder$BinderContext;)Lcom/google/errorprone/bugpatterns/threadsafety/GuardedByExpression;"
+      }
+    ]
+  },
+  {
+    "project": "fastjson_7c05c6f",
+    "project_dir": "Maven/fastjson_7c05c6f",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.alibaba.fastjson.parser.deserializer.DefaultFieldDeserializer",
+      "method": "parseField(Lcom/alibaba/fastjson/parser/DefaultJSONParser;Ljava/lang/Object;Ljava/lang/reflect/Type;Ljava/util/Map;)V",
+      "path": "target/classes",
+      "file": "src/main/java/com/alibaba/fastjson/parser/deserializer/DefaultFieldDeserializer.java",
+      "line": 121
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "feign_cf31cd1",
+    "project_dir": "Maven/feign_cf31cd1",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "feign.Response",
+      "method": "caseInsensitiveCopyOf(Ljava/util/Map;)Ljava/util/Map;",
+      "path": "core/target/classes",
+      "file": "core/src/main/java/feign/Response.java",
+      "line": 342
+    },
+    "test_target_caller": [
+      {
+        "class": "feign.Response$Builder",
+        "method": "build()Lfeign/Response$Builder;"
+      }
+    ]
+  },
+  {
+    "project": "felix-4960",
+    "project_dir": "Javac/felix-4960",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.felix.framework.BundleRevisionImpl",
+      "method": "getResourcesLocal(Ljava/lang/String;)Ljava/util/Enumeration;",
+      "file": "org/apache/felix/framework/BundleRevisionImpl.java",
+      "line": 526
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "felix-5464",
+    "project_dir": "Javac/felix-5464",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.felix.scrplugin.helper.ClassScanner",
+      "method": "processClass(Ljava/lang/Class;Ljava/lang/String;)Lorg/apache/felix/scrplugin/description/ClassDescription;",
+      "file": "org/apache/felix/scrplugin/helper/ClassScanner.java",
+      "line": 211
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "HikariCP-ce4ff92-buggy",
+    "project_dir": "Maven/HikariCP-ce4ff92-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.zaxxer.hikari.pool.ProxyConnection",
+      "method": "closeStatements()V",
+      "path": "target/classes",
+      "file": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+      "line": 198
+    },
+    "test_target_caller": [
+      {
+        "class": "com.zaxxer.hikari.pool.ProxyConnection",
+        "method": "close()V"
+      }
+    ]
+  },
+  {
+    "project": "httpcomponents-client_65c6c25",
+    "project_dir": "Maven/httpcomponents-client_65c6c25",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.hc.client5.http.impl.classic.MinimalHttpClient",
+      "method": "doExecute(Lorg/apache/hc/core5/http/HttpHost;Lorg/apache/hc/core5/http/ClassicHttpRequest;Lorg/apache/hc/core5/http/protocol/HttpContext;)Lorg/apache/hc/client5/http/impl/classic/CloseableHttpResponse;",
+      "path": "httpclient5/target/classes",
+      "file": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/classic/MinimalHttpClient.java",
+      "line": 145
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "httpcomponents-client_bf1822c",
+    "project_dir": "Maven/httpcomponents-client_bf1822c",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.hc.client5.http.impl.async.H2AsyncClientBuilder",
+      "method": "addExecInterceptorFirst(Ljava/lang/String;Lorg/apache/hc/client5/http/async/AsyncExecChainHandler;)Lorg/apache/hc/client5/http/impl/async/H2AsyncClientBuilder;",
+      "path": "httpclient5/target/classes",
+      "file": "httpclient5/src/main/java/org/apache/hc/client5/http/impl/async/H2AsyncClientBuilder.java",
+      "line": 341
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "httpcomponents-core_a63b121",
+    "project_dir": "Maven/httpcomponents-core_a63b121",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.hc.core5.net.URIBuilder",
+      "method": "appendPathSegments(Ljava/util/List;)Lorg/apache/hc/core5/net/URIBuilder;",
+      "path": "httpcore5/target/classes",
+      "file": "httpcore5/src/main/java/org/apache/hc/core5/net/URIBuilder.java",
+      "line": 571
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "incubator-hivemall_e86815a",
+    "project_dir": "Maven/incubator-hivemall_e86815a",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "hivemall.GeneralLearnerBaseUDTF",
+      "method": "forwardModel()V",
+      "path": "core/target/classes",
+      "file": "core/src/main/java/hivemall/GeneralLearnerBaseUDTF.java",
+      "line": 763
+    },
+    "test_target_caller": [
+      {
+        "class": "hivemall.GeneralLearnerBaseUDTF",
+        "method": "close()V"
+      }
+    ]
+  },
+  {
+    "project": "iotdb_97ca7e0",
+    "project_dir": "Maven/iotdb_97ca7e0",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.iotdb.db.metadata.MTree",
+      "method": "findChildNodePathInNextLevel(Lorg/apache/iotdb/db/metadata/mnode/MNode;[Ljava/lang/String;ILjava/lang/String;Ljava/util/Set;I)V",
+      "path": "server/target/classes",
+      "file": "server/src/main/java/org/apache/iotdb/db/metadata/MTree.java",
+      "line": 1136
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.iotdb.db.metadata.MManager",
+        "method": "getChildNodePathInNextLevel(Lorg/apache/iotdb/db/metadata/PartialPath;)Ljava/util/Set;"
+      }
+    ]
+  },
+  {
+    "project": "Java-WebSocket_51b63a2",
+    "project_dir": "Maven/Java-WebSocket_51b63a2",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.java_websocket.server.WebSocketServer",
+      "method": "stop(I)V",
+      "path": "target/classes",
+      "file": "src/main/java/org/java_websocket/server/WebSocketServer.java",
+      "line": 257
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "javapoet-70b38e5-buggy",
+    "project_dir": "Maven/javapoet-70b38e5-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.squareup.javapoet.TypeName",
+      "method": "get(Ljavax/lang/model/type/TypeMirror;)Lcom/squareup/javapoet/TypeName;",
+      "path": "target/classes",
+      "file": "src/main/java/com/squareup/javapoet/TypeName.java",
+      "line": 107
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "javaslang-faf9ac2-buggy",
+    "project_dir": "Maven/javaslang-faf9ac2-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "javaslang.Tuples$AbstractTuple",
+      "method": "decycle(Ljava/lang/ThreadLocal;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)Ljava/lang/Object;",
+      "path": "target/classes",
+      "file": "src/main/java/javaslang/Tuples.java",
+      "line": 840
+    },
+    "test_target_caller": [
+      {
+        "class": "javaslang.Tuples$AbstractTuple",
+        "method": "equals(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "javaslang.Tuples$AbstractTuple",
+        "method": "hashCode()I"
+      }
+    ]
+  },
+  {
+    "project": "Jest_93f3c48",
+    "project_dir": "Maven/Jest_93f3c48",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "io.searchbox.client.config.discovery.NodeChecker",
+      "method": "removeNodeAndUpdateServers(Ljava/lang/String;)V",
+      "path": "jest-common/target/classes",
+      "file": "jest-common/src/main/java/io/searchbox/client/config/discovery/NodeChecker.java",
+      "line": 114
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "johnzon_8b5c87d",
+    "project_dir": "Maven/johnzon_8b5c87d",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.johnzon.mapper.converter.EnumConverter",
+      "method": "toString(Ljava/lang/Enum;)Ljava/lang/String;",
+      "path": "johnzon-mapper/target/classes",
+      "file": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/EnumConverter.java",
+      "line": 43
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "jongo-f46f658-buggy",
+    "project_dir": "Maven/jongo-f46f658-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jongo.marshall.jackson.JacksonObjectIdUpdater",
+      "method": "isObjectId(Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;)Z",
+      "path": "target/classes",
+      "file": "src/main/java/org/jongo/marshall/jackson/JacksonObjectIdUpdater.java",
+      "line": 87
+    },
+    "test_target_caller": [
+      {
+        "class": "org.jongo.marshall.jackson.JacksonObjectIdUpdater",
+        "method": "getId(Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "class": "org.jongo.marshall.jackson.JacksonObjectIdUpdater",
+        "method": "mustGenerateObjectId(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "org.jongo.marshall.jackson.JacksonObjectIdUpdater",
+        "method": "setObjectId(Ljava/lang/Object;Lorg/bson/types/ObjectId;)V"
+      }
+    ]
+  },
+  {
+    "project": "jsoup_1d663ee",
+    "project_dir": "Maven/jsoup_1d663ee",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jsoup.nodes.Attribute",
+      "method": "setValue(Ljava/lang/String;)Ljava/lang/String;",
+      "path": "target/classes",
+      "file": "src/main/java/org/jsoup/nodes/Attribute.java",
+      "line": 88
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "jsoup_8808e3f",
+    "project_dir": "Maven/jsoup_8808e3f",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.jsoup.internal.Normalizer",
+      "method": "lowerCase(Ljava/lang/String;)Ljava/lang/String;",
+      "path": "target/classes",
+      "file": "src/main/java/org/jsoup/internal/Normalizer.java",
+      "line": 11
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "jspwiki_bdab6f2",
+    "project_dir": "Maven/jspwiki_bdab6f2",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.wiki.util.HttpUtil",
+      "method": "retrieveCookieValue(Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Ljava/lang/String;",
+      "path": "jspwiki-util/target/classes",
+      "file": "jspwiki-util/src/main/java/org/apache/wiki/util/HttpUtil.java",
+      "line": 78
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "JSqlParser_2897935",
+    "project_dir": "Maven/JSqlParser_2897935",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "net.sf.jsqlparser.expression.ExpressionVisitorAdapter",
+      "method": "visit(Lnet/sf/jsqlparser/statement/select/SubSelect;)V",
+      "path": "target/classes",
+      "file": "src/main/java/net/sf/jsqlparser/expression/ExpressionVisitorAdapter.java",
+      "line": 216
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "karaf_5965290",
+    "project_dir": "Maven/karaf_5965290",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser",
+      "method": "parseHeading(Lorg/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser$Tokenizer;)V",
+      "path": "shell/core/target/classes",
+      "file": "shell/core/src/main/java/org/apache/karaf/shell/impl/console/commands/help/wikidoc/WikiParser.java",
+      "line": 103
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParser",
+        "method": "parse(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "project": "lang-1",
+    "project_dir": "Javac/lang-1",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NumberFormatException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.math.NumberUtils",
+      "method": "createInteger(Ljava/lang/String;)Ljava/lang/Integer;",
+      "file": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+      "line": 684
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-5",
+    "project_dir": "Javac/lang-5",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.LocaleUtils",
+      "method": "toLocale(Ljava/lang/String;)Ljava/util/Locale;",
+      "file": "src/main/java/org/apache/commons/lang3/LocaleUtils.java",
+      "line": 99
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-6",
+    "project_dir": "Javac/lang-6",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StringIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+      "method": "translate(Ljava/lang/CharSequence;ILjava/io/Writer;)I",
+      "file": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
+      "line": 95
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-12",
+    "project_dir": "Javac/lang-12",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.RandomStringUtils",
+      "method": "random(IIIZZ[CLjava/util/Random;)Ljava/lang/String;",
+      "file": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+      "line": 248
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-13",
+    "project_dir": "Javac/lang-13",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.lang3.SerializationException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.SerializationUtils",
+      "method": "clone(Ljava/io/Serializable;)Ljava/io/Serializable;",
+      "file": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+      "line": 99
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-16",
+    "project_dir": "Javac/lang-16",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NumberFormatException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.math.NumberUtils",
+      "method": "createNumber(Ljava/lang/String;)Ljava/lang/Number;",
+      "file": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+      "line": 545
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-19",
+    "project_dir": "Javac/lang-19",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StringIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+      "method": "translate(Ljava/lang/CharSequence;ILjava/io/Writer;)I",
+      "file": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+      "line": 44
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-20",
+    "project_dir": "Javac/lang-20",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.StringUtils",
+      "method": "join([Ljava/lang/Object;Ljava/lang/String;II)Ljava/lang/String;",
+      "file": "org/apache/commons/lang3/StringUtils.java",
+      "line": 3383
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-27",
+    "project_dir": "Javac/lang-27",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StringIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.math.NumberUtils",
+      "method": "createNumber(Ljava/lang/String;)Ljava/lang/Number;",
+      "file": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+      "line": 489
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-33",
+    "project_dir": "Javac/lang-33",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.ClassUtils",
+      "method": "toClass([Ljava/lang/Object;)[Ljava/lang/Class;",
+      "file": "org/apache/commons/lang3/ClassUtils.java",
+      "line": 911
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-37",
+    "project_dir": "Javac/lang-37",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayStoreException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.ArrayUtils",
+      "method": "addAll([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;",
+      "file": "src/java/org/apache/commons/lang3/ArrayUtils.java",
+      "line": 2962
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-39",
+    "project_dir": "Javac/lang-39",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.StringUtils",
+      "method": "replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZI)Ljava/lang/String;",
+      "file": "org/apache/commons/lang3/StringUtils.java",
+      "line": 3677
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.commons.lang3.StringUtils",
+        "method": "replaceEach(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "class": "org.apache.commons.lang3.StringUtils",
+        "method": "replaceEachRepeatedly(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "project": "lang-43",
+    "project_dir": "Javac/lang-43",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.OutOfMemoryError",
+    "test_target": {
+      "class": "org.apache.commons.lang.text.ExtendedMessageFormat",
+      "method": "appendQuotedString(Ljava/lang/String;Ljava/text/ParsePosition;Ljava/lang/StringBuffer;Z)Ljava/lang/StringBuffer;",
+      "file": "src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java",
+      "line": 422
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.commons.lang.text.ExtendedMessageFormat",
+        "method": "applyPattern(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "project": "lang-44",
+    "project_dir": "Javac/lang-44",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StringIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang.NumberUtils",
+      "method": "createNumber(Ljava/lang/String;)Ljava/lang/Number;",
+      "file": "src/java/org/apache/commons/lang/NumberUtils.java",
+      "line": 193
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-45",
+    "project_dir": "Javac/lang-45",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StringIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang.WordUtils",
+      "method": "abbreviate(Ljava/lang/String;IILjava/lang/String;)Ljava/lang/String;",
+      "file": "src/java/org/apache/commons/lang/WordUtils.java",
+      "line": 629
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-47",
+    "project_dir": "Javac/lang-47",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.text.StrBuilder",
+      "method": "appendFixedWidthPadRight(Ljava/lang/Object;IC)Lorg/apache/commons/lang3/text/StrBuilder;",
+      "file": "org/apache/commons/lang3/text/StrBuilder.java",
+      "line": 1319
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-51",
+    "project_dir": "Javac/lang-51",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StringIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang.BooleanUtils",
+      "method": "toBoolean(Ljava/lang/String;)Z",
+      "file": "src/java/org/apache/commons/lang/BooleanUtils.java",
+      "line": 686
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-54",
+    "project_dir": "Javac/lang-54",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.apache.commons.lang.LocaleUtils",
+      "method": "toLocale(Ljava/lang/String;)Ljava/util/Locale;",
+      "file": "src/java/org/apache/commons/lang/LocaleUtils.java",
+      "line": 116
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-56",
+    "project_dir": "Javac/lang-56",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.lang.SerializationException",
+    "test_target": {
+      "class": "org.apache.commons.lang.SerializationUtils",
+      "method": "serialize(Ljava/io/Serializable;Ljava/io/OutputStream;)V",
+      "file": "src/java/org/apache/commons/lang/SerializationUtils.java",
+      "line": 111
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-57",
+    "project_dir": "Javac/lang-57",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.lang3.LocaleUtils",
+      "method": "isAvailableLocale(Ljava/util/Locale;)Z",
+      "file": "org/apache/commons/lang3/LocaleUtils.java",
+      "line": 250
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-58",
+    "project_dir": "Javac/lang-58",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NumberFormatException",
+    "test_target": {
+      "class": "org.apache.commons.lang.math.NumberUtils",
+      "method": "createNumber(Ljava/lang/String;)Ljava/lang/Number;",
+      "file": "src/java/org/apache/commons/lang/math/NumberUtils.java",
+      "line": 464
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "lang-59",
+    "project_dir": "Javac/lang-59",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.lang.text.StrBuilder",
+      "method": "appendFixedWidthPadRight(Ljava/lang/Object;IC)Lorg/apache/commons/lang/text/StrBuilder;",
+      "file": "src/java/org/apache/commons/lang/text/StrBuilder.java",
+      "line": 884
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "logging-log4j2_147f78c",
+    "project_dir": "Maven/logging-log4j2_147f78c",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.logging.log4j.core.async.RingBufferLogEvent",
+      "method": "getFormattedMessage()Ljava/lang/String;",
+      "path": "log4j-core/target/classes",
+      "file": "log4j-core/src/main/java/org/apache/logging/log4j/core/async/RingBufferLogEvent.java",
+      "line": 213
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "logging-log4j2_2d266d9",
+    "project_dir": "Maven/logging-log4j2_2d266d9",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.logging.log4j.core.config.ConfigurationScheduler",
+      "method": "schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;",
+      "path": "log4j-core/target/classes",
+      "file": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/ConfigurationScheduler.java",
+      "line": 107
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "logging-log4j2_cd881ce",
+    "project_dir": "Maven/logging-log4j2_cd881ce",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.logging.log4j.spi.AbstractLogger",
+      "method": "enter(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V",
+      "path": "log4j-api/target/classes",
+      "file": "log4j-api/src/main/java/org/apache/logging/log4j/spi/AbstractLogger.java",
+      "line": 320
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.logging.log4j.spi.AbstractLogger",
+        "method": "traceEntry()V"
+      }
+    ]
+  },
+  {
+    "project": "logging-log4j2_d1c02ee",
+    "project_dir": "Maven/logging-log4j2_d1c02ee",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.logging.log4j.core.config.composite.DefaultMergeStrategy",
+      "method": "isSameReference(Lorg/apache/logging/log4j/core/config/Node;Lorg/apache/logging/log4j/core/config/Node;)Z",
+      "path": "log4j-core/target/classes",
+      "file": "log4j-core/src/main/java/org/apache/logging/log4j/core/config/composite/DefaultMergeStrategy.java",
+      "line": 268
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-1",
+    "project_dir": "Javac/math-1",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math3.fraction.FractionConversionException",
+    "test_target": {
+      "class": "org.apache.commons.math3.fraction.BigFraction",
+      "method": "BigFraction(DDII)V",
+      "file": "src/main/java/org/apache/commons/math3/fraction/BigFraction.java",
+      "line": 306
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.commons.math3.fraction.BigFraction",
+        "method": "BigFraction(DDI)V"
+      },
+      {
+        "class": "org.apache.commons.math3.fraction.BigFraction",
+        "method": "BigFraction(DI)V"
+      }
+    ]
+  },
+  {
+    "project": "math-3",
+    "project_dir": "Javac/math-3",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.math3.util.MathArrays",
+      "method": "linearCombination([D[D)D",
+      "file": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+      "line": 846
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-4",
+    "project_dir": "Javac/math-4",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.math3.geometry.euclidean.threed.Line",
+      "method": "getAbscissa(Lorg/apache/commons/math3/geometry/euclidean/threed/Vector3D;)D",
+      "file": "org/apache/commons/math3/geometry/euclidean/threed/Line.java",
+      "line": 114
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-8",
+    "project_dir": "Javac/math-8",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayStoreException",
+    "test_target": {
+      "class": "org.apache.commons.math3.distribution.DiscreteDistribution",
+      "method": "sample(I)[Ljava/lang/Object;",
+      "file": "src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java",
+      "line": 190
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-13",
+    "project_dir": "Javac/math-13",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.OutOfMemoryError",
+    "test_target": {
+      "class": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "method": "toBlocksLayout([[D)[[D",
+      "file": "src/main/java/org/apache/commons/math3/linear/BlockRealMatrix.java",
+      "line": 229
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-14",
+    "project_dir": "Javac/math-14",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.OutOfMemoryError",
+    "test_target": {
+      "class": "org.apache.commons.math3.linear.BlockRealMatrix",
+      "method": "getData()[[D",
+      "file": "src/main/java/org/apache/commons/math3/linear/BlockRealMatrix.java",
+      "line": 598
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-28",
+    "project_dir": "Javac/math-28",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math3.exception.MaxCountExceededException",
+    "test_target": {
+      "class": "org.apache.commons.math3.optimization.linear.AbstractLinearOptimizer",
+      "method": "incrementIterationsCounter()V",
+      "file": "src/main/java/org/apache/commons/math3/optimization/linear/AbstractLinearOptimizer.java",
+      "line": 128
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-31",
+    "project_dir": "Javac/math-31",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math3.exception.ConvergenceException",
+    "test_target": {
+      "class": "org.apache.commons.math3.util.ContinuedFraction",
+      "method": "evaluate(DDI)D",
+      "file": "src/main/java/org/apache/commons/math3/util/ContinuedFraction.java",
+      "line": 177
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-32",
+    "project_dir": "Javac/math-32",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ClassCastException",
+    "test_target": {
+      "class": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet",
+      "method": "computeGeometricalProperties()V",
+      "file": "src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java",
+      "line": 136
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-38",
+    "project_dir": "Javac/math-38",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.optimization.direct.BOBYQAOptimizer$PathIsExploredException",
+    "test_target": {
+      "class": "org.apache.commons.math.optimization.direct.BOBYQAOptimizer",
+      "method": "prelim([D[D)V",
+      "file": "src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java",
+      "line": 1752
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-40",
+    "project_dir": "Javac/math-40",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.exception.TooManyEvaluationsException",
+    "test_target": {
+      "class": "org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver",
+      "method": "incrementEvaluationCount()V",
+      "file": "src/main/java/org/apache/commons/math/analysis/solvers/BaseAbstractUnivariateRealSolver.java",
+      "line": 296
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.commons.math.analysis.solvers.LaguerreSolver",
+        "method": "doSolve()D"
+      }
+    ]
+  },
+  {
+    "project": "math-49",
+    "project_dir": "Javac/math-49",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.MathRuntimeException$6",
+    "test_target": {
+      "class": "org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator",
+      "method": "advance()V",
+      "file": "src/main/java/org/apache/commons/math/util/OpenIntToDoubleHashMap.java",
+      "line": 564
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-58",
+    "project_dir": "Javac/math-58",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.exception.NotStrictlyPositiveException",
+    "test_target": {
+      "class": "org.apache.commons.math.analysis.function.Gaussian$Parametric",
+      "method": "validateParameters([D)V",
+      "file": "src/main/java/org/apache/commons/math/analysis/function/Gaussian.java",
+      "line": 183
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.commons.math.analysis.function.Gaussian$Parametric",
+        "method": "gradient(D[D)[D"
+      },
+      {
+        "class": "org.apache.commons.math.analysis.function.Gaussian$Parametric",
+        "method": "value(D[D)D"
+      }
+    ]
+  },
+  {
+    "project": "math-61",
+    "project_dir": "Javac/math-61",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.MathRuntimeException$4",
+    "test_target": {
+      "class": "org.apache.commons.math.distribution.PoissonDistributionImpl",
+      "method": "PoissonDistributionImpl(DDI)V",
+      "file": "src/main/java/org/apache/commons/math/distribution/PoissonDistributionImpl.java",
+      "line": 94
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-70",
+    "project_dir": "Javac/math-70",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.math.analysis.solvers.BisectionSolver",
+      "method": "solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D",
+      "file": "org/apache/commons/math/analysis/solvers/BisectionSolver.java",
+      "line": 89
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-78",
+    "project_dir": "Javac/math-78",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.MathRuntimeException$4",
+    "test_target": {
+      "class": "org.apache.commons.math.analysis.solvers.BrentSolver",
+      "method": "solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D",
+      "file": "src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java",
+      "line": 178
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-79",
+    "project_dir": "Javac/math-79",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer",
+      "method": "assignPointsToClusters(Ljava/util/Collection;Ljava/util/Collection;)V",
+      "file": "org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java",
+      "line": 91
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer",
+        "method": "cluster(Ljava/util/Collection;II)Ljava/util/List;"
+      }
+    ]
+  },
+  {
+    "project": "math-81",
+    "project_dir": "Javac/math-81",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.math.linear.EigenDecompositionImpl",
+      "method": "computeShiftIncrement(III)V",
+      "file": "src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java",
+      "line": 1544
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-85",
+    "project_dir": "Javac/math-85",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.MathException",
+    "test_target": {
+      "class": "org.apache.commons.math.distribution.AbstractContinuousDistribution",
+      "method": "inverseCumulativeProbability(D)D",
+      "file": "src/java/org/apache/commons/math/distribution/AbstractContinuousDistribution.java",
+      "line": 104
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-89",
+    "project_dir": "Javac/math-89",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ClassCastException",
+    "test_target": {
+      "class": "org.apache.commons.math.stat.Frequency",
+      "method": "addValue(Ljava/lang/Object;)V",
+      "file": "src/java/org/apache/commons/math/stat/Frequency.java",
+      "line": 110
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-90",
+    "project_dir": "Javac/math-90",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.apache.commons.math.stat.Frequency",
+      "method": "addValue(Ljava/lang/Object;)V",
+      "file": "src/java/org/apache/commons/math/stat/Frequency.java",
+      "line": 134
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-95",
+    "project_dir": "Maven/math-95",
+    "build_bin": "Maven",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.apache.commons.math.analysis.UnivariateRealSolverUtils",
+      "method": "bracket(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[D",
+      "path": "target/classes",
+      "file": "src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java",
+      "line": 179
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-97",
+    "project_dir": "Maven/math-97",
+    "build_bin": "Maven",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.apache.commons.math.analysis.BrentSolver",
+      "method": "solve(DD)D",
+      "path": "target/classes",
+      "file": "src/java/org/apache/commons/math/analysis/BrentSolver.java",
+      "line": 141
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-98",
+    "project_dir": "Maven/math-98",
+    "build_bin": "Maven",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.math.linear.BigMatrixImpl",
+      "method": "operate([Ljava/math/BigDecimal;)[Ljava/math/BigDecimal;",
+      "path": "target/classes",
+      "file": "src/java/org/apache/commons/math/linear/BigMatrixImpl.java",
+      "line": 997
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-100",
+    "project_dir": "Maven/math-100",
+    "build_bin": "Maven",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.math.estimation.AbstractEstimator",
+      "method": "getCovariances(Lorg/apache/commons/math/estimation/EstimationProblem;)[[D",
+      "path": "target/classes",
+      "file": "src/java/org/apache/commons/math/estimation/AbstractEstimator.java",
+      "line": 173
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-101",
+    "project_dir": "Maven/math-101",
+    "build_bin": "Maven",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StringIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.apache.commons.math.complex.ComplexFormat",
+      "method": "parse(Ljava/lang/String;Ljava/text/ParsePosition;)Lorg/apache/commons/math/complex/Complex;",
+      "path": "target/classes",
+      "file": "src/java/org/apache/commons/math/complex/ComplexFormat.java",
+      "line": 377
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "math-103",
+    "project_dir": "Maven/math-103",
+    "build_bin": "Maven",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.apache.commons.math.MaxIterationsExceededException",
+    "test_target": {
+      "class": "org.apache.commons.math.special.Gamma",
+      "method": "regularizedGammaP(DDDI)D",
+      "path": "target/classes",
+      "file": "src/java/org/apache/commons/math/special/Gamma.java",
+      "line": 180
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "maven-doxia_16836d8",
+    "project_dir": "Maven/maven-doxia_16836d8",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.maven.doxia.module.confluence.parser.AbstractFatherBlock",
+      "method": "traverse(Lorg/apache/maven/doxia/sink/Sink;)V",
+      "path": "doxia-modules/doxia-module-confluence/target/classes",
+      "file": "doxia-modules/doxia-module-confluence/src/main/java/org/apache/maven/doxia/module/confluence/parser/AbstractFatherBlock.java",
+      "line": 72
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "maven-release_6b1f658",
+    "project_dir": "Maven/maven-release_6b1f658",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.maven.shared.release.phase.MapVersionsPhase",
+      "method": "resolveSuggestedVersion(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "path": "maven-release-manager/target/classes",
+      "file": "maven-release-manager/src/main/java/org/apache/maven/shared/release/phase/MapVersionsPhase.java",
+      "line": 327
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.maven.shared.release.phase.MapVersionsPhase",
+        "method": "execute(Lorg/apache/maven/shared/release/config/ReleaseDescriptor;Lorg/apache/maven/shared/release/env/ReleaseEnvironment;Ljava/util/List;)Lorg/apache/maven/shared/release/ReleaseResult;"
+      }
+    ]
+  },
+  {
+    "project": "maven-surefire_08163fa",
+    "project_dir": "Maven/maven-surefire_08163fa",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.maven.surefire.report.SmartStackTraceParser",
+      "method": "focusOnClass([Ljava/lang/StackTraceElement;Ljava/lang/Class;)Ljava/util/List;",
+      "path": "surefire-providers/common-java5/target/classes",
+      "file": "surefire-providers/common-java5/src/main/java/org/apache/maven/surefire/report/SmartStackTraceParser.java",
+      "line": 194
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.maven.surefire.report.SmartStackTraceParser",
+        "method": "getString()Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "project": "mockito-1",
+    "project_dir": "Javac/mockito-1",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.UnsupportedOperationException",
+    "test_target": {
+      "class": "org.mockito.internal.invocation.InvocationMatcher",
+      "method": "captureArgumentsFrom(Lorg/mockito/invocation/Invocation;)V",
+      "file": "src/org/mockito/internal/invocation/InvocationMatcher.java",
+      "line": 123
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "mockito-7",
+    "project_dir": "Javac/mockito-7",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.mockito.exceptions.base.MockitoException",
+    "test_target": {
+      "class": "org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType",
+      "method": "extractRawTypeOf(Ljava/lang/reflect/Type;)Ljava/lang/Class;",
+      "file": "src/org/mockito/internal/util/reflection/GenericMetadataSupport.java",
+      "line": 407
+    },
+    "test_target_caller": [
+      {
+        "class": "org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType",
+        "method": "rawType()Ljava/lang/Class;"
+      }
+    ]
+  },
+  {
+    "project": "mockito-8",
+    "project_dir": "Javac/mockito-8",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.StackOverflowError",
+    "test_target": {
+      "class": "org.mockito.internal.util.reflection.GenericMetadataSupport",
+      "method": "getActualTypeArgumentFor(Ljava/lang/reflect/TypeVariable;)Ljava/lang/reflect/Type;",
+      "file": "src/org/mockito/internal/util/reflection/GenericMetadataSupport.java",
+      "line": 182
+    },
+    "test_target_caller": [
+      {
+        "class": "org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType",
+        "method": "TypeVariableReturnType(Lorg/mockito/internal/util/reflection/GenericMetadataSupport;[Ljava/lang/reflect/TypeVariable;Ljava/lang/reflect/TypeVariable;)V"
+      },
+      {
+        "class": "org.mockito.internal.util.reflection.GenericMetadataSupport",
+        "method": "actualTypeArguments()Ljava/util/Map;"
+      }
+    ]
+  },
+  {
+    "project": "mockito-9",
+    "project_dir": "Javac/mockito-9",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.mockito.exceptions.base.MockitoException",
+    "test_target": {
+      "class": "org.mockito.internal.invocation.InvocationImpl",
+      "method": "callRealMethod()Ljava/lang/Object;",
+      "file": "src/org/mockito/internal/invocation/InvocationImpl.java",
+      "line": 110
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "mockito-10",
+    "project_dir": "Javac/mockito-10",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.mockito.exceptions.base.MockitoException",
+    "test_target": {
+      "class": "org.mockito.internal.util.MockCreationValidator",
+      "method": "validateSerializable(Ljava/lang/Class;Z)V",
+      "file": "src/org/mockito/internal/util/MockCreationValidator.java",
+      "line": 63
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "mockito-12",
+    "project_dir": "Javac/mockito-12",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ClassCastException",
+    "test_target": {
+      "class": "org.mockito.internal.util.reflection.GenericMaster",
+      "method": "getGenericType(Ljava/lang/reflect/Field;)Ljava/lang/Class;",
+      "file": "src/org/mockito/internal/util/reflection/GenericMaster.java",
+      "line": 20
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "mockito-16",
+    "project_dir": "Javac/mockito-16",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.mockito.exceptions.misusing.MissingMethodInvocationException",
+    "test_target": {
+      "class": "org.mockito.internal.MockitoCore",
+      "method": "stub()Lorg/mockito/internal/progress/IOngoingStubbing;",
+      "file": "src/org/mockito/internal/MockitoCore.java",
+      "line": 43
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "mockito-21",
+    "project_dir": "Javac/mockito-21",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.mockito.internal.creation.instance.InstantationException",
+    "test_target": {
+      "class": "org.mockito.internal.creation.instance.ConstructorInstantiator",
+      "method": "withOuterClass(Ljava/lang/Class;)Ljava/lang/Object;",
+      "file": "src/org/mockito/internal/creation/instance/ConstructorInstantiator.java",
+      "line": 27
+    },
+    "test_target_caller": [
+      {
+        "class": "org.mockito.internal.creation.instance.ConstructorInstantiator",
+        "method": "newInstance(Ljava/lang/Class;)Ljava/lang/Object;"
+      }
+    ]
+  },
+  {
+    "project": "mockito-29",
+    "project_dir": "Javac/mockito-29",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.mockito.internal.matchers.Same",
+      "method": "describeTo(Lorg/hamcrest/Description;)V",
+      "file": "src/org/mockito/internal/matchers/Same.java",
+      "line": 29
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "mockito-34",
+    "project_dir": "Javac/mockito-34",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.ArrayIndexOutOfBoundsException",
+    "test_target": {
+      "class": "org.mockito.internal.invocation.InvocationMatcher",
+      "method": "captureArgumentsFrom(Lorg/mockito/internal/invocation/Invocation;)V",
+      "file": "src/org/mockito/internal/invocation/InvocationMatcher.java",
+      "line": 107
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "mockito-36",
+    "project_dir": "Javac/mockito-36",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.mockito.internal.invocation.Invocation",
+      "method": "callRealMethod()Ljava/lang/Object;",
+      "file": "src/org/mockito/internal/invocation/Invocation.java",
+      "line": 202
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "mockito-38",
+    "project_dir": "Javac/mockito-38",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool",
+      "method": "toStringEquals(Lorg/hamcrest/Matcher;Ljava/lang/Object;)Z",
+      "file": "src/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java",
+      "line": 48
+    },
+    "test_target_caller": [
+      {
+        "class": "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool",
+        "method": "getSuspiciouslyNotMatchingArgsIndexes(Ljava/util/List;[Ljava/lang/Object;)[Ljava/lang/Integer;"
+      }
+    ]
+  },
+  {
+    "project": "ninja_3e73cb8",
+    "project_dir": "Maven/ninja_3e73cb8",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "ninja.Route",
+      "method": "getPathParametersEncoded(Ljava/lang/String;)Ljava/util/Map;",
+      "path": "ninja-core/target/classes",
+      "file": "ninja-core/src/main/java/ninja/Route.java",
+      "line": 128
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "nutz_bbd28db",
+    "project_dir": "Maven/nutz_bbd28db",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.nutz.http.Sender",
+      "method": "create(Lorg/nutz/http/Request;)Lorg/nutz/http/Sender;",
+      "path": "target/classes",
+      "file": "src/org/nutz/http/Sender.java",
+      "line": 68
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "nutz_c8a9e83",
+    "project_dir": "Maven/nutz_c8a9e83",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.nutz.lang.Mirror",
+      "method": "getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;",
+      "path": "target/classes",
+      "file": "src/org/nutz/lang/Mirror.java",
+      "line": 606
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "opengrok_6a95adb",
+    "project_dir": "Maven/opengrok_6a95adb",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.opensolaris.opengrok.analysis.IteratorReader",
+      "method": "IteratorReader(Ljava/lang/Iterable;)V",
+      "path": "opengrok-indexer/target/classes",
+      "file": "src/org/opensolaris/opengrok/analysis/IteratorReader.java",
+      "line": 41
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "opennlp_cb6ee2c",
+    "project_dir": "Maven/opennlp_cb6ee2c",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "opennlp.tools.lemmatizer.DictionaryLemmatizer",
+      "method": "lemmatize(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+      "path": "opennlp-tools/target/classes",
+      "file": "opennlp-tools/src/main/java/opennlp/tools/lemmatizer/DictionaryLemmatizer.java",
+      "line": 117
+    },
+    "test_target_caller": [
+      {
+        "class": "opennlp.tools.lemmatizer.DictionaryLemmatizer",
+        "method": "lemmatize([Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "project": "OpenPDF_07ecaaf",
+    "project_dir": "Maven/OpenPDF_07ecaaf",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "com.lowagie.text.pdf.StandardDecryption",
+      "method": "finish()[B",
+      "path": "openpdf/target/classes",
+      "file": "openpdf/src/main/java/com/lowagie/text/pdf/StandardDecryption.java",
+      "line": 111
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-2266",
+    "project_dir": "Javac/pdfbox-2266",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.graphics.color.PDPattern",
+      "method": "toPaint(Lorg/apache/pdfbox/rendering/PDFRenderer;Lorg/apache/pdfbox/pdmodel/graphics/color/PDColor;I)Ljava/awt/Paint;",
+      "file": "org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+      "line": 130
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-2477",
+    "project_dir": "Javac/pdfbox-2477",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.xmpbox.xml.DomXmpParser",
+      "method": "manageStructuredType(Lorg/apache/xmpbox/XMPMetadata;Lorg/w3c/dom/Element;Ljava/lang/String;Lorg/apache/xmpbox/type/ComplexPropertyContainer;)V",
+      "file": "org/apache/xmpbox/xml/DomXmpParser.java",
+      "line": 393
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-2812",
+    "project_dir": "Javac/pdfbox-2812",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.graphics.color.PDColorSpaceFactory",
+      "method": "createColorSpace(Lorg/apache/pdfbox/pdmodel/PDDocument;Ljava/awt/color/ColorSpace;)Lorg/apache/pdfbox/pdmodel/graphics/color/PDColorSpace;",
+      "file": "org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java",
+      "line": 253
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-2948",
+    "project_dir": "Javac/pdfbox-2948",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.common.PDStream",
+      "method": "createInputStream(Ljava/util/List;)Ljava/io/InputStream;",
+      "file": "org/apache/pdfbox/pdmodel/common/PDStream.java",
+      "line": 254
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-2951",
+    "project_dir": "Javac/pdfbox-2951",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.font.encoding.Encoding",
+      "method": "contains(Ljava/lang/String;)Z",
+      "file": "org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+      "line": 106
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-2965",
+    "project_dir": "Javac/pdfbox-2965",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm",
+      "method": "getField(Ljava/lang/String;)Lorg/apache/pdfbox/pdmodel/interactive/form/PDField;",
+      "file": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+      "line": 429
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-2995",
+    "project_dir": "Javac/pdfbox-2995",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm",
+      "method": "getDefaultAppearance()Ljava/lang/String;",
+      "file": "org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+      "line": 445
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-3479",
+    "project_dir": "Javac/pdfbox-3479",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper",
+      "method": "setAppearanceValue(Ljava/lang/String;)V",
+      "file": "org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+      "line": 136
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "pdfbox-3572",
+    "project_dir": "Javac/pdfbox-3572",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.encryption.SecurityHandler",
+      "method": "encryptDataAESother([BLjava/io/InputStream;Ljava/io/OutputStream;Z)V",
+      "file": "org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+      "line": 271
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.pdfbox.pdmodel.encryption.SecurityHandler",
+        "method": "decrypt(Lorg/apache/pdfbox/cos/COSBase;JJ)V"
+      },
+      {
+        "class": "org.apache.pdfbox.pdmodel.encryption.SecurityHandler",
+        "method": "decryptStream(Lorg/apache/pdfbox/cos/COSStream;JJ)V"
+      },
+      {
+        "class": "org.apache.pdfbox.pdmodel.encryption.SecurityHandler",
+        "method": "encryptStream(Lorg/apache/pdfbox/cos/COSStream;JI)V"
+      },
+      {
+        "class": "org.apache.pdfbox.pdmodel.encryption.SecurityHandler",
+        "method": "encryptString(Lorg/apache/pdfbox/cos/COSString;JI)V"
+      }
+    ]
+  },
+  {
+    "project": "pdfbox_bdab232",
+    "project_dir": "Maven/pdfbox_bdab232",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.pdfbox.pdmodel.interactive.action.PDActionURI",
+      "method": "getURI()Ljava/lang/String;",
+      "path": "pdfbox/target/classes",
+      "file": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+      "line": 64
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "picocli_758f4c0",
+    "project_dir": "Maven/picocli_758f4c0",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "picocli.CommandLine$Range",
+      "method": "parameterIndex(Ljava/lang/reflect/Field;)Lpicocli/CommandLine$Range;",
+      "path": "target/classes",
+      "file": "src/main/java/picocli/CommandLine.java",
+      "line": 1024
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "qpid-proton-j_6422e24",
+    "project_dir": "Maven/qpid-proton-j_6422e24",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.qpid.proton.engine.impl.TransportImpl",
+      "method": "processTransportWorkSender(Lorg/apache/qpid/proton/engine/impl/DeliveryImpl;Lorg/apache/qpid/proton/engine/impl/SenderImpl;)Z",
+      "path": "proton-j/target/classes",
+      "file": "proton-j/src/main/java/org/apache/qpid/proton/engine/impl/TransportImpl.java",
+      "line": 526
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.qpid.proton.engine.impl.TransportImpl",
+        "method": "writeInto(Ljava/nio/ByteBuffer;)Z"
+      }
+    ]
+  },
+  {
+    "project": "qpid-proton-j_87ec94b",
+    "project_dir": "Maven/qpid-proton-j_87ec94b",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.qpid.proton.codec.MapType",
+      "method": "calculateSize(Ljava/util/Map;)I",
+      "path": "proton-j/target/classes",
+      "file": "proton-j/src/main/java/org/apache/qpid/proton/codec/MapType.java",
+      "line": 101
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.qpid.proton.codec.MapType",
+        "method": "getEncoding(Ljava/util/Map;)Lorg/apache/qpid/proton/codec/MapType$MapEncoding;"
+      }
+    ]
+  },
+  {
+    "project": "rocketmq_03c1f11",
+    "project_dir": "Maven/rocketmq_03c1f11",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.rocketmq.client.impl.factory.MQClientInstance",
+      "method": "consumerRunningInfo(Ljava/lang/String;)Lorg/apache/rocketmq/common/protocol/body/ConsumerRunningInfo;",
+      "path": "client/target/classes",
+      "file": "client/src/main/java/org/apache/rocketmq/client/impl/factory/MQClientInstance.java",
+      "line": 1218
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "shardingsphere_48237c8",
+    "project_dir": "Maven/shardingsphere_48237c8",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.shardingsphere.proxy.frontend.postgresql.auth.PostgreSQLAuthenticationEngine",
+      "method": "auth(Lio/netty/channel/ChannelHandlerContext;Lorg/apache/shardingsphere/db/protocol/payload/PacketPayload;)Lorg/apache/shardingsphere/proxy/frontend/engine/AuthenticationResult;",
+      "path": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/target/classes",
+      "file": "shardingsphere-proxy/shardingsphere-proxy-frontend/shardingsphere-proxy-frontend-postgresql/src/main/java/org/apache/shardingsphere/proxy/frontend/postgresql/auth/PostgreSQLAuthenticationEngine.java",
+      "line": 106
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "shardingsphere_52b0150",
+    "project_dir": "Maven/shardingsphere_52b0150",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.shardingsphere.infra.executor.sql.context.ExecutionContextBuilder",
+      "method": "getPrimaryKeyColumns(Lorg/apache/shardingsphere/infra/metadata/ShardingSphereMetaData;Ljava/util/Collection;)Ljava/util/List;",
+      "path": "shardingsphere-infra/shardingsphere-infra-executor/target/classes",
+      "file": "shardingsphere-infra/shardingsphere-infra-executor/src/main/java/org/apache/shardingsphere/infra/executor/sql/context/ExecutionContextBuilder.java",
+      "line": 129
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.shardingsphere.infra.executor.sql.context.ExecutionContextBuilder",
+        "method": "build(Lorg/apache/shardingsphere/infra/metadata/ShardingSphereMetaData;Lorg/apache/shardingsphere/infra/rewrite/engine/result/SQLRewriteResult;Lorg/apache/shardingsphere/sql/parser/binder/statement/SQLStatementContext;)Ljava/util/Collection;"
+      }
+    ]
+  },
+  {
+    "project": "shardingsphere_e46f68d",
+    "project_dir": "Maven/shardingsphere_e46f68d",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.shardingsphere.governance.core.yaml.swapper.SchemaYamlSwapper",
+      "method": "convertSchema(Lorg/apache/shardingsphere/governance/core/yaml/config/schema/YamlSchema;)Lorg/apache/shardingsphere/infra/metadata/schema/ShardingSphereSchema;",
+      "path": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/target/classes",
+      "file": "shardingsphere-governance/shardingsphere-governance-core/shardingsphere-governance-core-common/src/main/java/org/apache/shardingsphere/governance/core/yaml/swapper/SchemaYamlSwapper.java",
+      "line": 58
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "shiro_3ca513f",
+    "project_dir": "Maven/shiro_3ca513f",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.shiro.aop.DefaultAnnotationResolver",
+      "method": "getAnnotation(Lorg/apache/shiro/aop/MethodInvocation;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;",
+      "path": "core/target/classes",
+      "file": "core/src/main/java/org/apache/shiro/aop/DefaultAnnotationResolver.java",
+      "line": 62
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "sling-4982",
+    "project_dir": "Javac/sling-4982",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.sling.security.impl.ContentDispositionFilter$RewriterResponse",
+      "method": "isJcrData(Lorg/apache/sling/api/resource/Resource;)Z",
+      "file": "org/apache/sling/security/impl/ContentDispositionFilter.java",
+      "line": 288
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.sling.security.impl.ContentDispositionFilter$RewriterResponse",
+        "method": "setContentType(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "project": "sling-6487",
+    "project_dir": "Javac/sling-6487",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.sling.scripting.thymeleaf.internal.SlingResourceTemplateResolver",
+      "method": "resolveTemplate(Lorg/thymeleaf/IEngineConfiguration;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lorg/thymeleaf/templateresolver/TemplateResolution;",
+      "file": "org/apache/sling/scripting/thymeleaf/internal/SlingResourceTemplateResolver.java",
+      "line": 126
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "sling-org-apache-sling-pipes_674819d",
+    "project_dir": "Maven/sling-org-apache-sling-pipes_674819d",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.sling.pipes.PipeBindings",
+      "method": "instantiateObject(Ljava/lang/String;)Ljava/lang/Object;",
+      "path": "target/classes",
+      "file": "src/main/java/org/apache/sling/pipes/PipeBindings.java",
+      "line": 230
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "spring-hateoas-48749e7-buggy",
+    "project_dir": "Maven/spring-hateoas-48749e7-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.springframework.hateoas.ResourceSupport",
+      "method": "equals(Ljava/lang/Object;)Z",
+      "path": "target/classes",
+      "file": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+      "line": 145
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "tablesaw_65596d8",
+    "project_dir": "Maven/tablesaw_65596d8",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "tech.tablesaw.api.ColumnType",
+      "method": "compare(ILtech/tablesaw/columns/Column;Ltech/tablesaw/columns/Column;)Z",
+      "path": "core/target/classes",
+      "file": "core/src/main/java/tech/tablesaw/api/ColumnType.java",
+      "line": 71
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "time-2",
+    "project_dir": "Javac/time-2",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.joda.time.Partial",
+      "method": "Partial([Lorg/joda/time/DateTimeFieldType;[ILorg/joda/time/Chronology;)V",
+      "file": "src/main/java/org/joda/time/Partial.java",
+      "line": 224
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "time-5",
+    "project_dir": "Javac/time-5",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.UnsupportedOperationException",
+    "test_target": {
+      "class": "org.joda.time.PeriodType",
+      "method": "setIndexedField(Lorg/joda/time/ReadablePeriod;I[II)Z",
+      "file": "src/main/java/org/joda/time/PeriodType.java",
+      "line": 690
+    },
+    "test_target_caller": [
+      {
+        "class": "org.joda.time.Period",
+        "method": "withDays(I)Lorg/joda/time/Period;"
+      },
+      {
+        "class": "org.joda.time.Period",
+        "method": "withHours(I)Lorg/joda/time/Period;"
+      },
+      {
+        "class": "org.joda.time.Period",
+        "method": "withMillis(I)Lorg/joda/time/Period;"
+      },
+      {
+        "class": "org.joda.time.Period",
+        "method": "withMinutes(I)Lorg/joda/time/Period;"
+      },
+      {
+        "class": "org.joda.time.Period",
+        "method": "withMonths(I)Lorg/joda/time/Period;"
+      },
+      {
+        "class": "org.joda.time.Period",
+        "method": "withSeconds(I)Lorg/joda/time/Period;"
+      },
+      {
+        "class": "org.joda.time.Period",
+        "method": "withWeeks(I)Lorg/joda/time/Period;"
+      },
+      {
+        "class": "org.joda.time.Period",
+        "method": "withYears(I)Lorg/joda/time/Period;"
+      }
+    ]
+  },
+  {
+    "project": "time-7",
+    "project_dir": "Javac/time-7",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.joda.time.IllegalFieldValueException",
+    "test_target": {
+      "class": "org.joda.time.field.FieldUtils",
+      "method": "verifyValueBounds(Lorg/joda/time/DateTimeField;III)V",
+      "file": "src/main/java/org/joda/time/field/FieldUtils.java",
+      "line": 218
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "time-8",
+    "project_dir": "Javac/time-8",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.joda.time.DateTimeZone",
+      "method": "forOffsetHoursMinutes(II)Lorg/joda/time/DateTimeZone;",
+      "file": "src/main/java/org/joda/time/DateTimeZone.java",
+      "line": 280
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "time-18",
+    "project_dir": "Maven/time-18",
+    "build_bin": "Maven",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "org.joda.time.IllegalFieldValueException",
+    "test_target": {
+      "class": "org.joda.time.field.FieldUtils",
+      "method": "verifyValueBounds(Lorg/joda/time/DateTimeFieldType;III)V",
+      "path": "target/classes",
+      "file": "src/main/java/org/joda/time/field/FieldUtils.java",
+      "line": 233
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "time-20",
+    "project_dir": "Maven/time-20",
+    "build_bin": "Maven",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.joda.time.format.DateTimeFormatter",
+      "method": "parseDateTime(Ljava/lang/String;)Lorg/joda/time/DateTime;",
+      "path": "target/classes",
+      "file": "src/main/java/org/joda/time/format/DateTimeFormatter.java",
+      "line": 866
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "time-27",
+    "project_dir": "Javac/time-27",
+    "build_bin": "Javac",
+    "source_bench": "Defect4J",
+    "expected_bug_type": "java.lang.IllegalArgumentException",
+    "test_target": {
+      "class": "org.joda.time.format.PeriodFormatter",
+      "method": "parseMutablePeriod(Ljava/lang/String;)Lorg/joda/time/MutablePeriod;",
+      "file": "src/main/java/org/joda/time/format/PeriodFormatter.java",
+      "line": 326
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "truth-99b314e-buggy",
+    "project_dir": "Maven/truth-99b314e-buggy",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.truth0.subjects.MapSubject$1",
+      "method": "withValue(Ljava/lang/Object;)V",
+      "path": "core/target/classes",
+      "file": "core/src/main/java/org/truth0/subjects/MapSubject.java",
+      "line": 66
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "xmlgraphics-fop_62ff114",
+    "project_dir": "Maven/xmlgraphics-fop_62ff114",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.fop.render.AbstractRenderer",
+      "method": "renderMainReference(Lorg/apache/fop/area/MainReference;)V",
+      "path": "fop-core/target/classes",
+      "file": "fop-core/src/main/java/org/apache/fop/render/AbstractRenderer.java",
+      "line": 527
+    },
+    "test_target_caller": [
+      {
+        "class": "org.apache.fop.render.AbstractRenderer",
+        "method": "renderPage(Lorg/apache/fop/area/PageViewport;)V"
+      },
+      {
+        "class": "org.apache.fop.render.java2d.Java2DRenderer",
+        "method": "getPageImage(Lorg/apache/fop/area/PageViewport;)Ljava/awt/image/BufferedImage;"
+      },
+      {
+        "class": "org.apache.fop.render.java2d.Java2DRenderer",
+        "method": "print(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I"
+      },
+      {
+        "class": "org.apache.fop.render.svg.SVGRenderer",
+        "method": "renderPage(Lorg/apache/fop/area/PageViewport;)V"
+      }
+    ]
+  },
+  {
+    "project": "xmlgraphics-fop_991b446",
+    "project_dir": "Maven/xmlgraphics-fop_991b446",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.fop.fonts.SingleByteFont",
+      "method": "getBoundingBox(II)Ljava/awt/Rectangle;",
+      "path": "fop-core/target/classes",
+      "file": "fop-core/src/main/java/org/apache/fop/fonts/SingleByteFont.java",
+      "line": 138
+    },
+    "test_target_caller": []
+  },
+  {
+    "project": "zookeeper_e41cac8",
+    "project_dir": "Maven/zookeeper_e41cac8",
+    "build_bin": "Maven",
+    "source_bench": "NPEX",
+    "expected_bug_type": "java.lang.NullPointerException",
+    "test_target": {
+      "class": "org.apache.zookeeper.server.ZooKeeperServer",
+      "method": "processConnectRequest(Lorg/apache/zookeeper/server/ServerCnxn;Ljava/nio/ByteBuffer;)V",
+      "path": "zookeeper-server/target/classes",
+      "file": "zookeeper-server/src/main/java/org/apache/zookeeper/server/ZooKeeperServer.java",
+      "line": 1304
+    },
+    "test_target_caller": []
+  }
+]

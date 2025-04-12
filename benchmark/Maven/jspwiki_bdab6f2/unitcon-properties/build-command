@@ -1,0 +1,2 @@
+mvn clean package install -DskipTests -DfailIfNoTests=false -DtrimStackTrace=false -Dsurefire.useFile=false -e -q
+mvn dependency:copy-dependencies

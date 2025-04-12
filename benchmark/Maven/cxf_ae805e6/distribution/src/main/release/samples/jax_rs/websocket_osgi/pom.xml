@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>jax_rs_websocket_osgi</artifactId>
+    <packaging>bundle</packaging>
+    <name>JAX-RS WebSocket Blueprint Demo</name>
+    <description>JAX-RS WebSocket Demo</description>
+
+    <parent>
+        <groupId>org.apache.cxf.samples</groupId>
+        <artifactId>cxf-samples</artifactId>
+        <version>3.4.1-SNAPSHOT</version>
+        <relativePath>../..</relativePath>
+    </parent>
+    <properties>
+        <cxf.version>${project.version}</cxf.version>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.groupId}.${project.artifactId};blueprint.aries.xml-validation:=false</Bundle-SymbolicName>
+                        <Import-Package>
+                            javax.servlet;version=&quot;[2.6,4)&quot;,
+                            javax.servlet.http;version=&quot;[2.6,4)&quot;,
+                            javax.ws.rs,
+                            javax.ws.rs.core,
+                            javax.xml.bind*;version=!,
+                            org.apache.cxf.jaxrs.provider,
+                            org.osgi.service.blueprint,
+                            *
+                        </Import-Package>
+                        <Export-Package>
+                        </Export-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-websocket</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+        </dependency>
+
+        
+        <dependency>
+            <groupId>org.atmosphere</groupId>
+            <artifactId>atmosphere-runtime</artifactId>
+        </dependency>
+    </dependencies>
+</project>

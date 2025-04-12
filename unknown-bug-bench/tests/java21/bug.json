@@ -1,0 +1,33 @@
+{
+  "Activiti_17918a5": {
+    "target_source": "activiti-core/activiti-engine/src/main/java/org/activiti/engine/impl/bpmn/behavior/InclusiveGatewayActivityBehavior.java",
+    "target_line": 66
+  },
+  "client-java_da90f87": {
+    "target_source": "util/src/main/java/io/kubernetes/client/Exec.java",
+    "target_line": 466,
+    "skip_procedures": "io.kubernetes.client.proto.V1.*"
+  },
+  "commons-bcel_f15e858": {
+    "target_source": "src/main/java/org/apache/bcel/generic/InstructionFactory.java",
+    "target_line": 643
+  },
+  "commons-math_cba0440": {
+    "target_source": "commons-math-legacy/src/main/java/org/apache/commons/math4/legacy/stat/ranking/NaturalRanking.java",
+    "target_line": 205
+  },
+  "feign_903a5d7": {
+    "analyze_target": true,
+    "target_source": "core/src/main/java/feign/RequestTemplate.java",
+    "target_line": 706
+  },
+  "pdfbox_6f8ebc1": {
+    "target_source": "pdfbox/src/main/java/org/apache/pdfbox/filter/Filter.java",
+    "target_line": 250
+  },
+  "tsfile_6fcc23": {
+    "analyze_target": true,
+    "target_source": "tsfile/src/main/java/org/apache/tsfile/read/query/executor/TsFileExecutor.java",
+    "target_line": 60
+  }
+}

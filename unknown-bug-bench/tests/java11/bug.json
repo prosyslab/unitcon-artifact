@@ -1,0 +1,31 @@
+{
+  "johnzon_885cec0": {
+    "target1": {
+      "target_source": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/converter/DateConverter.java",
+      "target_line": 49
+    },
+    "target2": {
+      "target_source": "johnzon-mapper/src/main/java/org/apache/johnzon/mapper/Mapper.java",
+      "target_line": 181
+    }
+  },
+  "karaf_fb612cf": {
+    "target1": {
+      "target_source": "features/core/src/main/java/org/apache/karaf/features/internal/download/impl/MavenDownloadTask.java",
+      "target_line": 39
+    },
+    "target2": {
+      "target_source": "shell/core/src/main/java/org/apache/karaf/shell/impl/action/command/ArgumentCompleter.java",
+      "target_line": 70
+    }
+  },
+  "nutz_17c2dbc": {
+    "target_source": "src/org/nutz/mvc/adaptor/injector/JsonInjector.java",
+    "target_line": 37
+  },
+  "opengrok_b20ecb2": {
+    "analyze_target": true,
+    "target_source": "opengrok-indexer/src/main/java/org/opengrok/indexer/history/HistoryReader.java",
+    "target_line": 50
+  }
+}

@@ -1,0 +1,3 @@
+at javax.swing.JComponent.paintComponent(JComponent.java:783)
+at hu.oe.nik.szfmv.visualization.Dashboard.paintComponent(Dashboard.java:103)
+at hu.oe.nik.szfmv.visualization.Dashboard.updateDisplayedValues(Dashboard.java:59)

@@ -1,0 +1,51 @@
+{
+  "id": "emailTemplateMapping",
+  "extensions": {
+    "processDefinitionId": {
+      "templates": {
+        "tasks": {
+          "myTaskId1": {
+            "assignee": {
+              "type": "file",
+              "value": "https://github.com/leemunroe/responsive-html-email-template/blob/master/email.html"
+            },
+            "candidate": {
+              "type": "file",
+              "value": "https://github.com/leemunroe/responsive-html-email-template/blob/master/email-inlined.html"
+            }
+          },
+          "myTaskId2": {
+            "assignee": {
+              "from": "no-reply@activiti.org",
+              "subject": "myTaskId2 assignee subject",
+              "type": "variable",
+              "value": "myAssigneeTemplateVariable"
+            }
+          },
+          "myTaskId3": {
+            "candidate": {
+              "from": "no-reply@activiti.org",
+              "subject": "myTaskId3 candidate subject",
+              "type": "variable",
+              "value": "myCandidateTemplateVariable"
+            }
+          }
+        },
+        "default": {
+          "assignee": {
+            "from": "no-reply@activiti.org",
+            "subject": "Default assignee subject",
+            "type": "file",
+            "value": "classpath:templates/email.html"
+          },
+          "candidate": {
+            "from": "no-reply@activiti.org",
+            "subject": "Default candidate subject",
+            "type": "variable",
+            "value": "myCandidateTemplateVariable"
+          }
+        }
+      }
+    }
+  }
+}

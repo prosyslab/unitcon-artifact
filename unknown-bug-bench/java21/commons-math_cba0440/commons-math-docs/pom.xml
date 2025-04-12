@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-math4-parent</artifactId>
+    <version>4.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>commons-math-docs</artifactId>
+  
+
+  <name>Apache Commons Math Documentation</name>
+  <description>Aggregator module to genenerate Apache Commons Math documentation.</description>
+
+  <properties>
+    <moditect.skip>true</moditect.skip>
+    <checkstyle.skip>true</checkstyle.skip>
+    <animal.sniffer.skip>true</animal.sniffer.skip>
+    
+    <math.parent.dir>${basedir}/..</math.parent.dir>
+    
+    <maven.resources.skip>true</maven.resources.skip>
+    <maven.source.skip>true</maven.source.skip>
+    <maven.main.skip>true</maven.main.skip>
+    <maven.test.skip>true</maven.test.skip>
+    <maven.install.skip>true</maven.install.skip>
+    <maven.deploy.skip>true</maven.deploy.skip>
+    
+    <pmd.skip>true</pmd.skip>
+    <cpd.skip>true</cpd.skip>
+    <spotbugs.skip>true</spotbugs.skip>
+    <checkstyle.skip>true</checkstyle.skip>
+    <changes.jira.skip>true</changes.jira.skip>
+    <skipSurefireReport>true</skipSurefireReport>
+    
+    <doclint.javadoc.qualifier>-Xdoclint:none</doclint.javadoc.qualifier>
+  </properties>
+
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-neuralnet</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-transform</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-legacy-exception</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-legacy-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-legacy</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+
+    <plugins>
+      <plugin>
+        
+        <groupId>org.spdx</groupId>
+        <artifactId>spdx-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>build-spdx</id>
+            <goals>
+              <goal>createSPDX</goal>
+            </goals>
+            <phase>None</phase>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <skipIfEmpty>true</skipIfEmpty>
+        </configuration>
+      </plugin>
+
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <reportOutputDirectory>${project.build.directory}/apidocs</reportOutputDirectory>
+          <includeDependencySources>true</includeDependencySources>
+          <doctitle>Apache Commons Math ${project.version}</doctitle>
+          <windowtitle>Apache Commons Math ${project.version}</windowtitle>
+          <use>true</use>
+          <version>false</version>
+          <groups>
+            <group>
+              <title>Core Package</title>
+              <packages>org.apache.commons.math4.core*</packages>
+            </group>
+            <group>
+              <title>Neural Network Package</title>
+              <packages>org.apache.commons.math4.neuralnet*</packages>
+            </group>
+            <group>
+              <title>Transform Package</title>
+              <packages>org.apache.commons.math4.transform*</packages>
+            </group>
+            <group>
+              <title>Legacy Package</title>
+              <packages>org.apache.commons.math4.legacy*</packages>
+            </group>
+          </groups>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <reporting>
+    <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <reportOutputDirectory>${project.build.directory}/apidocs</reportOutputDirectory>
+          <includeDependencySources>true</includeDependencySources>
+          <doctitle>Apache Commons Math ${project.version}</doctitle>
+          <windowtitle>Apache Commons Math ${project.version}</windowtitle>
+          <use>true</use>
+          <version>false</version>
+          <groups>
+            <group>
+              <title>Core Package</title>
+              <packages>org.apache.commons.math4.core*</packages>
+            </group>
+            <group>
+              <title>Neural Network Package</title>
+              <packages>org.apache.commons.math4.neuralnet*</packages>
+            </group>
+            <group>
+              <title>Transform Package</title>
+              <packages>org.apache.commons.math4.transform*</packages>
+            </group>
+            <group>
+              <title>Legacy Package</title>
+              <packages>org.apache.commons.math4.legacy*</packages>
+            </group>
+          </groups>
+        </configuration>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>aggregate</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+
+      
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${commons.jacoco.version}</version>
+        <configuration>
+          <title>Apache Commons Math</title>
+          <footer>Code Coverage Report for Apache Commons Math ${project.version}</footer>
+          <includes>
+            
+            <include>**/*.class</include>
+          </includes>
+        </configuration>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>report-aggregate</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+
+    </project>

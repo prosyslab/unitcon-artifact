@@ -1,0 +1,10 @@
+Class-Path: with_dependency.jar
+  gradle/wrapper/gradle-wrapper.jar
+  picocli-tests-java567/gradle/wrapper/gradle-wrapper.jar
+  picocli-tests-java567/lib/hamcrest-core-1.3.jar
+  picocli-tests-java567/lib/jansi-1.15.jar
+  picocli-tests-java567/lib/junit-4.12.jar
+  picocli-tests-java567/lib/system-rules-1.17.1.jar
+  target/picocli-4.0.0-alpha-3.jar
+  target/classes
+Main-Class: UnitconTest

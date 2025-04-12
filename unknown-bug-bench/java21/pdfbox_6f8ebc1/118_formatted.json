@@ -1,0 +1,65 @@
+{
+	"Procname":"org.apache.pdfbox.filter.Filter.decode(java.io.InputStream,java.util.List,org.apache.pdfbox.cos.COSDictionary,org.apache.pdfbox.filter.DecodeOptions,java.util.List):org.apache.pdfbox.io.RandomAccessRead",
+	"Postcond_Heap":[
+		"v1 -> { * -> v13 }",
+		"v2 -> { * -> v14 }",
+		"v3 -> { * -> v15 }",
+		"v4 -> { * -> v16 },",
+		"v5 -> { * -> v17 }",
+		"v14 -> { * -> v224 }",
+		"v15 -> { items -> v86, * -> v18 }",
+		"v19 -> { LENGTH -> v20 }",
+		"v20 -> { * -> v21 }",
+		"v86 -> { * -> v87 }",
+		"v87 -> { * -> v88 }",
+		"v88 -> { __infer_model_backing_collection_snd -> v93, __infer_model_backing_collection_fst -> v91, __infer_model_backing_collection_empty -> v89 }",
+		"v89 -> { * -> v90 }",
+		"v91 -> { * -> v92 }",
+		"v93 -> { * -> v21 }"
+	],
+	"Postcond_Stack":[
+		"&parameters=v3",
+		"&encoded=v1",
+		"&cos.COSName=v19",
+		"&results=v5",
+		"&options=v4",
+		"&filterList=v2"
+	],
+	"Precond_Heap":[
+		"v1=encoded -> v13",
+		"v2=filterList -> v14 -> v224",
+		"v3=parameters -> v15",
+		"|- items -> v86 -> v87 -> v88",
+		"|  |- __infer_model_backing_collection_snd -> v93 -> v94",
+		"|  |- __infer_model_backing_collection_fst -> v91 -> v92",
+		"|  `- __infer_model_backing_collection_empty -> v89 -> v90",
+		"`- v18",
+		"v19=cos.COSName -> LENGTH -> v20 -> v21",
+
+		"v1 -> { * -> v13 }",
+		"v2 -> { * -> v14 }",
+		"v3 -> { * -> v15 }",
+		"v4 -> { * -> v16 }",
+		"v5 -> { * -> v17 }",
+		"v14 -> { * -> v224 }",
+		"v15 -> { items -> v86, * -> v18 }",
+		"v19 -> { LENGTH -> v20 }",
+		"v20 -> { * -> v21 }",
+		"v86 -> { * -> v87 }",
+		"v87 -> { * -> v88 }",
+		"v88 -> { __infer_model_backing_collection_snd -> v93, __infer_model_backing_collection_fst -> v91, __infer_model_backing_collection_empty -> v89 }",
+		"v89 -> { * -> v90 }",
+		"v91 -> { * -> v92 }",
+		"v93 -> { * -> v94 }"
+	],
+	"Precond_Stack":[
+		"&parameters=v3",
+		"&encoded=v1",
+		"&cos.COSName=v19",
+		"&results=v5",
+		"&options=v4",
+		"&filterList=v2"
+	],
+	"CItv":"{ }",
+	"BoItv":"{ v21 -> v21, v90 -> v90, v94 -> v94 }"
+}

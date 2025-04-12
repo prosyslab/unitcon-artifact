@@ -1,0 +1,3 @@
+at io.axoniq.axonserver.grpc.ErrorMessage$Builder.setLocation(ErrorMessage.java:624)
+at org.axonframework.axonserver.connector.util.ExceptionSerializer.serialize(ExceptionSerializer.java:12)
+at org.axonframework.axonserver.connector.ErrorCode.convert(ErrorCode.java:130)

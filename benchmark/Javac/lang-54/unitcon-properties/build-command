@@ -1,0 +1,1 @@
+javac -d . -cp ./deps/ant-launcher.jar:./deps/ant-contrib.jar:./deps/junit-4.11.jar:./deps/javac.jar:./deps/mmlc.jar:./deps/cmd-analyzer.jar:./deps/ant-bootstrap.jar:./deps/ant.jar:./deps/ant-jmf.jar:./deps/ant-junit4.jar:./deps/ant-junit.jar:./deps/ant-swing.jar:./deps/tools.jar -target 1.1 -encoding iso-8859-1 -g -O -source 1.3 @java_files

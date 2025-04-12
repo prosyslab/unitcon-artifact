@@ -1,0 +1,4 @@
+at com.google.common.collect.ObjectArrays.checkElementNotNull(ObjectArrays.java:191)
+at com.google.common.collect.ImmutableList.construct(ImmutableList.java:320)
+at com.google.common.collect.ImmutableList.of(ImmutableList.java:95)
+at org.truth0.subjects.MapSubject$1.withValue(MapSubject.java:67)

@@ -1,0 +1,3 @@
+at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+at java.util.ArrayList.set(ArrayList.java:450)
+at org.jfree.data.DefaultKeyedValues.setValue(DefaultKeyedValues.java:234)

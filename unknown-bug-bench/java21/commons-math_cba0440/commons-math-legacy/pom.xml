@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-math4-parent</artifactId>
+    <version>4.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>commons-math4-legacy</artifactId>
+  <name>Apache Commons Math (Legacy)</name>
+
+  <description>Codes that are either currently unsupported or not yet modularized.</description>
+
+  <properties>
+    
+    <commons.module.name>org.apache.commons.math4.legacy</commons.module.name>
+    
+    <commons.osgi.symbolicName>org.apache.commons.math4.legacy</commons.osgi.symbolicName>
+    
+    <commons.osgi.export>org.apache.commons.math4.legacy</commons.osgi.export>
+    
+    <math.parent.dir>${basedir}/..</math.parent.dir>
+    <math.jira.component>legacy</math.jira.component>
+
+    
+    <pmd.skip>true</pmd.skip>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-statistics-distribution</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-complex</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-gamma</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-combinatorics</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-angle</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-rootfinder</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-field</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-quaternion</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-arrays</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-rng-client-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-rng-simple</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-rng-sampling</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-legacy-exception</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math4-legacy-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-geometry-euclidean</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          
+          <rerunFailingTestsCount>5</rerunFailingTestsCount>
+        </configuration>
+        <executions>
+          <execution>
+            
+            <id>default-test</id>
+            <configuration>
+              <excludes>
+                <exclude>**/SimplexOptimizer*Test</exclude>
+              </excludes>
+            </configuration>
+          </execution>
+          <execution>
+            
+            <id>flaky-tests</id>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+            <configuration>
+              <rerunFailingTestsCount>14</rerunFailingTestsCount>
+              <printSummary>false</printSummary>
+              <includes>
+                <include>**/SimplexOptimizer*Test</include>
+              </includes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <configuration>
+          <enableRulesSummary>true</enableRulesSummary>
+          <configLocation>${math.parent.dir}/src/main/resources/checkstyle/checkstyle-legacy.xml</configLocation>
+          <suppressionsLocation>${math.parent.dir}/src/main/resources/checkstyle/checkstyle-suppressions-legacy.xml</suppressionsLocation>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+    </project>

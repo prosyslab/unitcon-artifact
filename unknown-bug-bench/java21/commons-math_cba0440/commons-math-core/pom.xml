@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-math4-parent</artifactId>
+    <version>4.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>commons-math4-core</artifactId>
+  <name>Miscellaneous core classes</name>
+
+  <description>Alternate implementations of JDK's &quot;Math&quot; functions.</description>
+
+  <properties>
+    
+    <commons.module.name>org.apache.commons.math4.core</commons.module.name>
+    
+    <commons.osgi.symbolicName>org.apache.commons.math4.core</commons.osgi.symbolicName>
+    
+    <commons.osgi.export>org.apache.commons.math4.core</commons.osgi.export>
+    
+    <math.parent.dir>${basedir}/..</math.parent.dir>
+    <math.jira.component>core</math.jira.component>
+
+    
+    <jacoco.skip>true</jacoco.skip>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+    </project>

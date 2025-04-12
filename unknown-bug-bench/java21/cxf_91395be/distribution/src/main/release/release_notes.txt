@@ -1,0 +1,129 @@
+Apache CXF 4.0.3 Release Notes
+
+1. Overview
+
+The 4.0.x versions of Apache CXF is a significant new version of CXF
+that provides several new features and enhancements.  
+
+New features include:
+* The release is based on JakartaEE 9.1: the javax.* packages are migrated to jakarta.*
+* Support of Spring Framework 6 / Spring Boot 3
+* HTTP/2 support
+
+Important notes:
+* Many features of CXF 4.x now require Java 17.  While CXF is compiled for Java 11,
+many of the dependencies require Java 17 and thus various features may only
+work with Java 17.
+
+Users are encouraged to review the migration guide at:
+https://cxf.apache.org/docs/40-migration-guide.html
+for further information and requirements for upgrading from earlier
+versions of CXF.
+
+
+4.0.3 fixes over 54 JIRA issues reported by users and the community.
+
+
+2. Installation Prerequisites 
+
+Before installing Apache CXF, make sure the following products,
+with the specified versions, are installed on your system:
+
+    * Java 17 Development Kit
+    * Apache Maven 3.x to build the samples
+
+
+3.  Integrating CXF Into Your Application
+
+If you use Maven to build your application, you need merely add
+appropriate dependencies. See the pom.xml files in the samples.
+
+If you don't use Maven, you'll need to add one or more jars to your
+classpath. The file lib/WHICH_JARS should help you decide which 
+jars you need.
+
+4. Building the Samples
+
+Building the samples included in the binary distribution is easy. Change to
+the samples directory and follow the build instructions in the README.txt file 
+included with each sample.
+
+5. Reporting Problems
+
+If you have any problems or want to send feedback of any kind, please e-mail the
+CXF dev list, dev@cxf.apache.org.  You can also file issues in JIRA at:
+
+http://issues.apache.org/jira/browse/CXF
+
+6. Migration notes:
+
+See the migration guide at:
+http://cxf.apache.org/docs/40-migration-guide.html
+for caveats when upgrading.
+
+7. Specific issues, features, and improvements fixed in this version
+
+** Sub-task
+    * [CXF-8842] - Get rid of EasyMock in cxf-core
+    * [CXF-8843] - Get rid of EasyMock in cxf-integration-jca
+    * [CXF-8844] - Get rid of EasyMock in cxf-rt-bindings-coloc
+    * [CXF-8845] - Get rid of EasyMock in cxf-rt-bindings-corba
+    * [CXF-8846] - Get rid of EasyMock in cxf-rt-bindings-soap
+    * [CXF-8847] - Get rid of EasyMock in cxf-rt-databinding-aegis
+    * [CXF-8848] - Get rid of EasyMock in cxf-rt-databinding-jaxb
+    * [CXF-8849] - Get rid of EasyMock in cxf-rt-features-clustering
+    * [CXF-8850] - Get rid of EasyMock in cxf-rt-features-logging
+    * [CXF-8851] - Get rid of EasyMock in cxf-rt-features-throttling
+    * [CXF-8852] - Get rid of EasyMock in cxf-services-xkms-x509-repo-ldap
+    * [CXF-8853] - Get rid of EasyMock in cxf-services-xkms-x509-handlers
+    * [CXF-8854] - Get rid of EasyMock in cxf-rt-wsdl
+    * [CXF-8855] - Get rid of EasyMock in cxf-rt-ws-transfer
+    * [CXF-8856] - Get rid of EasyMock in cxf-rt-frontend-jaxrs
+    * [CXF-8857] - Get rid of EasyMock in cxf-rt-frontend-jaxws
+    * [CXF-8858] - Get rid of EasyMock in cxf-rt-frontend-js
+    * [CXF-8859] - Get rid of EasyMock in cxf-rt-ws-security
+    * [CXF-8860] - Get rid of EasyMock in cxf-rt-ws-rm
+    * [CXF-8861] - Get rid of EasyMock in cxf-rt-ws-policy
+    * [CXF-8862] - Get rid of EasyMock in cxf-rt-ws-addr
+    * [CXF-8863] - Get rid of EasyMock in cxf-rt-transports-websocket
+    * [CXF-8864] - Get rid of EasyMock in cxf-rt-transports-jms
+    * [CXF-8865] - Get rid of EasyMock in cxf-rt-management
+    * [CXF-8866] - Get rid of EasyMock in cxf-rt-rs-service-description
+    * [CXF-8867] - Get rid of EasyMock in cxf-rt-rs-client
+    * [CXF-8868] - Get rid of EasyMock in cxf-rt-rs-extension-providers
+    * [CXF-8869] - Get rid of EasyMock in cxf-rt-rs-extension-search
+    * [CXF-8870] - Get rid of EasyMock in cxf-rt-transports-http-undertow
+    * [CXF-8871] - Get rid of EasyMock in cxf-rt-rs-mp-client
+    * [CXF-8872] - Get rid of EasyMock in cxf-rt-rs-security-oauth2
+    * [CXF-8873] - Get rid of EasyMock in cxf-rt-rs-security-oauth2-saml
+    * [CXF-8874] - Get rid of EasyMock in cxf-rt-rs-security-sso-oidc
+    * [CXF-8876] - Get rid of EasyMock in cxf-rt-transports-http-jetty
+    * [CXF-8877] - Get rid of EasyMock in cxf-rt-transports-http-netty-client
+    * [CXF-8878] - Get rid of EasyMock in cxf-rt-transports-http-netty-server
+    * [CXF-8890] - Get rid of EasyMock in cxf-rt-transports-http
+
+** Bug
+    * [CXF-8885] - HttpClient SelectorManager threads run indefinitely causing OOM
+    * [CXF-8886] - JavaDocProvider does not work with JDK 17 and beyond
+    * [CXF-8889] - Compilation of CXF fails due to a "jakarta..." vs. "javax..." issue.
+    * [CXF-8892] - CXF build on Windows is broken (test failures)
+    * [CXF-8895] - Deadlock instead of timeout with new HttpClientHTTPConduit using large payloads
+    * [CXF-8896] - http client sends some strange HTTP/1.1 and HTTP/2 mix headers
+    * [CXF-8903] - Too many open files error in HttpClientHTTPConduit
+    * [CXF-8905] - TransportURIResolver doesn't honor the property setting in bus
+    * [CXF-8907] -  java.lang.NullPointerException at AsymmetricBindingHandler.java
+    * [CXF-8914] - No content-length header after upgrade CXF from 3.5.6 to 3.6.1
+    * [CXF-8919] - JAXRSUtils references javax.activation.Datasource
+    * [CXF-8920] - Can't filter when collection has attribute of type LocalDate or LocalDateTime
+    * [CXF-8925] - Logging twice in case of faults happening after pre-stream phase in out-chain
+
+** New Feature
+    * [CXF-8817] - Add support for Micrometer Observation
+
+** Improvement
+    * [CXF-8457] - Provide OpenTelemetry support
+    * [CXF-8901] - Update Guava to 32.1.1 (solving CVE-2023-2976)
+    * [CXF-8912] - Remove xerces dependency and use the JDK's JAXP impl
+
+** Task
+    * [CXF-8549] - Get rid of EasyMock

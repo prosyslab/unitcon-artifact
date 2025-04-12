@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-math4-parent</artifactId>
+    <version>4.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>commons-math4-legacy-exception</artifactId>
+  <name>Exception classes (Legacy)</name>
+
+  <description>Exception classes used by code in &quot;legacy&quot; modules.</description>
+
+  <properties>
+    
+    <commons.module.name>org.apache.commons.math4.legacy.exception</commons.module.name>
+    
+    <commons.osgi.symbolicName>org.apache.commons.math4.legacy.exception</commons.osgi.symbolicName>
+    
+    <commons.osgi.export>org.apache.commons.math4.legacy.exception</commons.osgi.export>
+    
+    <math.parent.dir>${basedir}/..</math.parent.dir>
+    <math.jira.component>legacy-exception</math.jira.component>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <profiles>
+    
+    <profile>
+      <id>jdk17-javadoc</id>
+      <activation>
+        <jdk>[17</jdk>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <configuration>
+              <failOnWarnings>false</failOnWarnings>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+      <reporting>
+        <plugins>
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <configuration>
+              <failOnWarnings>false</failOnWarnings>
+            </configuration>
+          </plugin>
+        </plugins>
+      </reporting>
+    </profile>
+    </profiles>
+
+</project>

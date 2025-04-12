@@ -1,0 +1,5 @@
+*.bak
+*.sh
+benchmarks/
+jdk1.8.0_112/
+randoop-4.3.2/

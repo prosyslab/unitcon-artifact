@@ -1,0 +1,3 @@
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+at com.google.cloud.storage.BlobId.of(BlobId.java:109)
+at org.springframework.cloud.gcp.storage.GoogleStorageResourceObject.getBlobId(GoogleStorageResourceObject.java:110)

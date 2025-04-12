@@ -1,0 +1,1 @@
+javac -cp ./deps/junit-4.12.jar:./deps/commons-logging-1.2.jar:./deps/fontbox-2.1.0-SNAPSHOT.jar:./deps/bcprov-jdk15on-1.55.jar:./deps/bcpkix-jdk15on-1.55.jar:. @java_files -encoding UTF-8

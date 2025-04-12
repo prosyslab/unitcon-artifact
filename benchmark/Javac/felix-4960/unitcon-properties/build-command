@@ -1,0 +1,1 @@
+javac -cp ./deps/org.osgi.annotation-6.0.0.jar:./deps/org.apache.felix.resolver-1.16.0.jar:. @java_files -encoding UTF-8

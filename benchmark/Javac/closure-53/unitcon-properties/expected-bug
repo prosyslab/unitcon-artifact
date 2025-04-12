@@ -1,0 +1,5 @@
+at com.google.common.base.Preconditions.checkElementIndex(Preconditions.java:301)
+at com.google.common.base.Preconditions.checkElementIndex(Preconditions.java:280)
+at com.google.common.collect.Lists$ReverseList.reverseIndex(Lists.java:743)
+at com.google.common.collect.Lists$ReverseList.get(Lists.java:774)
+at com.google.javascript.jscomp.InlineObjectLiterals$InliningBehavior.replaceAssignmentExpression(InlineObjectLiterals.java:349)

@@ -1,0 +1,3 @@
+at java.util.ArrayList.rangeCheckForAdd(ArrayList.java:667)
+at java.util.ArrayList.add(ArrayList.java:479)
+at org.jfree.data.xy.XYSeries.addOrUpdate(XYSeries.java:564)

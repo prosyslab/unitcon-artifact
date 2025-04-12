@@ -1,0 +1,43 @@
+{
+  "commons-configuration_37f5448": {
+    "target1": {
+      "analyze_target": true,
+      "target_source": "src/main/java/org/apache/commons/configuration2/io/FileHandler.java",
+      "target_line": 278
+    },
+    "target2": {
+      "analyze_target": true,
+      "target_source": "src/main/java/org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper.java",
+      "target_line": 324
+    },
+    "target3": {
+      "analyze_target": true,
+      "target_source": "src/main/java/org/apache/commons/configuration2/ConfigurationUtils.java",
+      "target_line": 161
+    },
+    "target4": {
+      "analyze_target": true,
+      "target_source": "src/main/java/org/apache/commons/configuration2/tree/DefaultExpressionEngineSymbols.java",
+      "target_line": 239
+    },
+    "target5": {
+      "analyze_target": true,
+      "target_source": "src/main/java/org/apache/commons/configuration2/beanutils/ConfigurationDynaBean.java",
+      "target_line": 101
+    }
+  },
+  "commons-dbcp_6ce68bf": {
+    "target_source": "src/main/java/org/apache/commons/dbcp2/DelegatingDatabaseMetaData.java",
+    "target_line": 379
+  },
+  "commons-io_9d8a87c": {
+    "analyze_target": true,
+    "target_source": "src/main/java/org/apache/commons/io/input/RandomAccessFileInputStream.java",
+    "target_line": 82
+  },
+  "JSqlParser_67e2204": {
+    "analyze_target": true,
+    "target_source": "src/main/java/net/sf/jsqlparser/expression/DoubleValue.java",
+    "target_line": 28
+  }
+}

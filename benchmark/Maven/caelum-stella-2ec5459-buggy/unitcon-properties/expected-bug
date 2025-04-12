@@ -1,0 +1,5 @@
+at java.util.regex.Matcher.getTextLength(Matcher.java:1283)
+at java.util.regex.Matcher.reset(Matcher.java:309)
+at java.util.regex.Matcher.<init>(Matcher.java:229)
+at java.util.regex.Pattern.matcher(Pattern.java:1093)
+at br.com.caelum.stella.validation.CNPJValidator.isEligible(CNPJValidator.java:125)

@@ -1,0 +1,12 @@
+Bundle-DocURL: https://sling.apache.org/documentation/bundles/scripting/scripting-thymeleaf.html
+
+Provide-Capability:\
+  osgi.service;objectClass=org.thymeleaf.ITemplateEngine
+
+ScriptEngine-Name: ${project.name}
+
+ScriptEngine-Version: ${project.version}
+
+-removeheaders:\
+  Include-Resource,\
+  Private-Package

@@ -1,0 +1,2 @@
+at org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(MathRuntimeException.java:387)
+at org.apache.commons.math.distribution.PoissonDistributionImpl.<init>(PoissonDistributionImpl.java:94)

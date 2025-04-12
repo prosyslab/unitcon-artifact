@@ -1,0 +1,16 @@
+/.mvn/.gradle-enterprise/gradle-enterprise-workspace-id
+/.mvn/wrapper/maven-wrapper.jar
+**/target/**
+/tsfile/test.tsfile
+
+# intellij IDE files
+**/*.iml
+**/.idea/
+**/*.log
+**/*.ipr
+**/*.iws
+
+docs/node_modules/
+docs/src/.vuepress/.cache/
+docs/src/.vuepress/.temp/
+docs/src/.vuepress/dist/

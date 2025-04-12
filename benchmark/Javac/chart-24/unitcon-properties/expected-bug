@@ -1,0 +1,4 @@
+at java.awt.Color.testColorValueRange(Color.java:310)
+at java.awt.Color.<init>(Color.java:395)
+at java.awt.Color.<init>(Color.java:369)
+at org.jfree.chart.renderer.GrayPaintScale.getPaint(GrayPaintScale.java:128)

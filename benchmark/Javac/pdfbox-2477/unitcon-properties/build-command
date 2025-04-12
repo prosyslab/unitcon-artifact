@@ -1,0 +1,1 @@
+javac -cp ./deps/pdfbox-2.0.19.jar:./deps/fontbox-2.1.0-SNAPSHOT.jar:./deps/commons-logging-1.2.jar:. @java_files -encoding UTF-8

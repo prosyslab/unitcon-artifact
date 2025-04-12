@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>cxf-rt</artifactId>
+    <packaging>pom</packaging>
+    <name>Apache CXF Runtime</name>
+    <description>Apache CXF Runtime</description>
+    <url>https://cxf.apache.org</url>
+    <parent>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf</artifactId>
+        <version>4.0.4-SNAPSHOT</version>
+    </parent>
+    <modules>
+        <module>wsdl</module>
+        <module>transports</module>
+        <module>databinding</module>
+        <module>bindings</module>
+        <module>features</module>
+        <module>frontend</module>
+        <module>ws</module>
+        <module>rs</module>
+        <module>management</module>
+        <module>javascript</module>
+        <module>security</module>
+        <module>security-saml</module>
+    </modules>
+    </project>

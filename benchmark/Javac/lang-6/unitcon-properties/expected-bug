@@ -1,0 +1,3 @@
+at java.lang.String.charAt(String.java:658)
+at java.lang.Character.codePointAt(Character.java:4902)
+at org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:95)

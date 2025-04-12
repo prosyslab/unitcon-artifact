@@ -1,0 +1,2 @@
+at com.google.common.base.Preconditions.checkState(Preconditions.java:129)
+at com.google.javascript.jscomp.Normalize$DuplicateDeclarationHandler.onRedeclaration(Normalize.java:698)

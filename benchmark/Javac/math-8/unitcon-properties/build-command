@@ -1,0 +1,1 @@
+javac -d . @java_files -target 1.5 -encoding UTF-8 -g -O -source 1.5

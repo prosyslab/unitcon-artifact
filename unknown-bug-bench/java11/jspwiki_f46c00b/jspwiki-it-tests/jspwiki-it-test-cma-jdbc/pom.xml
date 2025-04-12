@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent> 
+    <groupId>org.apache.jspwiki.it</groupId>
+    <artifactId>jspwiki-it-builder</artifactId>
+    <version>2.12.2-SNAPSHOT</version>
+  </parent>
+
+  
+  <artifactId>jspwiki-it-test-cma-jdbc</artifactId>
+  <modelVersion>4.0.0</modelVersion>
+  <description>functional tests execution for jspwiki-it-test-container-jdbc (container auth, relative URLs, JDBC database)</description>
+  <packaging>war</packaging> 
+  
+  <properties> 
+    <it-jspwiki.context>${project.artifactId}</it-jspwiki.context>
+    
+    <it-jspwiki.groupdatabase>org.apache.wiki.auth.authorize.JDBCGroupDatabase</it-jspwiki.groupdatabase>
+    <it-jspwiki.userdatabase>org.apache.wiki.auth.user.JDBCUserDatabase</it-jspwiki.userdatabase>
+    <it-jspwiki.referenceStyle>relative</it-jspwiki.referenceStyle>
+  </properties>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.btmatthews.maven.plugins.inmemdb</groupId>
+        <artifactId>inmemdb-maven-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven3-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>jspwiki-selenide-tests</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+    </project>

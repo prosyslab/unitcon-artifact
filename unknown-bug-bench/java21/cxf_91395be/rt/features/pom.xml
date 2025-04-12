@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>cxf-rt-features</artifactId>
+    <packaging>pom</packaging>
+    <name>Apache CXF Features Runtime</name>
+    <description>Apache CXF Features Runtime</description>
+    <url>https://cxf.apache.org</url>
+    <parent>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt</artifactId>
+        <version>4.0.4-SNAPSHOT</version>
+    </parent>
+    <modules>
+        <module>clustering</module>
+        <module>logging</module>
+        <module>metrics</module>
+        <module>throttling</module>
+    </modules>
+    </project>

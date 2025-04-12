@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.opengrok</groupId>
+    <artifactId>opengrok-top</artifactId>
+    <version>1.13.1</version>
+  </parent>
+
+  <artifactId>opengrok-dist</artifactId>
+
+  <packaging>pom</packaging>
+
+  <name>Distribution</name>
+
+  <properties>
+    <project.python.package.version>${project.version}</project.python.package.version>
+  </properties>
+
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.opengrok</groupId>
+      <artifactId>opengrok</artifactId>
+      <version>1.13.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.opengrok</groupId>
+      <artifactId>opengrok-web</artifactId>
+      <version>1.13.1</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.opengrok</groupId>
+      <artifactId>tools</artifactId>
+      <version>1.13.1</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
+
+  <build>
+      <finalName>opengrok-${project.version}</finalName>
+      <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.6.1</version>
+            <executions>
+              <execution>
+                <id>copy-dependencies</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>copy-dependencies</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>${project.build.directory}/dist</outputDirectory>
+                  <overWriteReleases>false</overWriteReleases>
+                  <overWriteSnapshots>false</overWriteSnapshots>
+                  <overWriteIfNewer>true</overWriteIfNewer>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+      </plugins>
+  </build>
+
+    </project>
