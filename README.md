@@ -37,7 +37,28 @@ $ docker build -t prosyslab/unitcon-artifact -f Dockerfile .
 $ docker build -t prosyslab/unitcon-artifact-utbot -f Dockerfile.utbot .
 ```
 
-The commands take **XXX** and **XXX** minutes to build each docker image, respectively.
+The commands take about **XXX** and **10** minutes to build each docker image, respectively.
+
+### __1.3. Start a Docker container and check its validity__
+1. Start the containers.
+```console
+$ docker run -dit --name unitcon prosyslab/unitcon-artifact bash
+$ docker run -dit --name utbot prosyslab/unitcon-artifact-utbot bash
+```
+
+2. Check if the `unitcon` container is built well.
+```console
+$ docker exec -it unitcon bash
+root@{sha}:/usr/src/baselines# (Command to check if the container works well)
+(expected result)
+```
+
+3. Check if the `utbot` container is built well.
+```console
+$ docker exec -it utbot bash
+root@{sha}:/usr/src/baselines# (Command to check if the container works well)
+(expected result)
+```
 
 ## __2. Directory structure__
 ```
