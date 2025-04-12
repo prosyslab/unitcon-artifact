@@ -5,6 +5,7 @@ This is the artifact of the paper *UnitCon: Synthesizing Targeted Unit Tests for
 ## __1. Getting started__
 ### __1.1. System requirements__
 To run the experiments in the paper, we used Linux machines with 512GB RAM and Intel Xeon 2.90GHz.
+The experiment requires **XXX** GB storage for Docker images and experimental results.
 
 Additionally, we assume that the following environment settings are met.
 - Ubuntu 22.04
@@ -16,8 +17,8 @@ Additionally, we assume that the following environment settings are met.
 Our artifact is composed of two parts: the Docker image and the framework to build and utilize it. The Docker image contains all the necessary tools and dependencies to run the experiments.
 The framework, that holds this `README` file, is used to build the Docker image and orchestrate the experiments.
 
-**Recommended**: You can pull the pre-built Docker image from Dockerhub. 
-
+#### Option 1. Pull the pre-built Docker image (Recommended)
+You can pull the pre-built Docker image from Dockerhub. 
 To do so, run
 ```
 $ docker pull prosyslab/unitcon-artifact
@@ -27,6 +28,7 @@ Note that one of the tools used in the experiments requires a different Docker i
 $ docker pull prosyslab/unitcon-artifact-utbot
 ```
 
+#### Option 2. Build the Docker image manually
 If you want to build the Docker image manually, you need to download the dependencies.
 
 Please download `m2-cache.tar` from the **XXX** path, place it inside the `resources` directory, and then run the following command to build the image.
@@ -34,6 +36,8 @@ Please download `m2-cache.tar` from the **XXX** path, place it inside the `resou
 $ docker build -t prosyslab/unitcon-artifact -f Dockerfile .
 $ docker build -t prosyslab/unitcon-artifact-utbot -f Dockerfile.utbot .
 ```
+
+The commands take **XXX** and **XXX** minutes to build each docker image, respectively.
 
 ## __2. Directory structure__
 ```
