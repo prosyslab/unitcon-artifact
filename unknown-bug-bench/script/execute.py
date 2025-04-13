@@ -50,9 +50,9 @@ def analyze(p_dir_name, p, proj_infos):
         ret = 1
         return ret
 
-def combine_synthesis_command(p_dir_name, p, syn_mode, time_out, proj_infos):
+def combine_synthesis_command(p_dir_name, p, time_out, proj_infos):
     unitcon_path = os.path.join(unitcon_home, "unitcon")
-    cmd = " ".join([unitcon_path, "synthesize", p, syn_mode, "--time-out", str(time_out)])
+    cmd = " ".join([unitcon_path, "synthesize", p, "--time-out", str(time_out)])
     value = proj_infos.get(p_dir_name, None)
 
     if value != None:
@@ -61,7 +61,7 @@ def combine_synthesis_command(p_dir_name, p, syn_mode, time_out, proj_infos):
 
 
 def run(p_dir_name, p, time_out, proj_infos, log_file):
-    cmd = combine_synthesis_command(p_dir_name, p, syn_mode, time_out, proj_infos)
+    cmd = combine_synthesis_command(p_dir_name, p, time_out, proj_infos)
     ret = 0
     with open(log_file, "a") as f:
         f.write("Start: " + p + "\n")
@@ -126,7 +126,7 @@ def main():
         if "target_source" in targets:
             report_path = os.path.join(os.getenv("UNITCON_HOME"), "results", project)
             path = os.path.join(bench_home, project)
-            all_run(project, path, targets, report_path)
+            all_run(project, path, args.time_out, targets, report_path)
         else:
             for subtarget, info in targets.items():
                 report_path = os.path.join(os.getenv("UNITCON_HOME"), "results", project + "_" + subtarget)
