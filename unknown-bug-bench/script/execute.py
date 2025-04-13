@@ -116,7 +116,7 @@ def main():
     target = bugs.get(args.target, None)
     datas = list()
 
-    if target == "all":
+    if args.target == "all":
         datas = bugs.items()
     elif target != None:
         datas = [(args.target, target)]
