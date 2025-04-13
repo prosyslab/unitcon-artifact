@@ -140,16 +140,24 @@ Alternatively, we provide a minimal set of experiments to check the consistency 
 It will take **2** days.
 
 #### __Build__
-Before starting the experiment, projects need to be built. You can run:
+First, we need to build the target programs. Please run the following command in the `unitcon` container:
 ```console
-$ python3 script/execute.py build all
+root:~/unitcon/unitcon# python3 script/execute.py build all
+build started: avro_a7a43da
+build done: avro_a7a43da
+...
 ```
 
 #### __UnitCon__
-To run the experiment for UnitCon, you can run
+We can execute UnitCon with the following commands in the `unitcon` container:
 ```console
-$ python3 script/execute.py analyze all
-$ python3 script/execute.py synthesize all --mode full --report unitcon-results
+root:~/unitcon/unitcon# python3 script/execute.py analyze all
+analysis started: avro_a7a43da
+analysis done: avro_a7a43da
+...
+root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode full --report unitcon-results
+synthesis started: avro_a7a43da
+...
 ```
 
 #### __Other tools (except UTBot)__
