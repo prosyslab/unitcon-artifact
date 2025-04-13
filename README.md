@@ -166,7 +166,7 @@ Please start a shell in the `utbot` container that you've created at the section
 
 1. Build the target projects
 ```console
-root:/usr/src/baselines# python3 build.py all --log results/build.log
+root:/usr/src/baselines# python3 build.py all --log build.log
 04/13/2025 12:12:31 - INFO - __main__ - **********
 04/13/2025 12:12:31 - INFO - __main__ - build started: activemq-artemis_6fbafc4
 ...
@@ -211,7 +211,7 @@ UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot` 
 To run the experiment for UTBot, you can use the script `scripts/build.py` as the following.
 ```console
 $ cd baselines
-$ python3 build.py minimal --log results/build.log
+$ python3 build.py minimal --log build.log
 ```
 
 To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
