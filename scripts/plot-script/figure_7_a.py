@@ -104,7 +104,7 @@ def draw(iteration):
             fontsize=fontsize_tick,
             rotation=0)
 
-    _, u_max, _ = get_min_max(tool, npe, tool_set["UnitCon"], iteration)
+    _, u_max, _ = get_min_max("UnitCon", npe, tool_set["UnitCon"], iteration)
 
     plt.axhline(u_max,
                 color=color_map["UnitCon"],
