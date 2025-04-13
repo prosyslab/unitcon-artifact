@@ -161,19 +161,26 @@ $ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed]
 ```
 
 #### __UTBot__
-UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot` for experimentation.
-To run the experiment for UTBot, you can use the script `scripts/build.py` as the following.
+UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot`.
+Please start a shell in the `utbot` container that you've created at the section 2.2, and execute the following commands:
+
+1. Build the target projects
 ```console
 root:/usr/src/baselines# python3 build.py all --log results/build.log
 04/13/2025 12:12:31 - INFO - __main__ - **********
 04/13/2025 12:12:31 - INFO - __main__ - build started: activemq-artemis_6fbafc4
 ...
 ```
-
-To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
-FYI, we used iteration ranging from 1 to 10.
+2. Execute the tool UTBot. FYI, we used iteration ranging from 1 to 10.
 ```console
-$ python3 execute.py utbot all --timeout 10 --results results/[iteration] --log results/[iteration].log
+root:/usr/src/baselines# python3 execute.py utbot all --timeout 10 --results results/[iteration] --log results/[iteration].log
+```
+Example:
+```console
+root:/usr/src/baselines# python3 execute.py utbot all --timeout 10 --results results/1 --log results/1.log
+04/13/2025 12:21:16 - INFO - utbot.execute - classpath: with_dependency.jar
+04/13/2025 12:21:16 - INFO - utbot.execute - execute utbot project: activemq-artemis_6fbafc4
+...
 ```
 
 ### __3.3. Running the minimal version of 3.2 (Optional)__
