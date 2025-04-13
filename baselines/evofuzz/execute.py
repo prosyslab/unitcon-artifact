@@ -237,7 +237,7 @@ def execute_evofuzz(config, basedir, output_dir, flags):
         return summarize(config, basedir, output_dir)
 
     # build check
-    project_jar_path = os.path.join(project_dir, "unitcon-out", "with-dependency.jar")
+    project_jar_path = os.path.join(project_dir, "with_dependency.jar")
     if not os.path.isfile(project_jar_path):
         logger.warning(f"Cannot find project jar: {project_jar_path}")
         return {"project": config.project, "status": "project.jar not found"}

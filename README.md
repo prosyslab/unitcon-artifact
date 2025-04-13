@@ -149,6 +149,13 @@ build done: avro_a7a43da
 ...
 ```
 
+```console
+root:~/unitcon# python3 build.py all --log build.log
+04/13/2025 12:12:31 - INFO - __main__ - **********
+04/13/2025 12:12:31 - INFO - __main__ - build started: activemq-artemis_6fbafc4
+...
+```
+
 #### __UnitCon__
 We can execute UnitCon with the following commands in the `unitcon` container:
 ```console
@@ -173,7 +180,7 @@ root:~/unitcon# python3 execute.py all all --seed [seed] --timeout 10 --results 
 Example:
 ```console
 root:~/unitcon# python3 execute.py all all --seed 1 --timeout 10 --results results/1 --log results/1.log
-04/13/2025 12:41:06 - INFO - randoop.execute - classpath: unitcon-out/with-dependency.jar
+04/13/2025 12:41:06 - INFO - randoop.execute - classpath: with_dependency.jar
 04/13/2025 12:41:06 - INFO - randoop.execute - execute randoop project: avro_a7a43da
 ...
 ```
@@ -191,7 +198,7 @@ root:~/unitcon# python3 execute.py all [project] --seed [seed] --timeout 10 --re
 Example:
 ```console
 root@b60bdb700f49:~/unitcon# python3 execute.py evofuzz avro_a7a43da --seed 1 --timeout 10 --results results/1 --log results/1.log
-04/13/2025 12:44:53 - INFO - evofuzz.execute - classpath: unitcon-out/with-dependency.jar
+04/13/2025 12:44:53 - INFO - evofuzz.execute - classpath: with_dependency.jar
 04/13/2025 12:44:53 - INFO - evofuzz.execute - execute evofuzz project: avro_a7a43da
 ...
 ```
@@ -233,6 +240,14 @@ build done: Bears-196-buggy
 all build done!
 ```
 
+```console
+root:/usr/src/baselines# python3 build.py minimal --log build.log
+04/13/2025 12:56:24 - INFO - __main__ - **********
+04/13/2025 12:56:24 - INFO - __main__ - build started: Bears-196-buggy
+...
+```
+
+
 #### __UnitCon__
 We can execute UnitCon with the following commands in the `unitcon` container:
 ```console
@@ -251,7 +266,7 @@ To run the experiment for other tools except UTBot, you can use the script `exec
 you can use seed ranging from 1 to 3.
 ```console
 root:~/unitcon# python3 execute.py all minimal --seed 1 --timeout 10 --results results/1 --log results/1.log
-04/13/2025 12:58:28 - INFO - randoop.execute - classpath: unitcon-out/with-dependency.jar
+04/13/2025 12:58:28 - INFO - randoop.execute - classpath: with_dependency.jar
 04/13/2025 12:58:28 - INFO - randoop.execute - execute randoop project: Bears-196-buggy
 ...
 ```
@@ -259,7 +274,7 @@ root:~/unitcon# python3 execute.py all minimal --seed 1 --timeout 10 --results r
 Also, please execute the same tools with `--target_method` option:
 ```console
 root:~/unitcon# python3 execute.py all minimal --seed 1 --timeout 10 --results results/1 --target_method --log results/1.log
-04/13/2025 15:37:07 - INFO - randoop.execute - classpath: unitcon-out/with-dependency.jar
+04/13/2025 15:37:07 - INFO - randoop.execute - classpath: with_dependency.jar
 04/13/2025 15:37:07 - INFO - randoop.execute - execute randoop project: Bears-196-buggy
 ...
 ```
