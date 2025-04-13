@@ -242,6 +242,8 @@ analysis started: Bears-196-buggy
 ...
 all analysis done!
 root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode full --report unitcon-results
+synthesis started: Bears-196-buggy
+...
 ```
 
 #### __Other tools (except UTBot)__
