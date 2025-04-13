@@ -151,12 +151,14 @@ build done: avro_a7a43da
 #### __UnitCon__
 We can execute UnitCon with the following commands in the `unitcon` container:
 ```console
+root:~/unitcon# cd unitcon
 root:~/unitcon/unitcon# python3 script/execute.py analyze all
 analysis started: avro_a7a43da
 analysis done: avro_a7a43da
 ...
 root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode full --report unitcon-results
 synthesis started: avro_a7a43da
+synthesis done: avro_a7a43da
 ...
 ```
 
@@ -164,8 +166,33 @@ synthesis started: avro_a7a43da
 To run the experiment for other tools except UTBot, you can use the script `scripts/execute.py` as the following.
 FYI, we used seed ranging from 1 to 10.
 ```console
-$ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
-$ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --target_method --log results/[seed].log
+root:~/unitcon# python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
+root:~/unitcon# python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --target_method --log results/[seed].log
+```
+Example:
+```console
+root:~/unitcon# python3 execute.py all all --seed 1 --timeout 10 --results results/1 --log results/1.log
+04/13/2025 12:41:06 - INFO - randoop.execute - classpath: unitcon-out/with-dependency.jar
+04/13/2025 12:41:06 - INFO - randoop.execute - execute randoop project: avro_a7a43da
+...
+```
+
+(Optional) If you would like to execute a single tool, please use the following command:
+```console
+root:~/unitcon# python3 execute.py [tool] all --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
+```
+
+(Optional) If you would like to execute tools on a single target project, please use the following command:
+```console
+root:~/unitcon# python3 execute.py all [project] --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
+```
+
+Example:
+```console
+root@b60bdb700f49:~/unitcon# python3 execute.py evofuzz avro_a7a43da --seed 1 --timeout 10 --results results/1 --log results/1.log
+04/13/2025 12:44:53 - INFO - evofuzz.execute - classpath: unitcon-out/with-dependency.jar
+04/13/2025 12:44:53 - INFO - evofuzz.execute - execute evofuzz project: avro_a7a43da
+...
 ```
 
 #### __UTBot__
