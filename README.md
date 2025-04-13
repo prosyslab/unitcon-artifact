@@ -241,7 +241,7 @@ all build done!
 ```
 
 ```console
-root:/usr/src/baselines# python3 build.py minimal --log build.log
+root:~/unitcon# python3 build.py all --log build.log
 04/13/2025 12:56:24 - INFO - __main__ - **********
 04/13/2025 12:56:24 - INFO - __main__ - build started: Bears-196-buggy
 ...
