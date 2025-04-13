@@ -1,4 +1,0 @@
-spanA_1 spanA_2
- spanA_3
-
-spanB_1 spanC spanB_2

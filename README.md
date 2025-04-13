@@ -31,7 +31,6 @@ This is the artifact of the paper *UnitCon: Synthesizing Targeted Unit Tests for
 ├── Dockerfile
 ├── Dockerfile.utbot
 ├── Dockerfile.unknown.java11
-├── Dockerfile.unknown.java17
 ├── Dockerfile.unknown.java21
 ├── Dockerfile.unknown.java8
 ├── README.md
@@ -47,7 +46,6 @@ This is the artifact of the paper *UnitCon: Synthesizing Targeted Unit Tests for
 ├── unitcon
 └── unknown-bug-bench
     ├── java11
-    ├── java17
     ├── java21
     ├── java8
     ├── script
