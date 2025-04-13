@@ -385,28 +385,11 @@ After the experimental results have been structured as shown above, you can run 
 1. prepare the data for plotting
 ```console
 cd ~/unitcon/plot-script
-# unitcon
-$ python3 modify_csv.py unitcon-rc1
-$ python3 modify_csv.py unitcon-rc3
+# RQ1
+$ python3 modify_csv.py rq1 --iteration [iteration]
 
-# evofuzz
-$ python3 modify_csv.py evofuzz --iteration [iteration]
-$ python3 modify_csv.py evofuzz-method --iteration [iteration]
-
-# evosuite
-$ python3 modify_csv.py evosuite --iteration [iteration]
-$ python3 modify_csv.py evosuite-method --iteration [iteration]
-
-# npetest
-$ python3 modify_csv.py npetest --iteration [iteration]
-$ python3 modify_csv.py npetest-method --iteration [iteration]
-
-# randoop
-$ python3 modify_csv.py randoop --iteration [iteration]
-$ python3 modify_csv.py randoop-method --iteration [iteration]
-
-# utbot
-$ python3 modify_csv.py utbot --iteration [iteration]
+# RQ3
+$ python3 modify_csv.py rq3
 ```
 
 2. generate the graphs
