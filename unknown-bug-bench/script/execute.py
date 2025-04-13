@@ -50,13 +50,10 @@ def analyze(p_dir_name, p, proj_infos):
         ret = 1
         return ret
 
-def combine_synthesis_command(p_dir_name, p, time_out, proj_infos):
+def combine_synthesis_command(p_dir_name, p, time_out, data):
     unitcon_path = os.path.join(unitcon_home, "unitcon")
     cmd = " ".join([unitcon_path, "synthesize", p, "--time-out", str(time_out)])
-    value = proj_infos.get(p_dir_name, None)
-
-    if value != None:
-        cmd = " ".join([cmd, "--target", value["target_source"] + ":" + str(value["target_line"]), "--unknown-bug"])
+    cmd = " ".join([cmd, "--target", data["target_source"] + ":" + str(data["target_line"]), "--unknown-bug"])
     return cmd
 
 
