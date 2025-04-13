@@ -225,8 +225,8 @@ def main():
 
     elif args.run == "synthesize":
         report_path = os.path.join(os.getenv("UNITCON_HOME"), "results", args.report)
-        if not report_path.is_dir():
-            os.mkdirs(report_path)
+        if not os.path.isdir(report_path):
+            os.makedirs(report_path)
         unitcon_output = os.path.join(report_path, "unitcon-log.txt")
 
         all_projects = json.load(args.analysis_info)
