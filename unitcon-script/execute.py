@@ -126,8 +126,8 @@ def success_checker(p, p_name):
     if lines and nsucc_p.search(lines):
         num_success = int(nsucc_p.search(lines).group(1))
 
-    success = False
-    if num_success > 0: success = True
+    validated = False
+    if num_success > 0: validated = True
 
     first_tc = ""
     succ_time = 0.0

@@ -84,7 +84,7 @@ def copy(report_path, path):
     shutil.copyfile(log_path, os.path.join(report_path, p, "log.txt"))
 
 
-def all_run(p, path, data, report_path):
+def all_run(p, path, time_out, data, report_path):
     print(f"build started: {p}")
     build(path)
     print(f"build done: {p}")
@@ -98,7 +98,7 @@ def all_run(p, path, data, report_path):
     unitcon_output = os.path.join(report_path, "unitcon-log.txt")
 
     print(f"synthesis started: {p}")
-    run(p, path, args.time_out, data, unitcon_output)
+    run(p, path, time_out, data, unitcon_output)
     print(f"synthesis done: {p}")
 
     copy(report_path, path)
@@ -131,7 +131,7 @@ def main():
             for subtarget, info in targets.items():
                 report_path = os.path.join(os.getenv("UNITCON_HOME"), "results", project + "_" + subtarget)
                 path = os.path.join(bench_home, project)
-                all_run(project, path, info, report_path)
+                all_run(project, path, args.time_out, info, report_path)
 
 
 if __name__ == "__main__":
