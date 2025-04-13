@@ -547,8 +547,8 @@ $ docker exec -it unitcon bash
 root:~/unitcon# cd plot-script/
 ```
 
-2. Prepare the data for plotting
-* RQ1
+2. Prepare the data for plotting.
+* RQ1. If you experimented full version of RQ1 in Section 3.2, `[iteration]` would be 10. If you used `minimal` option in Section 3.3, `[iteration]` would be 3.
 ```console
 root:~/unitcon/plot-script# python3 modify_csv.py rq1 --iteration [iteration]
 ```
@@ -580,16 +580,18 @@ You can retrieve the results of the experiments in the paper from **[here](https
 Download the file `unitcon-experimental-result.tar.gz`, go to the `paper-script` directory and execute the script.
 
 ```console
-$ tar -xvf unitcon-experimental-result.tar.gz
-$ cd unitcon-experimental-result/paper-script
+$ docker exec -it unitcon bash
+root:~/unitcon# wget https://zenodo.org/records/15205112/........
+root:~/unitcon# tar -xvf unitcon-experimental-result.tar.gz
+root:~/unitcon# cd unitcon-experimental-result/paper-script
 ```
 
 Then you can parse the results by running the following command to get the same results as in the paper.
 ```console
-$ python3 figure_[number]_[subfigure label].py
+root:~/unitcon/unitcon-experimental-result/paper-script# python3 figure_[number]_[subfigure label].py
 ```
 
 For example, to generate the chart shown Figure 6(a), you can run
 ```console
-$ python3 figure_6_a.py
+root:~/unitcon/unitcon-experimental-result/paper-script# python3 figure_6_a.py
 ```
