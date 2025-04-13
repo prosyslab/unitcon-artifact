@@ -31,9 +31,9 @@ def combine_analysis_command(p_dir_name, p, data):
     target_analysis = data.get("analyze_target", None)
     skip_procedures = data.get("skip_procedures", None)
     if target_analysis != None:
-        cmd = " ".join([cmd, "--target", value["target_source"] + ":" + str(value["target_line"])])
-    if value["skip_procedures"]:
-        cmd = " ".join([cmd, "--skip-procedures", value["skip_procedures"]])
+        cmd = " ".join([cmd, "--target", data["target_source"] + ":" + str(data["target_line"])])
+    if skip_procedures != None:
+        cmd = " ".join([cmd, "--skip-procedures", data["skip_procedures"]])
     return cmd
 
 
@@ -93,7 +93,7 @@ def all_run(p, path, data, report_path):
     analyze(p, path, data)
     print(f"analysis done: {p}")
     
-    if not report_path.is_dir():
+    if not os.path.isdir(report_path):
         os.mkdirs(report_path)
     unitcon_output = os.path.join(report_path, "unitcon-log.txt")
 
@@ -114,10 +114,13 @@ def main():
 
     bugs = json.load(args.analysis_info)
     target = bugs.get(args.target, None)
-    datas = bugs.items()
+    datas = list()
 
-    if target != None:
+    if target == "all":
+        datas = bugs.items()
+    elif target != None:
         datas = [(args.target, target)]
+
 
     for project, targets in datas:
         if "target_source" in targets:
