@@ -159,35 +159,35 @@ def main():
             if report:
                 utbot_reports.append(report)
 
-    file = "randoop.csv"
+    dirname = "randoop"
     if args.target_method:
-        file = "randoop-method.csv"
-    reportfile = os.path.join(results_dir, file)
+        dirname = "randoop-method"
+    reportfile = os.path.join(results_dir, dirname, dirname + ".csv")
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, randoop_reports)
 
-    file = "evosuite.csv"
+    dirname = "evosuite"
     if args.target_method:
-        file = "evosuite-method.csv"
-    reportfile = os.path.join(results_dir, file)
+        dirname = "evosuite-method"
+    reportfile = os.path.join(results_dir, dirname, dirname + ".csv")
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, evosuite_reports)
 
-    file = "evofuzz.csv"
+    dirname = "evofuzz"
     if args.target_method:
-        file = "evofuzz-method.csv"
-    reportfile = os.path.join(results_dir, file)
+        dirname = "evofuzz-method"
+    reportfile = os.path.join(results_dir, dirname, dirname + ".csv")
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, evofuzz_reports)
     
-    file = "npetest.csv"
+    dirname = "npetest"
     if args.target_method:
-        file = "npetest-method.csv"
-    reportfile = os.path.join(results_dir, file)
+        dirname = "npetest-method"
+    reportfile = os.path.join(results_dir, dirname, dirname + ".csv")
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, npetest_reports)
 
-    reportfile = os.path.join(results_dir, "utbot.csv")
+    reportfile = os.path.join(results_dir, "utbot", "utbot.csv")
     fieldnames = ["project", "status", "n_tests", "validated"]
     dump_results(reportfile, fieldnames, utbot_reports)
 
