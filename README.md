@@ -357,6 +357,7 @@ Note that you can check the test cases mentioned in paper at `/opt/benchmarks/te
 ### __5.1. Setup__
 If RQ1 has not been executed yet, please run the following command to build UnitCon within the `unitcon` container:
 ```console
+$ docker exec -it unitcon bash
 root:~/unitcon# cd unitcon/
 root:~/unitcon/unitcon# ./setup.sh
 ```
@@ -365,19 +366,22 @@ root:~/unitcon/unitcon# ./setup.sh
 If the following experiment are run sequentially, the total execution time is 6 days.
 
 #### __Build__
-If RQ1 has not been executed, you can run
+If RQ1 has not been executed, please setup the target programs first:
 ```console
-$ python3 script/execute.py build all
-$ python3 script/execute.py analyze all
+$ docker exec -it unitcon bash
+root:~/unitcon# cd unitcon/
+root:~/unitcon/unitcon# python3 script/execute.py build all
+root:~/unitcon/unitcon# python3 script/execute.py analyze all
 ```
 
 #### __UnitCon__
-To run the experiment for UnitCon, you can run
+UnitCon provide 4 `mode` to support the combination of 2 search strategies, `priority` and `prune`.
+Please use the following commands to execute UnitCon with the different search strategies:
 ```console
-$ python3 script/execute.py synthesize all --mode full --report unitcon-both-results
-$ python3 script/execute.py synthesize all --mode priority --report unitcon-priority-results
-$ python3 script/execute.py synthesize all --mode prune --report unitcon-prune-results
-$ python3 script/execute.py synthesize all --mode basic --report unitcon-basic-results
+root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode full --report unitcon-both-results
+root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode priority --report unitcon-priority-results
+root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode prune --report unitcon-prune-results
+root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode basic --report unitcon-basic-results
 ```
 
 ### __5.3. Running the minimal version of 5.2 (Optional)__
@@ -386,17 +390,19 @@ Reproducing the experiments in our paper at a full scale will take a very long t
 #### __Build__
 If minimal version of RQ1 has not been executed, you can run
 ```console
-$ python3 script/execute.py build minimal
-$ python3 script/execute.py analyze minimal
+$ docker exec -it unitcon bash
+root:~/unitcon# cd unitcon/
+root:~/unitcon/unitcon# python3 script/execute.py build minimal
+root:~/unitcon/unitcon# python3 script/execute.py analyze minimal
 ```
 
 #### __UnitCon__
 To run the experiment for UnitCon, you can run
 ```console
-$ python3 script/execute.py synthesize minimal --mode full --report unitcon-both-results
-$ python3 script/execute.py synthesize minimal --mode priority --report unitcon-priority-results
-$ python3 script/execute.py synthesize minimal --mode prune --report unitcon-prune-results
-$ python3 script/execute.py synthesize minimal --mode basic --report unitcon-basic-results
+root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode full --report unitcon-both-results
+root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode priority --report unitcon-priority-results
+root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode prune --report unitcon-prune-results
+root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode basic --report unitcon-basic-results
 ```
 
 ## __6. Plotting the results__
