@@ -157,7 +157,7 @@ def success_checker(p, p_name):
         "num_of_multi_execs": executions,
         "succ_time": succ_time,
         "fst_succ_tc": first_tc,
-        "success": success,
+        "validated": validated,
         "total_time": total_time
     }
 
