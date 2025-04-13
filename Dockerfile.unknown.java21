@@ -21,7 +21,12 @@ COPY ./unknown-bug-bench/tests/java21 $BENCH_TC_HOME
 WORKDIR $BENCH_HOME
 
 ENV UNITCON_HOME=/root/unitcon
-COPY ./unknown-bug-bench/tests/java21/bug.json $UNITCON_HOME/script
-COPY ./unknown-bug-bench/scipt $UNITCON_HOME/script
-
 WORKDIR $UNITCON_HOME
+RUN git config --global url."https://github.com/".insteadOf "git@github.com:"
+RUN git clone https://github.com/prosyslab/unitcon.git --recursive
+
+ENV UNITCON_TOOL_HOME=$UNITCON_HOME/unitcon
+COPY ./unknown-bug-bench/script $UNITCON_TOOL_HOME/script
+COPY ./unknown-bug-bench/tests/java21/bug.json $UNITCON_TOOL_HOME/script
+
+WORKDIR $UNITCON_TOOL_HOME
