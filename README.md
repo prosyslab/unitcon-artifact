@@ -101,19 +101,19 @@ $ docker run -dit --name utbot prosyslab/unitcon-artifact-utbot bash
 2. Check if the `unitcon` container is built well.
 ```console
 $ docker exec -it unitcon bash
-root@{sha}:~/unitcon# ocaml --version
+root:~/unitcon# ocaml --version
 The OCaml toplevel, version 4.13.1
-root@{sha}:~/unitcon# java -version
+root:~/unitcon# java -version
 openjdk version "1.8.0_442"
 OpenJDK Runtime Environment (build 1.8.0_442-8u442-b06~us1-0ubuntu1~22.04-b06)
-root@{sha}:~/unitcon# python3 --version
+root:~/unitcon# python3 --version
 Python 3.10.12
 ```
 
 3. Check if the `utbot` container is built well.
 ```console
 $ docker exec -it utbot bash
-root@{sha}:/usr/src/baselines# ls -l /usr/lib/jvm/
+root:/usr/src/baselines# ls -l /usr/lib/jvm/
 total 16
 lrwxrwxrwx 1 root root   21 Jan 23 08:11 java-1.17.0-openjdk-amd64 -> java-17-openjdk-amd64
 lrwxrwxrwx 1 root root   20 Jan 26 16:38 java-1.8.0-openjdk-amd64 -> java-8-openjdk-amd64
@@ -129,8 +129,8 @@ drwxr-xr-x 9 root root 4096 Dec 19  2022 zulu11-ca-amd64
 ### __3.1. Setup__
 To build UnitCon, please run the following command within the `unitcon` container:
 ```console
-root@{sha}:~/unitcon# cd unitcon/
-root@{sha}:~/unitcon/unitcon# ./setup.sh
+root:~/unitcon# cd unitcon/
+root:~/unitcon/unitcon# ./setup.sh
 ```
 
 ### __3.2. Running the experiment for RQ1 (Full)__
@@ -164,8 +164,10 @@ $ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed]
 UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot` for experimentation.
 To run the experiment for UTBot, you can use the script `scripts/build.py` as the following.
 ```console
-$ cd baselines
-$ python3 build.py all --log results/build.log
+root:/usr/src/baselines# python3 build.py all --log results/build.log
+04/13/2025 12:12:31 - INFO - __main__ - **********
+04/13/2025 12:12:31 - INFO - __main__ - build started: activemq-artemis_6fbafc4
+...
 ```
 
 To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
