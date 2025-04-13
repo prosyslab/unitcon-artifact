@@ -221,9 +221,13 @@ root:/usr/src/baselines# python3 execute.py utbot all --timeout 10 --results res
 ### __3.3. Running the minimal version of 3.2 (Optional)__
 Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 10 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 8 and the number of repetitions to 3. Under the assumption of running the experiment sequentially, the total execution time is 2 days.
 
-Before starting the experiment, projects need to be built. You can run:
+#### __Build__
+First, we need to build the target programs. Please run the following command in the `unitcon` container:
 ```console
-$ python3 script/execute.py build minimal
+root:~/unitcon# cd unitcon/
+root:~/unitcon/unitcon# python3 script/execute.py build minimal
+build started: Bears-196-buggy
+build done: Bears-196-buggy
 ```
 
 #### __UnitCon__
