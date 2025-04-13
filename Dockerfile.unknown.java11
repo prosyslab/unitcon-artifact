@@ -30,6 +30,7 @@ WORKDIR $UNITCON_HOME
 RUN git config --global url."https://github.com/".insteadOf "git@github.com:"
 RUN git clone https://github.com/prosyslab/unitcon.git --recursive
 
+ENV PATH=/root/apache-maven-3.9.6/bin:$PATH
 ENV UNITCON_TOOL_HOME=$UNITCON_HOME/unitcon
 COPY ./unknown-bug-bench/script $UNITCON_TOOL_HOME/script
 COPY ./unknown-bug-bench/tests/java11/bug.json $UNITCON_TOOL_HOME/script

@@ -12,7 +12,7 @@ bench_home = os.path.abspath(os.getenv("BENCH_HOME"))
 
 def build(p):
     unitcon_path = os.path.join(unitcon_home, "unitcon")
-    cmd = " ".join([unitcon_path, "build", p])
+    cmd = " ".join([unitcon_path, "build", p, "--unknown-bug"])
     ret = 0
     try:
         output = subprocess.check_output(cmd, cwd=p, stderr=subprocess.STDOUT, shell=True)
