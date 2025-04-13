@@ -77,7 +77,7 @@ def run(p_dir_name, p, time_out, proj_infos, log_file):
     return ret
 
 
-def copy(report_path, path):
+def copy(p, report_path, path):
     t_path = os.path.join(path, "unitcon-out", "unitcon-tests")
     log_path = os.path.join(path, "unitcon-out", "log.txt")
     shutil.copytree(t_path, os.path.join(report_path, p))
@@ -101,7 +101,7 @@ def all_run(p, path, time_out, data, report_path):
     run(p, path, time_out, data, unitcon_output)
     print(f"synthesis done: {p}")
 
-    copy(report_path, path)
+    copy(p, report_path, path)
 
 
 
