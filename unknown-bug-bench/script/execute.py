@@ -94,7 +94,7 @@ def all_run(p, path, data, report_path):
     print(f"analysis done: {p}")
     
     if not os.path.isdir(report_path):
-        os.mkdirs(report_path)
+        os.makedirs(report_path)
     unitcon_output = os.path.join(report_path, "unitcon-log.txt")
 
     print(f"synthesis started: {p}")
