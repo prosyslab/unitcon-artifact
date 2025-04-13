@@ -9,7 +9,7 @@ RUN apt update && \
     apt install -y wget unzip maven make time git vim tzdata sqlite3
 RUN echo "alias time='/usr/bin/time'" >> /root/.bashrc
 RUN pip3 install pandas matplotlib venn
-RUN apt install texlive-latex-extra texlive-fonts-recommended dvipng cm-super
+RUN apt install -y texlive-latex-extra texlive-fonts-recommended dvipng cm-super
 
 COPY ./install-opam.sh /root
 RUN /root/install-opam.sh
