@@ -175,7 +175,7 @@ $ python3 execute.py utbot all --timeout 10 --results results/[iteration] --log 
 ```
 
 ### __3.3. Running the minimal version of 3.2 (Optional)__
-Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 10 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 20 and the number of repetitions to 3. Under the assumption of running the experiment sequentially, the total execution time is 4 days.
+Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 10 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 8 and the number of repetitions to 3. Under the assumption of running the experiment sequentially, the total execution time is 2 days.
 
 Before starting the experiment, projects need to be built. You can run:
 ```console
@@ -273,6 +273,25 @@ $ python3 script/execute.py synthesize all --mode full --report unitcon-both-res
 $ python3 script/execute.py synthesize all --mode priority --report unitcon-priority-results
 $ python3 script/execute.py synthesize all --mode prune --report unitcon-prune-results
 $ python3 script/execute.py synthesize all --mode basic --report unitcon-basic-results
+```
+
+### __3.3. Running the minimal version of 3.5 (Optional)__
+Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 4 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 8. Under the assumption of running the experiment sequentially, the total execution time is 5 hours.
+
+#### __Build__
+If minimal version of RQ1 has not been executed, you can run
+```console
+$ python3 script/execute.py build minimal
+$ python3 script/execute.py analyze minimal
+```
+
+#### __UnitCon__
+To run the experiment for UnitCon, you can run
+```console
+$ python3 script/execute.py synthesize minimal --mode full --report unitcon-both-results
+$ python3 script/execute.py synthesize minimal --mode priority --report unitcon-priority-results
+$ python3 script/execute.py synthesize minimal --mode prune --report unitcon-prune-results
+$ python3 script/execute.py synthesize minimal --mode basic --report unitcon-basic-results
 ```
 
 ### __3.6. Plotting the results__
