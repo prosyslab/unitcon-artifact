@@ -127,8 +127,8 @@ drwxr-xr-x 9 root root 4096 Dec 19  2022 zulu11-ca-amd64
 ## __3. Reproducing the results in the paper__
 ### __3.1. Setup__
 To build UnitCon, please run
-```
-cd unitcon
+```console
+$ cd unitcon
 $ ./setup.sh
 ```
 
@@ -137,13 +137,13 @@ If the following experiment are run sequentially, the total execution time is 12
 
 #### __Build__
 Before starting the experiment, projects need to be built. You can run:
-```
+```console
 $ python3 script/execute.py build all
 ```
 
 #### __UnitCon__
 To run the experiment for UnitCon, you can run
-```
+```console
 $ python3 script/execute.py analyze all
 $ python3 script/execute.py synthesize all --mode full --report unitcon-results
 ```
@@ -151,7 +151,7 @@ $ python3 script/execute.py synthesize all --mode full --report unitcon-results
 #### __Other tools (except UTBot)__
 To run the experiment for other tools except UTBot, you can use the script `scripts/execute.py` as the following.
 FYI, we used seed ranging from 1 to 10.
-```
+```console
 $ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
 $ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed] --target_method --log results/[seed].log
 ```
@@ -159,14 +159,14 @@ $ python3 execute.py all all --seed [seed] --timeout 10 --results results/[seed]
 #### __UTBot__
 UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot` for experimentation.
 To run the experiment for UTBot, you can use the script `scripts/build.py` as the following.
-```
+```console
 $ cd baselines
 $ python3 build.py all --log results/build.log
 ```
 
 To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
 FYI, we used iteration ranging from 1 to 10.
-```
+```console
 $ python3 execute.py utbot all --timeout 10 --results results/[iteration] --log results/[iteration].log
 ```
 
@@ -174,12 +174,13 @@ $ python3 execute.py utbot all --timeout 10 --results results/[iteration] --log 
 Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 10 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 20 and the number of repetitions to 3. Under the assumption of running the experiment sequentially, the total execution time is 4 days.
 
 Before starting the experiment, projects need to be built. You can run:
-```
+```console
 $ python3 script/execute.py build minimal
 ```
+
 #### __UnitCon__
 To run the experiment for UnitCon, you can run
-```
+```console
 $ python3 script/execute.py analyze minimal
 $ python3 script/execute.py synthesize minimal --mode full --report unitcon-results
 ```
@@ -187,7 +188,7 @@ $ python3 script/execute.py synthesize minimal --mode full --report unitcon-resu
 #### __Other tools (except UTBot)__
 To run the experiment for other tools except UTBot, you can use the script `scripts/execute.py` as the following.
 you can use seed ranging from 1 to 3.
-```
+```console
 $ cd ~/unitcon
 $ python3 execute.py all minimal --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
 ```
@@ -195,22 +196,22 @@ $ python3 execute.py all minimal --seed [seed] --timeout 10 --results results/[s
 #### __UTBot__
 UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot` for experimentation.
 To run the experiment for UTBot, you can use the script `scripts/build.py` as the following.
-```
+```console
 $ cd baselines
 $ python3 build.py minimal --log results/build.log
 ```
 
 To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
 You can use seed ranging from 1 to 3.
-```
+```console
 $ python3 execute.py utbot minimal --timeout 10 --results results/[iteration] --log results/[iteration].log
 ```
 
 ### __3.4. Running the experiment for RQ2__
 For RQ2, we organized the setup so that experiments could be run using separate Docker images based on the Java version used to build each project.
 To build a Docker image, you can run
-```
-docker build -t prosyslab/unitcon-unknown-bench:java[version] -f Dockerfile.unknown.java[version] .
+```console
+$ docker build -t prosyslab/unitcon-unknown-bench:java[version] -f Dockerfile.unknown.java[version] .
 ```
 
 The projects where you can check the reported bugs for each benchmark are listed below.
@@ -239,7 +240,7 @@ $ python3 script/execute.py [project name]
 ```
 
 For example, if you want to reproduce the bugs of `commons-dbcp_6ce68bf` in Java 8 container, you can run
-```
+```console
 $ python3 script/execute.py commons-dbcp_6ce68bf
 ```
 
@@ -256,14 +257,14 @@ If the following experiment are run sequentially, the total execution time is 6 
 
 #### __Build__
 If RQ1 has not been executed, you can run
-```
+```console
 $ python3 script/execute.py build all
 $ python3 script/execute.py analyze all
 ```
 
 #### __UnitCon__
 To run the experiment for UnitCon, you can run
-```
+```console
 $ python3 script/execute.py synthesize all --mode full --report unitcon-both-results
 $ python3 script/execute.py synthesize all --mode priority --report unitcon-priority-results
 $ python3 script/execute.py synthesize all --mode prune --report unitcon-prune-results
@@ -384,7 +385,7 @@ After the experimental results have been structured as shown above, you can run 
 
 1. prepare the data for plotting
 ```console
-cd ~/unitcon/plot-script
+$ cd ~/unitcon/plot-script
 # RQ1
 $ python3 modify_csv.py rq1 --iteration [iteration]
 
@@ -395,16 +396,16 @@ $ python3 modify_csv.py rq3
 2. generate the graphs
 ```console
 # figure 6
-python3 figure_6_a.py --iteration [iteration]
-python3 figure_6_b.py
+$ python3 figure_6_a.py --iteration [iteration]
+$ python3 figure_6_b.py
 
 # figure 7
-python3 figure_7_a.py --iteration [iteration]
-python3 figure_7_b.py --iteration [iteration]
+$ python3 figure_7_a.py --iteration [iteration]
+$ python3 figure_7_b.py --iteration [iteration]
 
 # figure 9
-python3 figure_9_a.py
-python3 figure_9_b.py
+$ python3 figure_9_a.py
+$ python3 figure_9_b.py
 ```
 
 
@@ -412,18 +413,18 @@ python3 figure_9_b.py
 You can retrieve the results of the experiments in the paper from here.
 Download the file `unitcon-experimental-result.tar.gz`, go to the `paper-script` directory and execute the script.
 
-```
+```console
 wget or download the archived file
-tar -xvf unitcon-experimental-result.tar.gz
-cd unitcon-experimental-result/paper-script
+$ tar -xvf unitcon-experimental-result.tar.gz
+$ cd unitcon-experimental-result/paper-script
 ```
 
 Then you can parse the results by running the following command to get the same results as in the paper.
-```
-python3 figure_[number]_[subfigure label].py
+```console
+$ python3 figure_[number]_[subfigure label].py
 ```
 
 For example, to generate the chart shown Figure 6(a), you can run
-```
-python3 figure_6_a.py
+```console
+$ python3 figure_6_a.py
 ```
