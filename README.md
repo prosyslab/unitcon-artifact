@@ -481,16 +481,10 @@ $ docker cp utbot:/usr/src/baselines/results ./results
 Successfully copied 71.8MB to /pass/to/unitcon-artifact/results
 $ docker cp results/1/utbot unitcon:/root/unitcon/results/1/utbot
 Successfully copied 24.1MB to unitcon:/root/unitcon/results/1/utbot
-$ docker cp results/1/utbot.csv unitcon:/root/unitcon/results/1/
-Successfully copied 2.05kB to unitcon:/root/unitcon/results/1/
 $ docker cp results/2/utbot unitcon:/root/unitcon/results/2/utbot
 Successfully copied 24.1MB to unitcon:/root/unitcon/results/2/utbot
-$ docker cp results/2/utbot.csv unitcon:/root/unitcon/results/2/
-Successfully copied 2.05kB to unitcon:/root/unitcon/results/2/
 $ docker cp results/3/utbot unitcon:/root/unitcon/results/3/utbot
 Successfully copied 22.5MB to unitcon:/root/unitcon/results/3/utbot
-$ docker cp results/3/utbot.csv unitcon:/root/unitcon/results/3/
-Successfully copied 2.05kB to unitcon:/root/unitcon/results/3/
 ...
 ```
 Repeat the copy command for the number of iterations you've executed UTBot.
@@ -547,29 +541,37 @@ Then the merged `results` directory is structured as shown below:
 #### __Running Script__
 After the experimental results have been structured as shown above, you can run the following scripts to prepare the data for plotting and to generate the graphs.
 
-1. prepare the data for plotting
+1. Start a shell in the `unitcon` container and change the working directory
 ```console
-$ cd ~/unitcon/plot-script
-# RQ1
-$ python3 modify_csv.py rq1 --iteration [iteration]
-
-# RQ3
-$ python3 modify_csv.py rq3
+$ docker exec -it unitcon bash
+root:~/unitcon# cd plot-script/
 ```
 
-2. generate the graphs
+2. Prepare the data for plotting
+* RQ1
 ```console
-# figure 6
-$ python3 figure_6_a.py --iteration [iteration]
-$ python3 figure_6_b.py
+root:~/unitcon/plot-script# python3 modify_csv.py rq1 --iteration [iteration]
+```
+* RQ3
+```console
+root:~/unitcon/plot-script# python3 modify_csv.py rq3
+```
 
-# figure 7
-$ python3 figure_7_a.py --iteration [iteration]
-$ python3 figure_7_b.py --iteration [iteration]
-
-# figure 9
-$ python3 figure_9_a.py
-$ python3 figure_9_b.py
+3. Generate the figures
+* Figure 6
+```console
+root:~/unitcon/plot-script# python3 figure_6_a.py --iteration [iteration]
+root:~/unitcon/plot-script# python3 figure_6_b.py
+```
+* Figure 7
+```console
+root:~/unitcon/plot-script# python3 figure_7_a.py --iteration [iteration]
+root:~/unitcon/plot-script# python3 figure_7_b.py --iteration [iteration]
+```
+* Figure 9
+```console
+root:~/unitcon/plot-script# python3 figure_9_a.py
+root:~/unitcon/plot-script# python3 figure_9_b.py
 ```
 
 
@@ -578,7 +580,6 @@ You can retrieve the results of the experiments in the paper from **[here](https
 Download the file `unitcon-experimental-result.tar.gz`, go to the `paper-script` directory and execute the script.
 
 ```console
-wget or download the archived file
 $ tar -xvf unitcon-experimental-result.tar.gz
 $ cd unitcon-experimental-result/paper-script
 ```
