@@ -2,77 +2,7 @@
 
 This is the artifact of the paper *UnitCon: Synthesizing Targeted Unit Tests for Java Runtime Exceptions* to appear in FSE 2025.
 
-## __1. Getting started__
-### __1.1. System requirements__
-To run the experiments in the paper, we used Linux machines with 512GB RAM and Intel Xeon 2.90GHz.
-The experiment requires **188** GB storage for Docker images and experimental results.
-
-Additionally, we assume that the following environment settings are met.
-- Ubuntu 22.04
-- python 3.8+
-- pip3
-- Docker
-
-### __1.2. Preparing the Docker image__
-Our artifact is composed of two parts: the Docker image and the framework to build and utilize it. The Docker image contains all the necessary tools and dependencies to run the experiments.
-The framework, that holds this `README` file, is used to build the Docker image and orchestrate the experiments.
-
-#### Option 1. Pull the pre-built Docker image (Recommended)
-You can pull the pre-built Docker image from Dockerhub. 
-To do so, run
-```
-$ docker pull prosyslab/unitcon-artifact
-```
-Note that one of the tools used in the experiments requires a different Docker image. You can pull this Docker image.
-```
-$ docker pull prosyslab/unitcon-artifact-utbot
-```
-
-#### Option 2. Build the Docker image manually
-If you want to build the Docker image manually, you need to download the dependencies.
-
-Please download `m2-cache.tar` from the **XXX** path, place it inside the `resources` directory, and then run the following command to build the image.
-```
-$ docker build -t prosyslab/unitcon-artifact -f Dockerfile .
-$ docker build -t prosyslab/unitcon-artifact-utbot -f Dockerfile.utbot .
-```
-
-Both commands take about **10** minutes to build each docker image, respectively.
-
-### __1.3. Start Docker containers and check their validity__
-1. Start the containers.
-```console
-$ docker run -dit --name unitcon prosyslab/unitcon-artifact bash
-$ docker run -dit --name utbot prosyslab/unitcon-artifact-utbot bash
-```
-
-2. Check if the `unitcon` container is built well.
-```console
-$ docker exec -it unitcon bash
-root@{sha}:~/unitcon# ocaml --version
-The OCaml toplevel, version 4.13.1
-root@{sha}:~/unitcon# java -version
-openjdk version "1.8.0_442"
-OpenJDK Runtime Environment (build 1.8.0_442-8u442-b06~us1-0ubuntu1~22.04-b06)
-root@{sha}:~/unitcon# python3 --version
-Python 3.10.12
-```
-
-3. Check if the `utbot` container is built well.
-```console
-$ docker exec -it utbot bash
-root@{sha}:/usr/src/baselines# ls -l /usr/lib/jvm/
-total 16
-lrwxrwxrwx 1 root root   21 Jan 23 08:11 java-1.17.0-openjdk-amd64 -> java-17-openjdk-amd64
-lrwxrwxrwx 1 root root   20 Jan 26 16:38 java-1.8.0-openjdk-amd64 -> java-8-openjdk-amd64
-drwxr-xr-x 9 root root 4096 Apr 12 16:57 java-17-openjdk-amd64
-drwxr-xr-x 7 root root 4096 Apr 12 16:57 java-8-openjdk-amd64
-drwxr-xr-x 2 root root 4096 Apr 12 16:57 openjdk-17
-lrwxrwxrwx 1 root root   15 Dec 19  2022 zulu11 -> zulu11-ca-amd64
-drwxr-xr-x 9 root root 4096 Dec 19  2022 zulu11-ca-amd64
-```
-
-## __2. Directory structure__
+## __1. Directory structure__
 ```
 ├── baselines
 │   ├── evofuzz
@@ -122,6 +52,76 @@ drwxr-xr-x 9 root root 4096 Dec 19  2022 zulu11-ca-amd64
     ├── java8
     ├── script
     └── tests
+```
+
+## __2. Getting started__
+### __2.1. System requirements__
+To run the experiments in the paper, we used Linux machines with 512GB RAM and Intel Xeon 2.90GHz.
+The experiment requires **188** GB storage for Docker images and experimental results.
+
+Additionally, we assume that the following environment settings are met.
+- Ubuntu 22.04
+- python 3.8+
+- pip3
+- Docker
+
+### __2.2. Preparing the Docker image__
+Our artifact is composed of two parts: the Docker image and the framework to build and utilize it. The Docker image contains all the necessary tools and dependencies to run the experiments.
+The framework, that holds this `README` file, is used to build the Docker image and orchestrate the experiments.
+
+#### Option 1. Pull the pre-built Docker image (Recommended)
+You can pull the pre-built Docker image from Dockerhub. 
+To do so, run
+```
+$ docker pull prosyslab/unitcon-artifact
+```
+Note that one of the tools used in the experiments requires a different Docker image. You can pull this Docker image.
+```
+$ docker pull prosyslab/unitcon-artifact-utbot
+```
+
+#### Option 2. Build the Docker image manually
+If you want to build the Docker image manually, you need to download the dependencies.
+
+Please download `m2-cache.tar` from the **XXX** path, place it inside the `resources` directory, and then run the following command to build the image.
+```
+$ docker build -t prosyslab/unitcon-artifact -f Dockerfile .
+$ docker build -t prosyslab/unitcon-artifact-utbot -f Dockerfile.utbot .
+```
+
+Both commands take about **10** minutes to build each docker image, respectively.
+
+### __2.3. Start Docker containers and check their validity__
+1. Start the containers.
+```console
+$ docker run -dit --name unitcon prosyslab/unitcon-artifact bash
+$ docker run -dit --name utbot prosyslab/unitcon-artifact-utbot bash
+```
+
+2. Check if the `unitcon` container is built well.
+```console
+$ docker exec -it unitcon bash
+root@{sha}:~/unitcon# ocaml --version
+The OCaml toplevel, version 4.13.1
+root@{sha}:~/unitcon# java -version
+openjdk version "1.8.0_442"
+OpenJDK Runtime Environment (build 1.8.0_442-8u442-b06~us1-0ubuntu1~22.04-b06)
+root@{sha}:~/unitcon# python3 --version
+Python 3.10.12
+```
+
+3. Check if the `utbot` container is built well.
+```console
+$ docker exec -it utbot bash
+root@{sha}:/usr/src/baselines# ls -l /usr/lib/jvm/
+total 16
+lrwxrwxrwx 1 root root   21 Jan 23 08:11 java-1.17.0-openjdk-amd64 -> java-17-openjdk-amd64
+lrwxrwxrwx 1 root root   20 Jan 26 16:38 java-1.8.0-openjdk-amd64 -> java-8-openjdk-amd64
+drwxr-xr-x 9 root root 4096 Apr 12 16:57 java-17-openjdk-amd64
+drwxr-xr-x 7 root root 4096 Apr 12 16:57 java-8-openjdk-amd64
+drwxr-xr-x 2 root root 4096 Apr 12 16:57 openjdk-17
+lrwxrwxrwx 1 root root   15 Dec 19  2022 zulu11 -> zulu11-ca-amd64
+drwxr-xr-x 9 root root 4096 Dec 19  2022 zulu11-ca-amd64
 ```
 
 ## __3. Reproducing the results in the paper__
