@@ -8,6 +8,7 @@ RUN apt update && \
     apt install -y python3 python3-pip libpython3.10 python3.10-venv openjdk-8-jdk && \
     apt install -y wget unzip maven make time git vim tzdata sqlite3
 RUN echo "alias time='/usr/bin/time'" >> /root/.bashrc
+RUN pip3 install pandas matplotlib venn
 
 COPY ./install-opam.sh /root
 RUN /root/install-opam.sh
@@ -40,4 +41,5 @@ ENV EVOSUITE_HOME=$TOOLS_HOME/evosuite
 WORKDIR $EVOSUITE_HOME
 RUN bash download.sh
 
+ENV OPAMCONFIRMLEVEL=unsafe-yes
 WORKDIR $UNITCON_HOME

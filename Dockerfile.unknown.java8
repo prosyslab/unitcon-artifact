@@ -29,4 +29,5 @@ ENV UNITCON_TOOL_HOME=$UNITCON_HOME/unitcon
 COPY ./unknown-bug-bench/script $UNITCON_TOOL_HOME/script
 COPY ./unknown-bug-bench/tests/java8/bug.json $UNITCON_TOOL_HOME/script
 
+ENV OPAMCONFIRMLEVEL=unsafe-yes
 WORKDIR $UNITCON_TOOL_HOME
