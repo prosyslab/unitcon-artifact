@@ -581,7 +581,7 @@ Download the file `unitcon-experimental-result.tar.gz`, go to the `paper-script`
 
 ```console
 $ docker exec -it unitcon bash
-root:~/unitcon# wget https://zenodo.org/records/15205112/........
+root:~/unitcon# wget https://zenodo.org/records/15205112/files/unitcon-experimental-result.tar.gz
 root:~/unitcon# tar -xvf unitcon-experimental-result.tar.gz
 root:~/unitcon# cd unitcon-experimental-result/paper-script
 ```
