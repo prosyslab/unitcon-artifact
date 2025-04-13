@@ -125,15 +125,19 @@ drwxr-xr-x 9 root root 4096 Dec 19  2022 zulu11-ca-amd64
 ```
 
 ## __3. Reproducing the results in the paper__
+
 ### __3.1. Setup__
-To build UnitCon, please run
+To build UnitCon, please run the following command within the `unitcon` container:
 ```console
-$ cd unitcon
-$ ./setup.sh
+root@{sha}:~/unitcon# cd unitcon/
+root@{sha}:~/unitcon/unitcon# ./setup.sh
 ```
 
-### __3.2. Running the experiment for RQ1__
-If the following experiment are run sequentially, the total execution time is 125 days.
+### __3.2. Running the experiment for RQ1 (Full)__
+If you run the following experiment sequentially, it take approximately 125 days in total.
+If you run the tools in parallel, it takes **XXX** hours for UnitCon and **XXX** hours for the other tools.
+Alternatively, we provide a minimal set of experiments to check the consistency between this artifact and the paper in the next section (3.3).
+It will take **XXX** days.
 
 #### __Build__
 Before starting the experiment, projects need to be built. You can run:
@@ -170,7 +174,7 @@ FYI, we used iteration ranging from 1 to 10.
 $ python3 execute.py utbot all --timeout 10 --results results/[iteration] --log results/[iteration].log
 ```
 
-### __3.3. Running the minimal version of 3.2__
+### __3.3. Running the minimal version of 3.2 (Optional)__
 Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 10 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 20 and the number of repetitions to 3. Under the assumption of running the experiment sequentially, the total execution time is 4 days.
 
 Before starting the experiment, projects need to be built. You can run:
