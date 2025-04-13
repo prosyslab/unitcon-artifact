@@ -269,7 +269,15 @@ root:/usr/src/baselines# python3 build.py minimal --log build.log
 To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
 You can use seed ranging from 1 to 3.
 ```console
-$ python3 execute.py utbot minimal --timeout 10 --results results/[iteration] --log results/[iteration].log
+root:/usr/src/baselines# python3 execute.py utbot minimal --timeout 10 --results results/[iteration] --log results/[iteration].log
+```
+
+Example:
+```console
+root:/usr/src/baselines# python3 execute.py utbot minimal --timeout 10 --results results/1 --log results/1.log
+04/13/2025 13:06:05 - INFO - utbot.execute - classpath: with_dependency.jar
+04/13/2025 13:06:05 - INFO - utbot.execute - execute utbot project: Bears-196-buggy
+...
 ```
 
 ### __3.4. Running the experiment for RQ2 (Optional)__
