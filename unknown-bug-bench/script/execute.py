@@ -56,7 +56,7 @@ def combine_synthesis_command(p_dir_name, p, time_out, proj_infos):
     value = proj_infos.get(p_dir_name, None)
 
     if value != None:
-        cmd = " ".join([cmd, "--target", value["target_source"] + ":" + str(value["target_line"])])
+        cmd = " ".join([cmd, "--target", value["target_source"] + ":" + str(value["target_line"]), "--unknown-bug"])
     return cmd
 
 
