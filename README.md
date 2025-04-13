@@ -285,24 +285,6 @@ root:/usr/src/baselines# python3 execute.py utbot minimal --timeout 10 --results
 ### __3.4. Running the experiment for RQ2 (Optional)__
 For RQ2, we organized the setup so that experiments could be run using separate Docker images based on the Java version used to build each project.
 
-1. Build Docker images
-```console
-$ docker build -t prosyslab/unitcon-unknown-bench:java8 -f Dockerfile.unknown.java8 .
-$ docker build -t prosyslab/unitcon-unknown-bench:java11 -f Dockerfile.unknown.java11 .
-$ docker build -t prosyslab/unitcon-unknown-bench:java21 -f Dockerfile.unknown.java21 .
-```
-2. Start containers
-```console
-$ docker run -dit --name unitcon-rq2-java8 prosyslab/unitcon-unknown-bench:java8 bash
-$ docker run -dit --name unitcon-rq2-java11 prosyslab/unitcon-unknown-bench:java11 bash
-$ docker run -dit --name unitcon-rq2-java21 prosyslab/unitcon-unknown-bench:java21 bash
-```
-3. Setup UnitCon as described in Step 3.1 to each container
-```console
-$ docker exec -it unitcon-rq2-java[version] bash
-root:~/unitcon/unitcon# ./setup.sh
-```
-
 The projects where you can check the reported bugs for each benchmark are listed below.
 - **java 8**
     - commons-configuration_37f5448
@@ -323,6 +305,29 @@ The projects where you can check the reported bugs for each benchmark are listed
     - pdfbox_6f8ebc1
     - tsfile_6fcc23
 
+
+1. Build Docker images
+```console
+$ docker build -t prosyslab/unitcon-unknown-bench:java8 -f Dockerfile.unknown.java8 .
+$ docker build -t prosyslab/unitcon-unknown-bench:java11 -f Dockerfile.unknown.java11 .
+$ docker build -t prosyslab/unitcon-unknown-bench:java21 -f Dockerfile.unknown.java21 .
+```
+
+2. Start containers
+```console
+$ docker run -dit --name unitcon-rq2-java8 prosyslab/unitcon-unknown-bench:java8 bash
+$ docker run -dit --name unitcon-rq2-java11 prosyslab/unitcon-unknown-bench:java11 bash
+$ docker run -dit --name unitcon-rq2-java21 prosyslab/unitcon-unknown-bench:java21 bash
+```
+
+3. Setup UnitCon as described in Step 3.1 to each container
+```console
+$ docker exec -it unitcon-rq2-java[version] bash
+root:~/unitcon/unitcon# ./setup.sh
+```
+
+4. Execute UnitCon
+
 Plrease run the following command in the corresponding Java version container to generate test cases that reproduce the reported bugs.
 ```console
 $ docker exec -it unitcon-rq2-java[version] bash
@@ -337,7 +342,7 @@ root:~/unitcon/unitcon# python3 script/execute.py commons-dbcp_6ce68bf
 
 If you want to reproduce all the reported bugs in a single container, simply run
 ```console
-$ docker exec -it unitcon-rq2-java8 bash
+$ docker exec -it unitcon-rq2-java[version] bash
 root:~/unitcon/unitcon# python3 script/execute.py all
 ```
 
