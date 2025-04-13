@@ -142,6 +142,7 @@ It will take **2** days.
 #### __Build__
 First, we need to build the target programs. Please run the following command in the `unitcon` container:
 ```console
+root:~/unitcon# cd unitcon/
 root:~/unitcon/unitcon# python3 script/execute.py build all
 build started: avro_a7a43da
 build done: avro_a7a43da
@@ -228,29 +229,39 @@ root:~/unitcon# cd unitcon/
 root:~/unitcon/unitcon# python3 script/execute.py build minimal
 build started: Bears-196-buggy
 build done: Bears-196-buggy
+...
+all build done!
 ```
 
 #### __UnitCon__
-To run the experiment for UnitCon, you can run
+We can execute UnitCon with the following commands in the `unitcon` container:
 ```console
-$ python3 script/execute.py analyze minimal
-$ python3 script/execute.py synthesize minimal --mode full --report unitcon-results
+root:~/unitcon# cd unitcon/
+root:~/unitcon/unitcon# python3 script/execute.py analyze minimal
+analysis started: Bears-196-buggy
+...
+all analysis done!
+root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode full --report unitcon-results
 ```
 
 #### __Other tools (except UTBot)__
-To run the experiment for other tools except UTBot, you can use the script `scripts/execute.py` as the following.
+To run the experiment for other tools except UTBot, you can use the script `execute.py` as the following.
 you can use seed ranging from 1 to 3.
 ```console
-$ cd ~/unitcon
-$ python3 execute.py all minimal --seed [seed] --timeout 10 --results results/[seed] --log results/[seed].log
+root:~/unitcon# python3 execute.py all minimal --seed 1 --timeout 10 --results results/1 --log results/1.log
+04/13/2025 12:58:28 - INFO - randoop.execute - classpath: unitcon-out/with-dependency.jar
+04/13/2025 12:58:28 - INFO - randoop.execute - execute randoop project: Bears-196-buggy
+...
 ```
 
 #### __UTBot__
-UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot` for experimentation.
-To run the experiment for UTBot, you can use the script `scripts/build.py` as the following.
+UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot`.
+Please start a shell in the `utbot` container that you've created at the section 2.2, and execute the following commands:
 ```console
-$ cd baselines
-$ python3 build.py minimal --log build.log
+root:/usr/src/baselines# python3 build.py minimal --log build.log
+04/13/2025 12:56:24 - INFO - __main__ - **********
+04/13/2025 12:56:24 - INFO - __main__ - build started: Bears-196-buggy
+...
 ```
 
 To run the experiment for UTBot, you can use the script `scripts/execute.py` as the following.
