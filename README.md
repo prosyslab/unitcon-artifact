@@ -81,7 +81,7 @@ $ docker pull prosyslab/unitcon-artifact-utbot
 #### Option 2. Build the Docker image manually
 If you want to build the Docker image manually, you need to download the dependencies.
 
-Please download `m2-cache.tar` from the **XXX** path, place it inside the `resources` directory, and then run the following command to build the image.
+Please download `m2-cache.tar` from the **[here](https://zenodo.org/records/15205112)** path, place it inside the `resources` directory, and then run the following command to build the image.
 ```
 $ docker build -t prosyslab/unitcon-artifact -f Dockerfile .
 $ docker build -t prosyslab/unitcon-artifact-utbot -f Dockerfile.utbot .
@@ -544,7 +544,7 @@ $ python3 figure_9_b.py
 
 
 ## __7. The results of the experiments in the paper__
-You can retrieve the results of the experiments in the paper from here.
+You can retrieve the results of the experiments in the paper from **[here](https://zenodo.org/records/15205112)**.
 Download the file `unitcon-experimental-result.tar.gz`, go to the `paper-script` directory and execute the script.
 
 ```console
