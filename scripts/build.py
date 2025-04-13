@@ -59,7 +59,7 @@ if __name__ == "__main__":
         pass
     elif target == "minimal":
         projects = json.load(args.minimal_projects)
-        projects = [ProjectConfig(**p) for p in projects]
+        projects = [p for p in projects]
     elif target in ["maven", "javac"]:
         projects = [p for p in projects if p["project_dir"].lower().startswith(target)]
     else:
