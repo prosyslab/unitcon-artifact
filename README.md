@@ -147,9 +147,8 @@ root:~/unitcon/unitcon# python3 script/execute.py build all
 build started: avro_a7a43da
 build done: avro_a7a43da
 ...
-```
-
-```console
+all build done!
+root:~/unitcon/unitcon# cd ..
 root:~/unitcon# python3 build.py all --log build.log
 04/13/2025 12:12:31 - INFO - __main__ - **********
 04/13/2025 12:12:31 - INFO - __main__ - build started: activemq-artemis_6fbafc4
@@ -238,9 +237,7 @@ build started: Bears-196-buggy
 build done: Bears-196-buggy
 ...
 all build done!
-```
-
-```console
+root:~/unitcon/unitcon# cd ..
 root:~/unitcon# python3 build.py all --log build.log
 04/13/2025 12:56:24 - INFO - __main__ - **********
 04/13/2025 12:56:24 - INFO - __main__ - build started: Bears-196-buggy
