@@ -97,7 +97,7 @@ def draw(iteration):
         cur_xpos += bar_width + bar_space
 
         if tool in ["EvoSuite", "EvoFuzz", "NPETest", "Randoop"]:
-            min_value2, max_value2, std2 = get_min_max(tool+"_method", tool_set[tool+"_method"])
+            min_value2, max_value2, std2 = get_min_max(tool+"_method", tool_set[tool+"_method"], iteration)
             ax.bar(cur_xpos, std2, bar_width, color=color_map[tool+"_method"])
             ax.errorbar(cur_xpos,
                     std2,
