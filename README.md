@@ -383,6 +383,7 @@ root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode priority
 root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode prune --report unitcon-prune-results
 root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode basic --report unitcon-basic-results
 ```
+You can execute these 4 commands in parallel.
 
 ### __5.3. Running the minimal version of 5.2 (Optional)__
 Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 4 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 8. Under the assumption of running the experiment sequentially, the total execution time is 5 hours.
@@ -404,6 +405,7 @@ root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode prio
 root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode prune --report unitcon-prune-results
 root:~/unitcon/unitcon# python3 script/execute.py synthesize minimal --mode basic --report unitcon-basic-results
 ```
+You can execute these 4 commands in parallel.
 
 ## __6. Plotting the results__
 #### __Init Structure__
@@ -465,7 +467,27 @@ After all the above experiments have finished, the results will be stored in bot
 ```
 
 #### __Combine Structure__
-Please copy the data from the `utbot` container to the `unitcon` container and merge them into a single structure as shown below.
+Please copy the data from the `utbot` container to the `unitcon` container as follows:
+```console
+$ docker cp utbot:/usr/src/baselines/results ./results
+Successfully copied 71.8MB to /pass/to/unitcon-artifact/results
+$ docker cp results/1/utbot unitcon:/root/unitcon/results/1/utbot
+Successfully copied 24.1MB to unitcon:/root/unitcon/results/1/utbot
+$ docker cp results/1/utbot.csv unitcon:/root/unitcon/results/1/
+Successfully copied 2.05kB to unitcon:/root/unitcon/results/1/
+$ docker cp results/2/utbot unitcon:/root/unitcon/results/2/utbot
+Successfully copied 24.1MB to unitcon:/root/unitcon/results/2/utbot
+$ docker cp results/2/utbot.csv unitcon:/root/unitcon/results/2/
+Successfully copied 2.05kB to unitcon:/root/unitcon/results/2/
+$ docker cp results/3/utbot unitcon:/root/unitcon/results/3/utbot
+Successfully copied 22.5MB to unitcon:/root/unitcon/results/3/utbot
+$ docker cp results/3/utbot.csv unitcon:/root/unitcon/results/3/
+Successfully copied 2.05kB to unitcon:/root/unitcon/results/3/
+...
+```
+Repeat the copy command for the number of iterations you've executed UTBot.
+
+Then the merged `results` directory is structured as shown below:
 ```
 ├── unitcon-results
 │   ├── ...
