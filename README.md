@@ -256,6 +256,14 @@ root:~/unitcon# python3 execute.py all minimal --seed 1 --timeout 10 --results r
 ...
 ```
 
+Also, please execute the same tools with `--target_method` option:
+```console
+root:~/unitcon# python3 execute.py all minimal --seed 1 --timeout 10 --results results/1 --target_method --log results/1.log
+04/13/2025 15:37:07 - INFO - randoop.execute - classpath: unitcon-out/with-dependency.jar
+04/13/2025 15:37:07 - INFO - randoop.execute - execute randoop project: Bears-196-buggy
+...
+```
+
 #### __UTBot__
 UTBot can be executed using the Docker image `prosyslab/unitcon-artifact-utbot`.
 Please start a shell in the `utbot` container that you've created at the section 2.2, and execute the following commands:
