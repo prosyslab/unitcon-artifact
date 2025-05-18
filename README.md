@@ -81,7 +81,7 @@ $ docker pull prosyslab/unitcon-artifact-utbot
 #### Option 2. Build the Docker image manually
 If you want to build the Docker image manually, you need to download the dependencies.
 
-Please download `m2-cache.tar` from the **[here](https://zenodo.org/records/15205112)** path, place it inside the `resources` directory, and then run the following command to build the image.
+Please download `m2-cache.tar` from the **[here](https://zenodo.org/records/15460355)** path, place it inside the `resources` directory, and then run the following command to build the image.
 ```
 $ docker build -t prosyslab/unitcon-artifact -f Dockerfile .
 $ docker build -t prosyslab/unitcon-artifact-utbot -f Dockerfile.utbot .
@@ -126,14 +126,7 @@ drwxr-xr-x 9 root root 4096 Dec 19  2022 zulu11-ca-amd64
 
 ## __3. Reproducing the results for RQ1__
 
-### __3.1. Setup__
-To build UnitCon, please run the following command within the `unitcon` container:
-```console
-root:~/unitcon# cd unitcon/
-root:~/unitcon/unitcon# ./setup.sh
-```
-
-### __3.2. Running the experiment (Full)__
+### __3.1. Running the experiment (Full)__
 If you run the following experiment sequentially, it take approximately 125 days in total.
 If you run the tools in parallel, it takes **33** hours for UnitCon and **330** hours for the other tools.
 Alternatively, we provide a minimal set of experiments to check the consistency between this artifact and the paper in the next section (3.3).
@@ -225,7 +218,7 @@ root:/usr/src/baselines# python3 execute.py utbot all --timeout 10 --results res
 ...
 ```
 
-### __3.3. Running the minimal version of 3.2 (Optional)__
+### __3.2. Running the minimal version of 3.2 (Optional)__
 Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 10 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 8 and the number of repetitions to 3. Under the assumption of running the experiment sequentially, the total execution time is 2 days.
 
 #### __Build__
@@ -341,12 +334,6 @@ $ docker run -dit --name unitcon-rq2-java11 prosyslab/unitcon-unknown-bench:java
 $ docker run -dit --name unitcon-rq2-java21 prosyslab/unitcon-unknown-bench:java21 bash
 ```
 
-3. Setup UnitCon as described in Step 3.1 to each container
-```console
-$ docker exec -it unitcon-rq2-java[version] bash
-root:~/unitcon/unitcon# ./setup.sh
-```
-
 ### __4.2. Execute UnitCon__
 
 Plrease run the following command in the corresponding Java version container to generate test cases that reproduce the reported bugs.
@@ -402,15 +389,7 @@ Note that you can check the test cases mentioned in paper at `/opt/benchmarks/te
 
 ## __5. Reproducing the results for RQ3__
 
-### __5.1. Setup__
-If RQ1 has not been executed yet, please run the following command to build UnitCon within the `unitcon` container:
-```console
-$ docker exec -it unitcon bash
-root:~/unitcon# cd unitcon/
-root:~/unitcon/unitcon# ./setup.sh
-```
-
-### __5.2. Running the experiment (Full)__
+### __5.1. Running the experiment (Full)__
 If the following experiment are run sequentially, the total execution time is 6 days.
 
 #### __Build__
@@ -432,7 +411,7 @@ root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode prune --
 root:~/unitcon/unitcon# python3 script/execute.py synthesize all --mode basic --report unitcon-basic-results
 ```
 
-### __5.3. Running the minimal version of 5.2 (Optional)__
+### __5.2. Running the minimal version of 5.2 (Optional)__
 Reproducing the experiments in our paper at a full scale will take a very long time with limited resources. This is because the full experiment would involve running 4 trials of 10 minutes each for all 198 projects. Thus, we provide a minimal version of the experiment that can be run in a reasonable amount of time. We reduced the number of projects to 8. Under the assumption of running the experiment sequentially, the total execution time is 5 hours.
 
 #### __Build__
@@ -614,12 +593,12 @@ root:~/unitcon/plot-script# python3 figure_9_b.py
 
 
 ## __7. The results of the experiments in the paper__
-You can retrieve the results of the experiments in the paper from **[here](https://zenodo.org/records/15205112)**.
+You can retrieve the results of the experiments in the paper from **[here](https://zenodo.org/records/15460355)**.
 Download the file `unitcon-experimental-result.tar.gz`, go to the `paper-script` directory and execute the script.
 
 ```console
 $ docker exec -it unitcon bash
-root:~/unitcon# wget https://zenodo.org/records/15205112/files/unitcon-experimental-result.tar.gz
+root:~/unitcon# wget https://zenodo.org/records/15460355/files/unitcon-experimental-result.tar.gz
 root:~/unitcon# tar -xvf unitcon-experimental-result.tar.gz
 root:~/unitcon# cd unitcon-experimental-result/paper-script
 ```
