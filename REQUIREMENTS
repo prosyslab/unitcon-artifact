@@ -1,0 +1,7 @@
+The experiment requires **188** GB storage for Docker images and experimental results.
+
+Additionally, we assume that the following environment settings are met.
+- Ubuntu 22.04
+- python 3.8+
+- pip3
+- Docker
